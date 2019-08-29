@@ -1,0 +1,8 @@
+{
+  "name": "fusionauth-site",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}

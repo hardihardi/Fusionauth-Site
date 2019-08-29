@@ -4,6 +4,7 @@
 _site
 build
 fusionauth-site.iws
+node_modules
 
 # Daniel doesn't like any of the new format files and my ide keeps creating them
 .idea

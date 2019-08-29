@@ -33,6 +33,9 @@ exclude:
  - fusionauth-site.iws
  - Gemfile
  - Gemfile.lock
+ - package.json
+ - package-lock.json
+ - node_modules
 asciidoctor:
   template_dir: docs/src/templates/haml
   attributes:
@@ -56,3 +59,5 @@ pagination:
   trail:
     before: 4
     after: 5
+sass:
+  style: compressed
