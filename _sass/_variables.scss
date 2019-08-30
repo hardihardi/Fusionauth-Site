@@ -6,15 +6,19 @@ $nav-width: 280px;
 
 
 // Bootstrap variables
+$container-max-widths: (xl: 1440px);
+
 $primary: #ea8c51;
 $secondary: #3f2e61;
 $dark: #5b6670;
 $light: #c6c7c6;
+$light2: #efefef;
 
 $theme-colors: (
     "dark-blue": #2d3d50,
     "orange": $primary,
-    "purple": $secondary
+    "purple": $secondary,
+    "light2": $light2
 );
 
 $font-family-sans-serif: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
