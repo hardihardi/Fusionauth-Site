@@ -1,8 +1,12 @@
 ---
 ---
 
+//noinspection CssUnknownTarget
 @import "variables";
+//noinspection CssUnknownTarget
 @import "../../node_modules/bootstrap/scss/bootstrap";
+//noinspection CssUnknownTarget
+@import "carousel";
 
 html {
   height: 100%;
