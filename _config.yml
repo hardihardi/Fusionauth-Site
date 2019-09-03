@@ -22,21 +22,6 @@ plugins:
  - jekyll-paginate-v2
 exclude:
  - docs/src/templates
- - .gitignore
- - .ruby-version
- - _config.yml
- - BootstrapStudioConvert.rb
- - build.savant
- - deploy.sh
- - FusionAuth.bsdesign
- - fusionauth-site.iml
- - fusionauth-site.ipr
- - fusionauth-site.iws
- - Gemfile
- - Gemfile.lock
- - package.json
- - package-lock.json
- - node_modules
 asciidoctor:
   template_dir: docs/src/templates/haml
   base_dir: src
