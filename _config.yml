@@ -9,6 +9,7 @@ baseurl: ""
 url: "https://fusionauth.io"
 twitter_username: fusionauth
 github_username:  FusionAuth
+source: src
 host: 0.0.0.0
 
 # Build settings
@@ -38,6 +39,7 @@ exclude:
  - node_modules
 asciidoctor:
   template_dir: docs/src/templates/haml
+  base_dir: src
   attributes:
     icons: font
     #    attribute-missing: drop-line
