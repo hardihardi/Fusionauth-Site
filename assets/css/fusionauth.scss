@@ -81,6 +81,21 @@ a.link-dark {
   font-weight: normal;
 }
 
+// For making the gap on 2 column content wider
+.wider-gap {
+  .col-md-6 {
+    @include media-breakpoint-up(md) {
+      &:nth-child(odd) {
+        padding-right: 50px;
+      }
+
+      &:nth-child(even) {
+        padding-left: 50px;
+      }
+    }
+  }
+}
+
 // Old stuff
 
 //.navbar.bg-secondary .nav-link {
