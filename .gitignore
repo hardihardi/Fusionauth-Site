@@ -23,4 +23,5 @@ out/
 .idea/httpRequests
 
 # Generated SVGs
-assets/img/diagrams
+src/assets/img/diagrams
+src/assets/js/fusionauth.js
