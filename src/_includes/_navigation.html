@@ -1,9 +1,14 @@
-<nav class="navbar navbar-dark navbar-expand-lg p-2 sticky-top {% if page.header_color %}{{ page.header_color }}{% else %}bg-primary{% endif %}">
+<nav class="navbar {% if page.header_dark == true %}navbar-dark{% endif %} navbar-expand-lg p-2 sticky-top">
   {% assign url = page.url | downcase %}
 
   <div class="container">
-    <a class="navbar-brand logo" href="/"><img src="/assets/img/FusionAuth-Logo-white-orange.svg?h=b3dd00805e806aa4c910569eff3b15fc"
-                                               alt="FusionAuth Logo" width="200"></a>
+    <a class="navbar-brand logo" href="/">
+      {% if page.header_dark == true %}
+      <img src="/assets/img/FusionAuth-Logo-white-orange.svg" alt="FusionAuth Logo" width="200">
+      {% else %}
+      <img src="/assets/img/fusionauth-FC-wide.svg" alt="FusionAuth Logo" width="200">
+      {% endif %}
+    </a>
     <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span
         class="bg-inverse navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse" id="navcol-1">
@@ -29,7 +34,7 @@
         </li>
         <li class="nav-item d-lg-none" role="presentation"><a class="nav-link" href="/contact">Contact Us</a></li>
       </ul>
-      <a class="btn btn-primary pop text-white ml-auto d-none d-lg-inline-block {% if url == '/contact.html' %}active{% endif %}" href="/contact">Contact Us</a>
+      <a class="btn btn-primary pop wide ml-auto d-none d-lg-inline-block" href="/contact">Contact Us</a>
     </div>
   </div>
 </nav>
