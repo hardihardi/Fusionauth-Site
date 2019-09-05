@@ -110,9 +110,11 @@ a.link-dark {
 }
 
 // Used in the footer to add bars part of the way up the links
-.magic-3-col-bars > :nth-child(3n+5):not(:nth-last-child(-n+3)) {
-  border-left: 2px solid white;
-  border-right: 2px solid white;
+@include media-breakpoint-up(md) {
+  .magic-3-col-bars > :nth-child(3n+5):not(:nth-last-child(-n+3)) {
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+  }
 }
 
 // Used for the programming languages and platforms
