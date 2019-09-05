@@ -4,10 +4,10 @@ $media-md: 992px;
 $media-sm: 768px;
 $nav-width: 280px;
 
+//$enable-shadows: true;
+
 
 // Bootstrap variables
-$container-max-widths: (xl: 1440px);
-
 $primary: #ea8c51;
 $secondary: #3f2e61;
 $dark: #5b6670;
@@ -21,5 +21,34 @@ $theme-colors: (
     "light2": $light2
 );
 
-$font-family-sans-serif: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+$font-size-base: 1rem;
+$lead-font-size: $font-size-base * 1.1 !default;
 
+$font-family-sans-serif: 'Roboto', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+
+$navbar-nav-link-padding-x: 20px;
+$navbar-padding-y: 30px;
+
+$btn-padding-x-lg: 24px;
+$btn-padding-y-lg: 16px;
+
+$spacer: 1rem; // Need this to be defined so we can add another spacer tier
+$spacers: (
+    6: ($spacer * 6)
+);
+
+$line-height-base: 1.5;
+$line-heights: (
+    1: $line-height-base,
+    2: ($line-height-base * 1.1),
+    3: ($line-height-base * 1.25),
+    4: ($line-height-base * 1.5)
+);
+
+
+$headings-color: $secondary;
+$headings-font-weight: bold;
+$display1-weight: bold;
+$display2-weight: bold;
+$display3-weight: bold;
+$display4-weight: bold;

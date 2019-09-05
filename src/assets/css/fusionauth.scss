@@ -18,30 +18,70 @@ body {
   min-height: 100%;
 }
 
+.bg-dark-blue a, .bg-primary a {
+  color: white;
+}
+
 .btn {
-  color: $white;
+  color: white;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+}
 
-  &.pop {
-    box-shadow: 0 7px 20px -3px black;
-    padding: 20px;
+.input-group {
+  .btn {
+    box-shadow: none;
+  }
+}
 
-    &.wide {
-      padding-left: 50px;
-      padding-right: 50px;
+.text-wide {
+  letter-spacing: .1rem;
+}
+
+.overflow-visible {
+  overflow: visible;
+}
+
+img.shadow {
+  box-shadow: none !important;
+  -webkit-filter: drop-shadow(0 0.125rem 0.4rem rgba(0, 0, 0, .5));
+  filter: dropShadow($box-shadow);
+}
+
+// Line heights
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $size, $length in $line-heights {
+      .lh#{$infix}-#{$size} {
+        line-height: $length;
+      }
     }
   }
 }
 
-.page-footer a {
-  color: white;
+// Widths at breakpoints
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $prop, $abbrev in (width: w, height: h) {
+      @each $size, $length in $sizes {
+        .#{$abbrev}#{$infix}-#{$size} {
+          #{$prop}: $length !important;
+        }
+      }
+    }
+  }
 }
 
 .navbar {
   .nav-link {
-    color: $secondary;
-    font-weight: bold;
+    //color: $secondary;
+    //font-weight: bold;
+    font-size: 14px;
 
-    &:active {
+    &.active, &:active {
       color: $dark;
     }
   }
@@ -55,39 +95,12 @@ body {
   }
 }
 
-.circle {
-  border-radius: 50%;
+.hero {
+  max-width: 1440px;
 }
 
-// Unsorted and may be applied to other pages later
-main.home {
-  h1, h2, h3, h4, h5, h6 {
-    color: $secondary;
-    font-weight: bold;
-    text-align: center;
-  }
-
-  .bg-secondary {
-    h1, h2, h3, h4, h5, h6 {
-      color: $white;
-    }
-  }
-
-  h1 {
-    font-size: 55px;
-  }
-
-  h2 {
-    font-size: 34px;
-  }
-
-  h3 {
-    font-size: 20px;
-  }
-
-  a {
-    font-weight: bold;
-  }
+.circle {
+  border-radius: 50%;
 }
 
 // Dark links
@@ -120,21 +133,6 @@ a.link-dark {
 .carousel a .card {
   color: black;
   font-weight: normal;
-}
-
-// For making the gap on 2 column content wider
-.wider-gap {
-  .col-md-6 {
-    @include media-breakpoint-up(md) {
-      &:nth-child(odd) {
-        padding-right: 50px;
-      }
-
-      &:nth-child(even) {
-        padding-left: 50px;
-      }
-    }
-  }
 }
 
 // Old stuff
@@ -290,4 +288,3 @@ a.link-dark {
 //    }
 //  }
 //}
-

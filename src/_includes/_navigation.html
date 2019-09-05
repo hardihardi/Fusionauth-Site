@@ -1,4 +1,4 @@
-<nav class="navbar {% if page.header_dark == true %}navbar-dark{% endif %} navbar-expand-lg p-2 sticky-top">
+<nav class="navbar {% if page.header_dark == true %}navbar-dark{% endif %} navbar-expand-xl sticky-top">
   {% assign url = page.url | downcase %}
 
   <div class="container">
@@ -11,8 +11,8 @@
     </a>
     <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span
         class="bg-inverse navbar-toggler-icon"></span></button>
-    <div class="collapse navbar-collapse" id="navcol-1">
-      <ul class="nav navbar-nav text-right text-lg-left">
+    <div class="collapse navbar-collapse text-uppercase" id="navcol-1">
+      <ul class="nav navbar-nav text-right text-xl-left">
         <li class="nav-item" role="presentation"><a class="nav-link" href="/features">Features</a></li>
         <li class="nav-item" role="presentation"><a class="nav-link" href="/pricing">Pricing</a></li>
         <li class="nav-item" role="presentation"><a class="nav-link" href="/docs/v1/tech/">Docs</a></li>
@@ -32,9 +32,9 @@
             {% endfor %}
           </div>
         </li>
-        <li class="nav-item d-lg-none" role="presentation"><a class="nav-link" href="/contact">Contact Us</a></li>
+        <li class="nav-item d-xl-none" role="presentation"><a class="nav-link" href="/contact">Contact Us</a></li>
       </ul>
-      <a class="btn btn-primary pop wide ml-auto d-none d-lg-inline-block" href="/contact">Contact Us</a>
+      <a class="btn btn-primary btn-lg ml-auto d-none d-xl-inline-block" href="/contact">Contact Us</a>
     </div>
   </div>
 </nav>
