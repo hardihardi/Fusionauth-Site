@@ -1,4 +1,4 @@
-:stop: :hammer: :clock:
+stop :hammer: :alarm_clock:
 
 Setup instructions BEFORE you checkout this branch
 ----
