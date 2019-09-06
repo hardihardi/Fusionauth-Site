@@ -209,11 +209,14 @@ header_dark: true
       <h2 class="display-4 text-center">Trusted worldwide</h2>
       <h3 class="text-primary text-center">Over 100,000 downloads on six continents.</h3>
 
-      <div class="row mt-4 mb-4 d-flex flex-nowrap align-items-center">
+      <div class="row mt-4 mb-4 d-flex flex-wrap align-items-center justify-content-center">
         {% for client in site.data.clients limit:5 %}
-        <img style="width: 20%" src="/assets/img/{{ client.image }}">
+        <div class="m-3">
+          <img class="client-logo" src="/assets/img/{{ client.image }}">
+        </div>
         {% endfor %}
       </div>
+
 
       <div class="fusion-go-round">
         <div class="fusion-go-round-platform">
