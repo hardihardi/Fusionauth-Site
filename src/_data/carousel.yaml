@@ -1,6 +1,21 @@
-- title: Example Carousel Item
+- title: Types of Logins and Authentication Workflows
   image: mstile-144x144.png
-  url: \#TODO
-- title: Example Carousel Item 2
+  url: /articles/logins/types-of-logins-authentication-workflows
+- title: Guide to User Data Security
   image: slack-icon.svg
-  url: \#TODO
+  url: /resources/guide-to-user-data-security
+- title: Password Security Compliance Checklist
+  image: mstile-144x144.png
+  url: /blog/2019/04/11/password-security-compliance-checklist
+- title: Challenges of CIAM
+  image: mstile-144x144.png
+  url: /challenges-of-ciam
+- title: Single vs. Multi-Tenant Whitepaper
+  image: mstile-144x144.png
+  url: /blog/2018/12/03/single-tenant-vs-multi-tenant
+- title: Develper’s Guide to the GDPR
+  image: mstile-144x144.png
+  url: /blog/2019/01/29/white-paper-developers-guide-gdpr
+- title: DataStax Case Study
+  image: mstile-144x144.png
+  url: /blog/2019/07/30/datastax-switch-fusionauth-case-study
