@@ -1,6 +1,8 @@
 
 $fusion-go-round-card-width: 190px !default;
+$fusion-go-round-card-width-wide: 350px !default;
 $fusion-go-round-car-padding: ((map-get($container-max-widths, xl) - $grid-gutter-width - ($fusion-go-round-visible-padding-x * 2)) / 5 - $fusion-go-round-card-width) / 2 !default;
+$fusion-go-round-car-padding-wide: ((map-get($container-max-widths, xl) - $grid-gutter-width - ($fusion-go-round-visible-padding-x * 2)) / 3 - $fusion-go-round-card-width-wide) / 2 !default;
 
 .fusion-go-round {
   position: relative;
@@ -10,34 +12,18 @@ $fusion-go-round-car-padding: ((map-get($container-max-widths, xl) - $grid-gutte
     display: flex;
     flex-direction: row;
     padding: $fusion-go-round-visible-padding-y $fusion-go-round-visible-padding-x;
-    height: 256px + ($fusion-go-round-visible-padding-y * 2);
     overflow-x: auto;
     overflow-y: hidden;
+    align-content: stretch;
 
     .fusion-go-round-car {
       flex: 0 0 auto;
       width: $fusion-go-round-card-width + $fusion-go-round-car-padding * 2;
       padding: 0 $fusion-go-round-car-padding;
 
-      .card {
-        margin: auto;
-        height: 100%;
-        border-radius: $fusion-go-round-card-border-radius;
-
-        .card-img-top {
-          height: 180px;
-          width: 100%;
-        }
-
-        .card-text-bottom {
-          height: 74px;
-          width: 100%;
-          border-bottom-left-radius: $fusion-go-round-card-border-radius;
-          border-bottom-right-radius: $fusion-go-round-card-border-radius;
-          border-top: 1px solid $light;
-          font-size: .9rem;
-          overflow: hidden;
-        }
+      &.wide {
+        width: $fusion-go-round-card-width-wide + $fusion-go-round-car-padding-wide * 2;
+        padding: 0 $fusion-go-round-car-padding-wide;
       }
     }
   }
@@ -62,5 +48,33 @@ $fusion-go-round-car-padding: ((map-get($container-max-widths, xl) - $grid-gutte
       margin-top: -50%;
       color: black;
     }
+  }
+}
+
+.fusion-go-round-card {
+  @extend .card;
+
+  width: $fusion-go-round-card-width;
+  align-items: stretch;
+  height: 100%;
+  border-radius: $fusion-go-round-card-border-radius;
+
+  &.wide {
+    width: $fusion-go-round-card-width-wide;
+  }
+
+  .card-img-top {
+    height: 180px;
+    width: 100%;
+  }
+
+  .card-text-bottom {
+    height: 74px;
+    width: 100%;
+    border-bottom-left-radius: $fusion-go-round-card-border-radius;
+    border-bottom-right-radius: $fusion-go-round-card-border-radius;
+    border-top: 1px solid $light;
+    font-size: .9rem;
+    overflow: hidden;
   }
 }
