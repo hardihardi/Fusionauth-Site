@@ -24,7 +24,7 @@ body {
 
 .btn {
   color: white;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+  box-shadow: $box-shadow;
 }
 
 .input-group {
@@ -43,7 +43,7 @@ body {
 
 img.shadow {
   box-shadow: none !important;
-  -webkit-filter: drop-shadow(0 0.125rem 0.4rem rgba(0, 0, 0, .5));
+  -webkit-filter: drop-shadow($box-shadow-sm);
   filter: dropShadow($box-shadow);
 }
 
@@ -130,11 +130,6 @@ a.link-dark {
     width: 110px;
     text-align: center;
   }
-}
-
-.carousel a .card {
-  color: black;
-  font-weight: normal;
 }
 
 // Old stuff

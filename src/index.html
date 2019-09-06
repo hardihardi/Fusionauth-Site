@@ -206,34 +206,36 @@ header_dark: true
 
   <section class="pb-6 pt-6">
     <div class="container">
-      <h2>Trusted worldwide</h2>
-      <h3 class="text-primary">Over 100,000 downloads on six continents.</h3>
+      <h2 class="display-4 text-center">Trusted worldwide</h2>
+      <h3 class="text-primary text-center">Over 100,000 downloads on six continents.</h3>
     </div>
   </section>
 
-  <section class="pb-6 pt-6 bg-secondary p-5">
+  <section class="pb-5 pt-6 bg-secondary p-5">
     <div class="container text-center">
-      <h2>Ready to try FusionAuth?</h2>
-      <h3>Use our FastPath install and start building something awesome.</h3>
-      <a class="btn btn-primary btn-lg m-4" href="/downloads">GET STARTED FOR FREE</a>
+      <h2 class="text-white h1">Ready to try FusionAuth?</h2>
+      <h3 class="text-white h4 m-3">Use our FastPath install and start building something awesome.</h3>
+      <a class="btn btn-primary btn-lg m-4 font-weight-bold text-wide" href="/downloads">GET STARTED FOR FREE</a>
       <h4 class="text-light">We got this. Go build the cool stuff.</h4>
-      <img src="/assets/img/FusionAuth-Logo-white-orange.svg?h=b3dd00805e806aa4c910569eff3b15fc" alt="FusionAuth Logo" class="m-4">
+      <img src="/assets/img/FusionAuth-Logo-white-orange.svg?h=b3dd00805e806aa4c910569eff3b15fc" alt="FusionAuth Logo" class="m-4" style="max-width: 250px">
     </div>
   </section>
 
   <section class="pb-6 pt-6">
     <div class="container">
-      <h2>Papers, Guides & Resources</h2>
-      <h3>Auth is complex. We share everything we know.</h3>
+      <h2 class="display-4 text-center mb-3">Papers, Guides & Resources</h2>
+      <h3 class="h4 text-center mb-5">Auth is complex. We share everything we know.</h3>
 
       <div id="papers" class="fusion-go-round">
         <div class="fusion-go-round-platform">
           {% for post in site.data.carousel %}
           <div class="fusion-go-round-car{% if forloop.first %} active{% endif %}">
             <a href="{{ post.url }}">
-              <div class="card">
+              <div class="card shadow">
                 <img class="card-img-top" src="/assets/img/{{ post.image }}">
-                <h5>{{ post.title }}</h5>
+                <div class="shadow-sm card-text-bottom">
+                  <span class="h5 text-black">{{ post.title }}</span>
+                </div>
               </div>
             </a>
           </div>

@@ -6,6 +6,11 @@ $nav-width: 280px;
 
 //$enable-shadows: true;
 
+// Our stuff
+
+$fusion-go-round-visible-padding-y: 20px; // Useful for showing shadows. Overflow is not viable for this.
+$fusion-go-round-visible-padding-x: 10px; // Useful for showing shadows. Overflow is not viable for this.
+$fusion-go-round-card-border-radius: 6px;
 
 // Bootstrap variables
 $primary: #ea8c51;
@@ -23,6 +28,9 @@ $theme-colors: (
 
 $font-size-base: 1rem;
 $lead-font-size: $font-size-base * 1.1 !default;
+
+$box-shadow-sm: 0 0.125rem 0.4rem rgba(0, 0, 0, .5);
+$box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
 
 $font-family-sans-serif: 'Roboto', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 

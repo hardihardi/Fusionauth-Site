@@ -2,48 +2,60 @@
 .fusion-go-round {
   position: relative;
   width: 100%;
-  overflow: hidden;
 
   .fusion-go-round-platform {
     display: flex;
     flex-direction: row;
-    height: 256px;
+    padding: $fusion-go-round-visible-padding-y $fusion-go-round-visible-padding-x;
+    height: 256px + ($fusion-go-round-visible-padding-y * 2);
     overflow-x: auto;
     overflow-y: hidden;
 
     .fusion-go-round-car {
       flex: 0 0 auto;
-      width: 282px;
-      padding-left: 25px;
-      padding-right: 25px;
+      width: 236px;
+      padding-left: 22.5px;
+      padding-right: 22.5px;
 
       .card {
         margin: auto;
         height: 100%;
+        display: flex;
+        flex-direction: column;
+        border-radius: $fusion-go-round-card-border-radius;
 
         .card-img-top {
+          flex: 0 0 180px;
           height: 180px;
+          width: 100%;
+        }
+
+        .card-text-bottom {
+          flex: 1 0 auto;
+          margin: 1px;
+          width: calc(100% - 2px);
+          border-bottom-left-radius: $fusion-go-round-card-border-radius;
+          border-bottom-right-radius: $fusion-go-round-card-border-radius;
         }
       }
     }
   }
 
   .fusion-go-round-left {
-    position: absolute;
-    top: 50%;
     left: 0;
   }
 
   .fusion-go-round-right {
-    position: absolute;
-    top: 50%;
     right: 0;
   }
 
   .fusion-go-round-left, .fusion-go-round-right {
+    position: absolute;
+    top: 50%;
+
     i {
       background-color: white;
-      box-shadow: 0 0 3px black;
+      box-shadow: $box-shadow;
       border: 25px solid white;
       border-radius: 50%;
       margin-top: -50%;
