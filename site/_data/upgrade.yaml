@@ -1,6 +1,6 @@
 - name: Saas Solutions
-  url: /upgrade-saas
+  url: /upgrade/from-saas
 - name: Homegrown
-  url: /upgrade-homegrown
+  url: /upgrade/from-homegrown
 - name: Open-Source Identity
-  url: /upgrade-open-source
+  url: /upgrade/from-open-source

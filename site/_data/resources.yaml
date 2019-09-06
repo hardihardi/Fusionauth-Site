@@ -1,3 +1,8 @@
-- name: DataStax Case Study
-  url: /resources/datastax-case-study.pdf
-
+- name: Community & Support
+  url: /community
+- name: Papers & Resources
+  url: /resources/
+- name: Download
+  url: /download
+- name: Blog
+  url: /blog/
