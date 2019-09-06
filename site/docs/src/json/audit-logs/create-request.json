@@ -1,0 +1,12 @@
+{
+  "auditLog": {
+    "data": {
+      "externalId": "_applicationA"
+    },
+    "newValue:": "{\"name\": \"bar\"}",
+    "oldValue": "{\"name\": \"foo\"}",
+    "reason": "Because I like to change things.",
+    "insertUser": "user@fusionauth.io",
+    "message": "Example audit log"
+  }
+}

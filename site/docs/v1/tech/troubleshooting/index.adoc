@@ -1,0 +1,49 @@
+---
+layout: doc
+title: Troubleshooting
+description: Troubleshoot any issues that might arise while install or running FusionAuth.
+---
+
+== Overview
+
+If any problems arise or if you are unable to access FusionAuth, consult the FusionAuth log files. In most cases API errors will be written out to the fusionauth-app.log file.
+
+If you need further assistance, please ask a question on https://stackoverflow.com/questions/tagged/fusionauth[Stack Overflow, window="_blank"] or open an issue on https://github.com/FusionAuth/fusionauth-issues/issues/new/choose[Github, window="_blank"] if you have additional questions. If you have a support contract you may send a request to support@fusionauth.io.
+
+=== Logs
+
+The following are the default locations for each of the FusionAuth log files. You may or may not have all of the FusionAuth services installed on the same system so you may not have all of the following logs on your server.
+
+[source,shell]
+.Linux and macOS
+----
+/usr/local/fusionauth/logs/fusionauth-app.log
+/usr/local/fusionauth/logs/fusionauth-search.log
+----
+
+These paths assume the suggested product location of `\fusionauth`. This path may be different on your system depending on where you unpacked the zip files.
+
+[source]
+.Windows
+----
+\fusionauth\logs\fusionauth-app.log
+\fusionauth\logs\fusionauth-search.log
+----
+
+=== Event Log
+
+[NOTE.since]
+====
+Available since 1.6.0
+====
+
+The event log is a FusionAuth message store designed to capture different types of events that may be necessary to communicate to a FusionAuth developer or admin user.
+
+The event log may contain helpful details to indicate the cause of the failure, or a failure condition you need to be aware of in FusionAuth. See [breadcrumb]#System# icon:chevron-right[role=breadcrumb] [breadcrumb]#Event Log#.
+
+While not limited to, generally speaking the event log will contain events or errors related to external systems or asynchronous issues that are difficult to communicate to the API caller or the FusionAuth admin at runtime. While not intended to be an exhaustive list, examples of these types of errors are:
+
+- SMTP connection issues
+- Lambda invocation errors
+- External identity provider failures or configuration issues
+- Failure to deliver a webhook event

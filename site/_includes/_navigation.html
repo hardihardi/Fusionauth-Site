@@ -1,0 +1,40 @@
+<nav class="navbar {% if page.header_dark == true %}navbar-dark{% else %}navbar-light{% endif %} navbar-expand-xl sticky-top">
+  {% assign url = page.url | downcase %}
+
+  <div class="container">
+    <a class="navbar-brand logo" href="/">
+      {% if page.header_dark == true %}
+      <img src="/assets/img/FusionAuth-Logo-white-orange.svg" alt="FusionAuth Logo" width="200">
+      {% else %}
+      <img src="/assets/img/fusionauth-FC-wide.svg" alt="FusionAuth Logo" width="200">
+      {% endif %}
+    </a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span
+        class="bg-inverse navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse text-uppercase" id="navcol-1">
+      <ul class="nav navbar-nav text-right text-xl-left">
+        <li class="nav-item" role="presentation"><a class="nav-link" href="/features">Features</a></li>
+        <li class="nav-item" role="presentation"><a class="nav-link" href="/pricing">Pricing</a></li>
+        <li class="nav-item" role="presentation"><a class="nav-link" href="/docs/v1/tech/">Docs</a></li>
+        <li class="nav-item dropdown" role="presentation">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Resources</a>
+          <div class="dropdown-menu">
+            {% for page in site.data.resources %}
+            <a class="dropdown-item" href="{{ page.url }}">{{ page.name }}</a>
+            {% endfor %}
+          </div>
+        </li>
+        <li class="nav-item dropdown" role="presentation">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Upgrade From...</a>
+          <div class="dropdown-menu">
+            {% for page in site.data.upgrade %}
+            <a class="dropdown-item" href="{{ page.url }}">{{ page.name }}</a>
+            {% endfor %}
+          </div>
+        </li>
+        <li class="nav-item d-xl-none" role="presentation"><a class="nav-link" href="/contact">Contact Us</a></li>
+      </ul>
+      <a class="btn btn-primary btn-lg ml-auto d-none d-xl-inline-block" href="/contact">Contact Us</a>
+    </div>
+  </div>
+</nav>

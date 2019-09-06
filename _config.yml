@@ -9,7 +9,7 @@ baseurl: ""
 url: "https://fusionauth.io"
 twitter_username: fusionauth
 github_username:  FusionAuth
-source: src
+source: site
 host: 0.0.0.0
 
 # Build settings
@@ -24,7 +24,7 @@ exclude:
  - docs/src/templates
 asciidoctor:
   template_dir: docs/src/templates/haml
-  base_dir: src
+  base_dir: site
   attributes:
     icons: font
     #    attribute-missing: drop-line
@@ -46,5 +46,5 @@ pagination:
   trail:
     before: 4
     after: 5
-#sass:
-#  style: compressed
+sass:
+  style: compressed

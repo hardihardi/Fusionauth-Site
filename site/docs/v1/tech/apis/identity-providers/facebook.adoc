@@ -1,0 +1,145 @@
+---
+layout: doc
+title: Facebook Identity Provider APIs
+description: APIs for creating, retrieving, updating and disabling the Facebook identity provider
+---
+
+== Overview
+
+[NOTE.since]
+====
+This API has been available since 1.1.0
+====
+
+The Facebook identity provider type will use the Facebook OAuth login API. It will provide a `Login with Facebook` button on FusionAuth's login page that will leverage the Facebook login pop-up dialog. Additionally, this identity provider will call Facebook's Graph API to load additional details about the user and store them in FusionAuth. Here are the user details from the Facebook's `/me` Graph API that FusionAuth stores and the User object fields they are stored in:
+
+* `birthday` -> `birthDate`
+* `email` -> `email`
+* `first_name` -> `firstName`
+* `last_name` -> `lastName`
+* `middle_name` -> `middleName`
+* `name` -> `fullName`
+
+FusionAuth will also call Facebook's `/me/picture` API to load the user's profile image and store it as the `imageUrl` in FusionAuth.
+
+Finally, FusionAuth will call Facebook's `/oauth/access_token` API to exchange the login token for a long-lived Facebook token. This token is stored in the `UserRegistration` object inside the `tokens` Map. This Map stores the tokens from the various identity providers so that you can use them in your application to call their APIs.
+
+=== Operations
+
+* <<Create the Facebook Identity Provider>>
+* <<Retrieve the Facebook Identity Provider>>
+* <<Update the Facebook Identity Provider>>
+* <<Delete the Facebook Identity Provider>>
+* <<Complete the Facebook Login>>
+
+== Create the Facebook Identity Provider
+
+=== Request
+
+[.api-authentication]
+link:authentication#api-key-authentication[icon:lock[role=red]] Create the Facebook Identity Provider
+[.endpoint]
+.URI
+--
+[method]#POST# [uri]#/api/identity-provider#
+--
+
+The `type` property in the request JSON is used to determine that you are managing the Facebook identity provider.
+
+include::docs/v1/tech/apis/identity-providers/_facebook-request-body.adoc[]
+
+=== Response
+
+include::docs/v1/tech/apis/_standard-post-response-codes.adoc[]
+
+include::docs/v1/tech/apis/identity-providers/_facebook-response-body.adoc[]
+
+== Retrieve the Facebook Identity Provider
+
+=== Request
+
+[.api-authentication]
+link:authentication#api-key-authentication[icon:lock[role=red]] Retrieve the Facebook Identity Providers
+[.endpoint]
+.URI
+--
+[method]#GET# [uri]#/api/identity-provider?type=Facebook#
+--
+
+=== Response
+
+include::docs/v1/tech/apis/_standard-get-response-codes.adoc[]
+
+include::docs/v1/tech/apis/identity-providers/_facebook-response-body.adoc[]
+
+== Update the Facebook Identity Provider
+
+=== Request
+
+[.api-authentication]
+link:authentication#api-key-authentication[icon:lock[role=red]] Update the Facebook Identity Provider
+[.endpoint]
+.URI
+--
+[method]#PUT# [uri]#/api/identity-provider/#
+--
+
+include::docs/v1/tech/apis/identity-providers/_facebook-request-body.adoc[]
+
+=== Response
+
+The response for this API contains the the Facebook Identity Provider.
+
+include::docs/v1/tech/apis/_standard-put-response-codes.adoc[]
+
+include::docs/v1/tech/apis/identity-providers/_facebook-response-body.adoc[]
+
+== Delete the Facebook Identity Provider
+
+=== Request
+
+[.api-authentication]
+link:authentication#api-key-authentication[icon:lock[role=red]] Delete the Facebook Identity Provider
+[.endpoint]
+.URI
+--
+[method]#DELETE# [uri]#/api/identity-provider/?type=Facebook#
+--
+
+=== Response
+
+This API does not return a JSON response body.
+
+include::docs/v1/tech/apis/_standard-delete-response-codes.adoc[]
+
+== Complete the Facebook Login
+
+This API allows you to complete a Facebook login after authenticating a user using the Facebook API. If you are using the FusionAuth login UI with the Facebook button you will not utilize this API directly.
+
+This API is intended to be used if you want to build your own login page and you have added the Facebook login button to your own login page and you then need to complete the login with FusionAuth.
+
+For example, if you built your own login page, you could add a Login with Facebook button and complete the Facebook authentication. When you complete the Facebook authentication you will have been returned an access token from Facebook. Using this API you can pass that access token returned from Facebook to FusionAuth and we will complete the login workflow and reconcile the user to FusionAuth.
+
+The user does not need to exist yet in FusionAuth to utilize this API. The token returned from Facebook will be used to retrieve the user's email address, if that user does not yet exist in FusionAuth the user will be created. If create registration has been enabled for this identity provider and the user does not yet have a registration for this application, a registration will be automatically created for the user. The user will be assigned any default roles configured for the application. If create registration has not been enabled, a registration will not be created if one does not yet exist. This last scenario is useful if you wish to manually provision users and then subsequently allow them to login with Facebook.
+
+=== Request
+
+[.api-authentication]
+link:authentication#no-authentication-required[icon:unlock-alt[role=green]] Complete Facebook Login
+[.endpoint]
+.URI
+--
+[method]#POST# [uri]#/api/identity-provider/login#
+--
+
+:loginProvider: Facebook
+include::docs/v1/tech/apis/identity-providers/_identity-provider-login-request-body.adoc[]
+:loginProvider!:
+
+=== Response
+
+The response for this API contains the User object.
+
+:loginProvider: Facebook
+include::docs/v1/tech/apis/identity-providers/_identity-provider-login-response-body.adoc[]
+:loginProvider!:
