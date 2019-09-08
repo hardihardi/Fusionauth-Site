@@ -223,6 +223,7 @@ header_dark: true
           {% for quote in site.data.quotes %}
           <div class="fusion-go-round-car wide">
             <div class="fusion-go-round-card wide shadow-sm p-3">
+              <img class="quote-fluff" src="/assets/img/quotes.svg">
               <blockquote class="text-dark">{{ quote.quote }}</blockquote>
               <div class="mt-auto text-secondary font-weight-bold"><img class="circle shadow mr-3" style="width: 42px;" src="/assets/img/{{ quote.image }}"><span>{{ quote.name }}{% if quote.company %}, {{ quote.company }}{% endif %}</span></div>
             </div>
