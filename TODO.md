@@ -3,8 +3,8 @@ Please add your name to anything you are working on and check it off when its co
 Stuff we need to do
 ====
 * [x] Home (Tyler)
-* [ ] Blog home/landing
-* [ ] Blog layout
+* [ ] Blog home/landing (Tyler)
+* [ ] Blog layout (Tyler)
 * Features - These are all connected and require style (Tyler)
   + [ ] API Built for Devs
   + [ ] Authentication Options
@@ -17,6 +17,7 @@ Stuff we need to do
   + [ ] Homegrown
   + [ ] Open Source
   + [ ] Saas
+* [ ] Resources Index (Tyler)
 * [ ] Pricing
 * [ ] Community
 * [ ] Contact
