@@ -107,6 +107,7 @@ img.shadow {
 
     .dropdown-item {
       color: $secondary;
+      font-size: 14px;
 
       &:focus, &:hover {
         color: $navbar-light-hover-color;
