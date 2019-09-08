@@ -81,8 +81,6 @@ img.shadow {
 
 .navbar {
   .nav-link {
-    //color: $secondary;
-    //font-weight: bold;
     font-size: 14px;
 
     &.active, &:active {
@@ -95,6 +93,39 @@ img.shadow {
 
     .nav-link {
       color: $white;
+    }
+  }
+}
+
+// Make the dropdown menus more similar to the nav.
+@include media-breakpoint-down(lg) {
+  .navbar-expand-xl {
+
+    .dropdown-menu {
+      border: none;
+    }
+
+    .dropdown-item {
+      color: $secondary;
+
+      &:focus, &:hover {
+        color: $navbar-light-hover-color;
+      }
+    }
+
+    &.navbar-dark {
+      .dropdown-menu {
+        background: none;
+      }
+
+      .dropdown-item {
+        color: $white;
+        background: none;
+
+        &:hover {
+          color: $navbar-dark-hover-color;
+        }
+      }
     }
   }
 }
