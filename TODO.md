@@ -2,7 +2,7 @@ Please add your name to anything you are working on and check it off when its co
 
 Stuff we need to do
 ====
-* [ ] Home (Tyler)
+* [x] Home (Tyler)
 * [ ] Blog home/landing
 * [ ] Blog layout
 * Features - These are all connected and require style (Tyler)

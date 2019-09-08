@@ -58,6 +58,7 @@ $fusion-go-round-car-padding-wide: ((map-get($container-max-widths, xl) - $grid-
   align-items: stretch;
   height: 100%;
   border-radius: $fusion-go-round-card-border-radius;
+  max-width: 100%;
 
   &.wide {
     width: $fusion-go-round-card-width-wide;
