@@ -1,6 +1,7 @@
 
 .fusion-pills {
   box-shadow: 0 6px 5px -6px rgba(black, .75);
+  overflow-x: auto;
 
   .nav-link {
     border-bottom: 10px solid transparent;
@@ -18,25 +19,44 @@
 
       .fusion-pill-icon {
         background-color: $primary;
+        color: white;
       }
     }
   }
 
   .fusion-pill-icon {
+    @extend .shadow;
+
     border-radius: 50%;
     overflow: hidden;
     width: 60px;
     height: 60px;
     margin: auto;
     background-color: white;
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    i {
+      margin: auto;
+    }
   }
 }
 
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-@for $i from 1 through 12 {
-  .grid-#{$i}-cols {
-    display: grid;
-    grid-template-columns: repeat($i, 1fr);
-    align-content: stretch;
+    @for $i from 1 through 12 {
+      .grid#{$infix}-#{$i}-cols {
+        display: grid;
+        grid-template-columns: repeat($i, 1fr);
+        align-content: stretch;
+      }
+    }
   }
 }
