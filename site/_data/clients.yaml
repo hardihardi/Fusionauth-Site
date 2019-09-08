@@ -1,13 +1,13 @@
 - image: clients/datastax_black_blue.png
   alt: DataStax
-- image: clients/deutsche-bank-logo-blue.png
-  alt: Deutsche Bank
-- image: clients/GBM-logo.png
-  alt: GBM
 - image: clients/ibm-logo-blue.png
   alt: IBM
 - image: clients/Kidnected-logo.png
   alt: Kidnected
+- image: clients/GBM-logo.png
+  alt: GBM
+- image: clients/deutsche-bank-logo-blue.png
+  alt: Deutsche Bank
 - image: roche_blue.png
   alt: Roche
 - image: Socond-Ave-Learning-Logo.png
