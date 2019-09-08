@@ -1,17 +1,42 @@
 
 .fusion-pills {
-  box-shadow: 0 4px 5px -3px black;
+  box-shadow: 0 6px 5px -6px rgba(black, .75);
 
   .nav-link {
     border-bottom: 10px solid transparent;
 
     &:hover {
       border-bottom-color: $light;
+
+      .fusion-pill-icon {
+        background-color: $light;
+      }
     }
 
     &.active {
       border-bottom-color: $primary;
+
+      .fusion-pill-icon {
+        background-color: $primary;
+      }
     }
+  }
+
+  .fusion-pill-icon {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    background-color: white;
   }
 }
 
+
+@for $i from 1 through 12 {
+  .grid-#{$i}-cols {
+    display: grid;
+    grid-template-columns: repeat($i, 1fr);
+    align-content: stretch;
+  }
+}
