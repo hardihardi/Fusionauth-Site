@@ -22,8 +22,8 @@ Stuff we need to do
 * [ ] Community
 * [ ] Contact (Daniel)
 * [ ] Client Partners
-* [ ] Download
-* [ ] Direct Download
+* [ ] Download (Daniel)
+* [ ] Direct Download (Daniel)
 * [ ] Everywhere
 * [ ] License
 * [ ] Pricing
