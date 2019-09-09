@@ -261,33 +261,7 @@ header_dark: true
       <h2 class="display-4 text-center mb-3">Papers, Guides & Resources</h2>
       <h3 class="h4 text-center mb-5">Auth is complex. We share everything we know.</h3>
 
-      <div id="papers" class="fusion-go-round">
-        <div class="fusion-go-round-platform">
-          {% for post in site.data.carousel %}
-          <div class="fusion-go-round-car">
-            <a class="text-decoration-none" href="{{ post.url }}">
-              <div class="fusion-go-round-card shadow-sm">
-                <img class="card-img-top" src="/assets/img/{{ post.image }}">
-                <div class="card-text-bottom text-center p-3 text-secondary font-weight-bold text-uppercase">
-                  <span>{{ post.title }}</span>
-                </div>
-              </div>
-            </a>
-          </div>
-          {% endfor %}
-        </div>
-        <a class="fusion-go-round-left" href="#" role="button" data-slide="prev">
-          <i class="fal fa-arrow-left fa-2x"></i>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="fusion-go-round-right" href="#" role="button" data-slide="next">
-          <i class="fal fa-arrow-right fa-2x"></i>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-      <div class="row mt-5">
-        <a class="text-uppercase btn btn-primary btn-lg m-auto" href="/resources">View them all</a>
-      </div>
+      {% include macros/resources.html %}
 
     </div>
   </section>
