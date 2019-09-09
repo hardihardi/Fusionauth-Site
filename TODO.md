@@ -23,12 +23,15 @@ Stuff we need to do
 * [ ] Contact (Daniel)
 * [ ] Client Partners
 * [ ] Download (Daniel)
-* [ ] Direct Download (Daniel)
-* [ ] Everywhere
+* [x] Direct Download (Bryan)
+* [ ] Everywhere ()
 * [x] License (Bryan)
 * [x] Site privacy Policy (Bryan)
 * [x] Product Privacy Policy? (Bryan)
 * [x] Thank you (Daniel)
+* [x] 404 page (Bryan)
+* [ ] Landing Pages
+* [ ] Update resource graphics
 
 Backend Stuff
 ====
