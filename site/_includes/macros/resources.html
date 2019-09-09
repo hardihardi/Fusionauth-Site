@@ -1,6 +1,6 @@
 <div id="papers" class="fusion-go-round">
   <div class="fusion-go-round-platform">
-    {% for post in site.data.carousel %}
+    {% for post in site.data.resources limit: 8 %}
     <div class="fusion-go-round-car">
       <a class="text-decoration-none" href="{{ post.url }}">
         <div class="fusion-go-round-card shadow-sm">
