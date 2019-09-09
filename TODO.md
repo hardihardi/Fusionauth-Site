@@ -15,7 +15,7 @@ Stuff we need to do
   + [x] User management reporting (Bryan)
 * Upgrade (Tyler)
   + [x] Homegrown (Tyler)
-  + [ ] Open Source (Bryan)
+  + [x] Open Source (Bryan)
   + [x] Saas (Tyler)
 * [ ] Resources Index (Tyler)
 * [ ] Pricing (Tyler)
@@ -27,14 +27,14 @@ Stuff we need to do
 * [ ] Everywhere
 * [ ] License
 * [ ] Pricing
-* [ ] Privacy Policy
+* [ ] Privacy Policy (Bryan)
 * [ ] Product Privacy Policy?
 * [x] Thank you (Daniel)
 
 Backend Stuff
 ====
 * [ ] Buy hosting
-* [ ] Buy support 
+* [ ] Buy support
 
 Can remove?
 ====
