@@ -20,7 +20,7 @@ Stuff we need to do
 * [ ] Resources Index (Tyler)
 * [ ] Pricing
 * [ ] Community
-* [ ] Contact
+* [ ] Contact (Daniel)
 * [ ] Client Partners
 * [ ] Download
 * [ ] Direct Download
@@ -29,7 +29,7 @@ Stuff we need to do
 * [ ] Pricing
 * [ ] Privacy Policy
 * [ ] Product Privacy Policy?
-* [x] Thank you
+* [x] Thank you (Daniel)
 
 Backend Stuff
 ====

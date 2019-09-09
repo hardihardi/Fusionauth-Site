@@ -29,11 +29,11 @@ $fusion-go-round-car-padding-wide: ((map-get($container-max-widths, xl) - $grid-
   }
 
   .fusion-go-round-left {
-    left: -40px;
+    left: -35px;
   }
 
   .fusion-go-round-right {
-    right: -40px;
+    right: -35px;
   }
 
   .fusion-go-round-left, .fusion-go-round-right {
@@ -54,7 +54,8 @@ $fusion-go-round-car-padding-wide: ((map-get($container-max-widths, xl) - $grid-
       border: 25px solid white;
       border-radius: 50%;
       color: black;
-      margin-top: -50%;
+      margin-top: -60%;
+      vertical-align: middle;
 
       &:before {
         opacity: 0.6;
