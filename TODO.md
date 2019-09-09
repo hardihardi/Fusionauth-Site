@@ -25,10 +25,9 @@ Stuff we need to do
 * [ ] Download (Daniel)
 * [ ] Direct Download (Daniel)
 * [ ] Everywhere
-* [ ] License
-* [ ] Pricing
-* [ ] Privacy Policy (Bryan)
-* [ ] Product Privacy Policy?
+* [x] License (Bryan)
+* [x] Site privacy Policy (Bryan)
+* [x] Product Privacy Policy? (Bryan)
 * [x] Thank you (Daniel)
 
 Backend Stuff
