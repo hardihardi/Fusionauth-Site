@@ -18,8 +18,10 @@ body {
   min-height: 100%;
 }
 
-.bg-dark-blue a, .bg-primary a {
-  color: white;
+.page-footer {
+  a {
+    color: $white;
+  }
 }
 
 .btn {
@@ -89,7 +91,7 @@ img.shadow {
   }
 
   &.navbar-dark {
-    @extend .bg-secondary;
+    background-color: $secondary;
 
     .nav-link {
       color: $white;
@@ -177,6 +179,19 @@ img.quote-fluff {
   position: absolute;
   top: -20px;
   left: 0;
+}
+
+// Hack to get image to "overflow"
+.bg-upgrade {
+  background: linear-gradient($dark-blue 50%, $white 50%);
+}
+
+// The second half of the hack to give the "overflow" effect for upgrade pages
+.balanced-vertical {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  align-content: stretch;
+  justify-content: stretch;
 }
 
 // Old stuff

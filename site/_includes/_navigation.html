@@ -1,4 +1,4 @@
-<nav class="navbar {% if page.header_dark == true %}navbar-dark{% else %}navbar-light{% endif %} navbar-expand-xl">
+<nav class="navbar {% if page.header_dark == true %}navbar-dark{% else %}navbar-light{% endif %} {% if page.header_classes %}{{ page.header_classes }}{% endif %} navbar-expand-xl">
   {% assign url = page.url | downcase %}
 
   <div class="container">
@@ -28,9 +28,9 @@
         <li class="nav-item dropdown" role="presentation">
           <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Upgrade From...</a>
           <div class="dropdown-menu text-right text-xl-left">
-            {% for item in site.data.upgrade %}
-            <a class="dropdown-item {% if page.url == item.url %}active{% endif %}" href="{{ item.url }}">{{ item.name }}</a>
-            {% endfor %}
+            <a class="dropdown-item" href="/upgrade/from-saas">Saas Solutions</a>
+            <a class="dropdown-item" href="/upgrade/from-homegrown">Homegrown</a>
+            <a class="dropdown-item" href="/upgrade/from-open-source">Open-Source Identity</a>
           </div>
         </li>
         <li class="nav-item d-xl-none" role="presentation"><a class="nav-link" href="/contact">Contact Us</a></li>

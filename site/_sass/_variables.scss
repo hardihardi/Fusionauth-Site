@@ -18,9 +18,10 @@ $secondary: #3f2e61;
 $dark: #5b6670;
 $light: #c6c7c6;
 $light2: #efefef;
+$dark-blue: #2d3d50;
 
 $theme-colors: (
-    "dark-blue": #2d3d50,
+    "dark-blue": $dark-blue,
     "orange": $primary,
     "purple": $secondary,
     "light2": $light2
@@ -57,7 +58,7 @@ $line-heights: (
 );
 
 $embed-responsive-aspect-ratios: (
-  (2, 1),
+        (2, 1),
 );
 
 $headings-color: $secondary;
