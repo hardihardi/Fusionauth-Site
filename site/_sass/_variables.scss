@@ -56,6 +56,9 @@ $line-heights: (
     4: ($line-height-base * 1.5)
 );
 
+$embed-responsive-aspect-ratios: (
+  (2, 1),
+);
 
 $headings-color: $secondary;
 $headings-font-weight: bold;

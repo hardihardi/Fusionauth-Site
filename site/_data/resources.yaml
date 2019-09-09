@@ -1,8 +1,2 @@
-- name: Community & Support
-  url: /community
-- name: Papers & Resources
-  url: /resources/
-- name: Download
-  url: /download
-- name: Blog
-  url: /blog/
+- title: Example Resource
+  url: \#TODO

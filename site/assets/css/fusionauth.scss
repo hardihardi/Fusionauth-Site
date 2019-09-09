@@ -142,7 +142,11 @@ img.shadow {
 // Dark links
 a.link-dark {
   color: $secondary;
-  text-decoration: underline;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 // Used in the footer to add bars part of the way up the links
