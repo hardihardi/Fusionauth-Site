@@ -29,7 +29,7 @@ Stuff we need to do
 * [ ] Pricing
 * [ ] Privacy Policy
 * [ ] Product Privacy Policy?
-* [ ] Thank you
+* [x] Thank you
 
 Backend Stuff
 ====
