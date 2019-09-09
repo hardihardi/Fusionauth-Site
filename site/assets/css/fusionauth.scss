@@ -142,12 +142,22 @@ img.shadow {
 }
 
 // Dark links
-a.link-dark {
+a.link-dark, .link-dark {
   color: $secondary;
   text-decoration: none;
 
   &:hover {
     text-decoration: underline;
+  }
+}
+
+// Variation of the first dark link (No underline and changes orange on mouse over)
+a.link-dark-2, .link-dark-2 {
+  color: $secondary;
+  text-decoration: none;
+
+  &:hover {
+    color: $primary;
   }
 }
 

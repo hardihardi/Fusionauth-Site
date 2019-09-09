@@ -16,7 +16,7 @@ Stuff we need to do
 * Upgrade (Tyler)
   + [ ] Homegrown (Tyler)
   + [ ] Open Source (Tyler)
-  + [ ] Saas (Tyler)
+  + [x] Saas (Tyler)
 * [ ] Resources Index (Tyler)
 * [ ] Pricing
 * [ ] Community
