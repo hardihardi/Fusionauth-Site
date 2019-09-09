@@ -189,7 +189,7 @@ img.quote-fluff {
 // The second half of the hack to give the "overflow" effect for upgrade pages
 .balanced-vertical {
   display: grid;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: 1fr 1fr;
   align-content: stretch;
   justify-content: stretch;
 }
