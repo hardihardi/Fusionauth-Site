@@ -3,7 +3,7 @@ Please add your name to anything you are working on and check it off when its co
 Stuff we need to do
 ====
 * [x] Home (Tyler)
-* [ ] Blog home/landing (Tyler)
+* [x] Blog home/landing (Tyler)
 * [ ] Blog layout (Tyler) (Need to review the comments/footer area)
 * Features - These are all connected and require style (Tyler)
   + [x] API Built for Devs (Bryan)
@@ -32,6 +32,7 @@ Stuff we need to do
 * [x] 404 page (Bryan)
 * [x] Landing Pages (Bryan)
 * [ ] Update resource graphics (Bryan)
+* [x] Write for FusionAuth (Bryan)
 
 Backend Stuff
 ====
