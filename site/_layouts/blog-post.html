@@ -13,7 +13,7 @@
           </div>
 <!--          <div class="post-image" style="background-image: url('/assets/img/{{ page.image }}');"></div>-->
           <div class="post-body mt-5">
-            <h1 class="display-4">{{ page.title }}</h1>
+            <h1 class="display-5">{{ page.title }}</h1>
             <div class="mb-5 mt-4">
               <span class="text-uppercase text-secondary">{{ page.date | date_to_string: "ordinal", "US" }}</span>
               <span class="ml-4 text-uppercase text-secondary">{{ page.author }}</span>
@@ -32,7 +32,7 @@
           </div>
         </article>
         <div class="col-12 col-lg-3">
-          <div class="shadow">
+          <div class="">
             <div class="p-4">
               <h2>Recent Posts</h2>
               {% for post in site.posts limit: 4 %}
@@ -47,7 +47,7 @@
               <a class="btn btn-lg btn-primary text-uppercase mt-3 mb-4">Get Started for Free</a>
             </div>
             <div class="p-4">
-              <h2>Resources</h2>
+              <h2>Additional<br>Useful<br>Resources</h2>
               {% for resource in site.data.resources %}
               <a class="d-block mt-3 mb-3 link-dark" href="{{ resource.url }}">{{ resource.title }}</a>
               {% endfor %}
