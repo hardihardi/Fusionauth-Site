@@ -3,28 +3,29 @@ layout: landing-page
 title: Home
 description: FusionAuth is a web-scale identity (CIAM) platform. And the best part is that it's completely free.
 image: fusionauth-share-image.jpg
+header_dark: true
+
 sitemap:
   exclude: 'yes'
 ---
-<main class="page landing-page">
+<main>
+  <section class="pb-6 pt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="block-heading">
+                <h2 class="pt-4 pb-3 display-4">Share from Bryan</h2>
+                </div>
+                <div>
 
-        <section class="clean-block">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="block-heading">
-                            <h2 class="text-info">Share from Bryan</h2>
-                        </div>
-                        <div>
-
-                        <h2>FusionAuth</h2>
-                        <ul>
+                <h2>FusionAuth</h2>
+                <ul>
 <li><a href="mailto:?subject=About%20FusionAuth&amp;body=FusionAuth%20-%20Free%20for%20Unlimited%20Users%20-%20https://fusionauth.io">by email</a> - - - - <a href="sms:&amp;body=From%20Bryan%20Giese%20-%20FusionAuth%20-%20Free%20for%20Unlimited%20Users%20-%20https://fusionauth.io">by text</a></li>
 </ul>
 
 
-                        <h2>CleanSpeak</h2>
-                        <ul>
+                <h2>CleanSpeak</h2>
+                <ul>
 <li><a href="mailto:?subject=About%20CleanSpeak&amp;body=CleanSpeak%20-%20Premier%20Profanity%20Filtering%20-%20https://cleanspeak.com">by email</a> - - - - <a href="sms:&amp;body=From%20Bryan%20Giese%20-%20CleanSpeak%20-%20Premier%20Profanity%20Filtering%20and%20Moderation%20-%20https://cleanspeak.com">by text</a></li>
 </ul>
 <h2>Write for FusionAuth</h2>
@@ -39,20 +40,17 @@ sitemap:
 <ul>
 <li><a href="mailto:?subject=FusionAuth:%20Guide%20to%20User%20Data%20Security&amp;body=Guide%20to%20User%20Data%20Security-%20https://fusionauth.io/resources/guide-to-user-data-security">by email</a> - - - - <a href="sms:&amp;body=From%20Bryan%20Giese%20-%20Guide%20to%20User%20Data%20Security-%20https://fusionauth.io/resources/guide-to-user-data-security">by text</a></li>
 </ul>
-  <h2>Dev Survey</h2>
+<h2>Dev Survey</h2>
 <ul>
 <li><a href="https://goo.gl/forms/orEcqgsqmoZndK8E2" target="_blank">Open</a> ------ <a href="mailto:?subject=FusionAuth:%20Easy%20Dev%20Survey&amp;body=FusionAuth.io%20Easy%20Dev%20Survey-%20https://goo.gl/forms/orEcqgsqmoZndK8E2">by email</a> - - - - <a href="sms:&amp;body=From%20Bryan%20Giese%20-%20FusionAuth.io%20Easy%20Dev%20Survey-%20https://goo.gl/forms/orEcqgsqmoZndK8E2">by text</a></li>
 </ul>
 
-                        </div>
-                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="clean-block bg-dark">
-            <div class="container">
-                <div class="row">
-                </div>
-            </div>
-        </section>
-    </main>
+        </div>
+    </div>
+
+
+    </div>
+  </section>
+
+</main>
