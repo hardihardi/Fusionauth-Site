@@ -30,8 +30,8 @@ Stuff we need to do
 * [x] Product Privacy Policy? (Bryan)
 * [x] Thank you (Daniel)
 * [x] 404 page (Bryan)
-* [ ] Landing Pages
-* [ ] Update resource graphics
+* [x] Landing Pages (Bryan)
+* [ ] Update resource graphics (Bryan)
 
 Backend Stuff
 ====
