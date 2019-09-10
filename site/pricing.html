@@ -8,10 +8,10 @@ header_dark: true
 <section class="bg-secondary">
   <div class="container pb-5 pt-5">
     <div class="row">
-      <div class="col-12 col-md-5">
-        <img src="/assets/img/Big-Free-Disk.svg">
+      <div class="col-12 col-md-5 text-center">
+        <img class="w-100 w-lg-75" src="/assets/img/Big-Free-Disk.svg">
       </div>
-      <div class="col-12 col-md-7 text-white">
+      <div class="col-12 col-md-7 text-white mt-5 mt-md-3 mt-lg-5 text-center text-md-left">
         <h1 class="text-white display-4">Pricing for every budget</h1>
         <p>Our flexible pricing options make sure every application can deploy secure authentication whether you are just starting out,
           growing fast, or an established enterprise firm.</p>
@@ -26,9 +26,9 @@ header_dark: true
     <div class="text-center">
       <i class="fal fa-cloud fa-5x text-primary"></i>
       <h2>FusionAuth Cloud</h2>
-      <p>We host and manage FusionAuth for you in private, secure cloud data centers.</p>
+      <p class="text-secondary">We host and manage FusionAuth for you in private, secure cloud data centers.</p>
     </div>
-    <ul class="nav nav-tabs fusion-tabs">
+    <ul class="nav fusion-tabs">
       <li class="nav-item">
         <a class="d-flex flex-column justify-content-center align-items-center nav-link active" id="basic-tab" data-toggle="tab" href="#basic" role="tab">
           <i class="fal fa-car fa-4x"></i>
@@ -53,30 +53,45 @@ header_dark: true
 
         <div class="clean-pricing-item tab-pane fade p-4 show active" role="tabpanel" id="basic">
           <div class="heading d-flex">
-            <i class="fas fa-car fa-3x text-secondary"></i><h3 class="ml-3 h2 border-bottom border-secondary w-100">Basic</h3>
+            <i class="fal fa-car fa-4x text-secondary"></i><h3 class="ml-3 h1 border-bottom border-secondary w-100">Basic</h3>
           </div>
-          <div class="features">
-            <div>
+          <div class="row p-4 text-center text-md-left">
+            <div class="col-12 col-md-5 mb-4 mb-md-0">
               <h4>Server</h4>
-              <p class="text-dark">Single server using fault tolerant disks<br><br></p>
+              <p class="text-dark">Single server using fault tolerant disks</p>
             </div>
-            <div>
-              <h4>Location</h4>
-              <p class="text-dark">US, Canada, EU, Asia, SA, Australia</p>
-            </div>
-            <div>
+            <div class="col-12 col-md-3 mb-4 mb-md-0">
               <h4>Backups</h4>
               <p class="text-dark">Optional</p>
             </div>
-            <div>
+            <div class="col-12 col-md-4 mb-4 mb-md-0">
+              <h4>Support</h4>
+              <p class="text-dark">Community Support & Optional Support Packages</p>
+            </div>
+            <div class="col-12 col-md-5 mb-4 mb-md-0">
+              <h4>Number of applications</h4>
+              <p class="text-dark">Unlimited</p>
+            </div>
+            <div class="col-12 col-md-3 mb-4 mb-md-0">
               <h4>Total Users</h4>
               <p class="text-dark">Up to 200,000</p>
             </div>
-            <div>
+            <div class="col-12 col-md-4 mb-4 mb-md-0"></div>
+            <div class="col-12 col-md-5 mb-4 mb-md-0">
+              <h4>Location</h4>
+              <p class="text-dark">US, Canada, EU, Asia, SA, Australia</p>
+            </div>
+            <div class="col-12 col-md-3 mb-4 mb-md-0">
               <h4>SLA</h4>
               <p class="text-dark">N/A</p>
             </div>
-            <p class="price">Starting at $100/month</p>
+            <div class="col-12 col-md-4 mb-4 mb-md-0">
+              <div class="text-uppercase font-weight-light text-dark ls-md">Starting at</div>
+              <div><span class="text-primary display-4">$100</span><span class="text-secondary h5">/month</span></div>
+            </div>
+            <div class="col-12 text-center pt-4">
+              <a class="btn btn-lg btn-primary m-auto" href="#TODO">Buy Basic Hosting</a>
+            </div>
           </div>
         </div>
 
@@ -141,18 +156,16 @@ header_dark: true
       </div>
     </div>
 
-    <div class="row justify-content-center mt-3">
-      <div class="col-sm-9 col-md-8 col-lg-6">
-        <p>Migrating from another solution? Ask about our <strong>Upgrade Guides</strong> to make migration simple.</p>
-      </div>
+    <div class="text-center mt-4">
+      <p>Migrating from another solution? Ask about our <a class="font-weight-bold" href="#TODO">Upgrade Guides</a> to make migration simple.</p>
     </div>
   </div>
 </section>
 
-<section class="clean-block dark">
+<section class="bg-light2 mt-6 pt-6">
   <div class="container">
     <div class="block-heading">
-      <h2 class="text-info">Support Plans for FusionAuth Self-Hosted</h2>
+      <h2 class="">FusionAuth Self-Hosted Support</h2>
       <p>Host FusionAuth yourself<a href="/everywhere"> on any platform</a>, then select a stand-alone support plan that fits your needs.
       </p>
     </div>
@@ -169,19 +182,19 @@ header_dark: true
           </div>
           <a class="btn btn-outline-primary btn-block d-flex align-items-center" role="button" href="/docs" style="background-size: 75%;">
             <span class="d-xl-flex mx-auto">Documentation</span>
-            <img class="ml-auto" src="/assets/img/books.svg">
+            <img class="ml-auto w-100" src="/assets/img/books.svg">
           </a>
           <a class="btn btn-outline-primary btn-block d-inline-flex align-items-center" role="button" href="https://github.com/FusionAuth/fusionauth-issues">
             <span class="mx-auto">Report bugs</span>
-            <img class="ml-auto" src="/assets/img/GithubIcon.png">
+            <img class="ml-auto w-100" src="/assets/img/GithubIcon.png">
           </a>
           <a class="btn btn-outline-primary btn-block d-inline-flex align-items-center" role="button" href="https://stackoverflow.com/questions/tagged/fusionauth">
             <span class="mx-auto">Ask questions</span>
-            <img class="ml-auto" src="/assets/img/so-icon.svg">
+            <img class="ml-auto w-100" src="/assets/img/so-icon.svg">
           </a>
           <a class="btn btn-outline-primary btn-block d-inline-flex align-items-center" role="button" href="mailto:dev@fusionauth.io?subject=Please%20send%20me%20an%20invite%20to%20the%20Slack%20channel&amp;body=My%20email%20address%20is">
             <span class="mx-auto">Help from friends</span>
-            <img class="ml-auto" src="/assets/img/slack-icon.svg">
+            <img class="ml-auto w-100" src="/assets/img/slack-icon.svg">
           </a>
           <div class="d-flex flex-fill"></div>
         </div>

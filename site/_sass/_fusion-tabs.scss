@@ -4,26 +4,28 @@ $fusion-tabs-spacing-sm: 15px;
 
 .fusion-tabs {
   margin: 0 auto;
-  padding-top: 16px;
+  padding-top: 4px;
+  padding-bottom: 8px;
   overflow: hidden;
 
   .nav-item {
-    width: 120px;
-    height: 120px;
     margin: 0 ($fusion-tabs-spacing / 2);
+    height: 120px;
 
     .nav-link {
-      width: 100%;
-      height: 100%;
+      width: 120px;
+      height: 120px;
       border: none;
       background-color: $light2;
       color: $secondary;
       text-transform: uppercase;
       position: relative;
-      top: -12px;
       border-radius: $border-radius;
       box-shadow: $box-shadow;
       font-weight: bold;
+      box-sizing: content-box;
+      margin-bottom: 8px;
+      padding: 0;
 
       &:hover {
         background-color: $light;
@@ -32,9 +34,11 @@ $fusion-tabs-spacing-sm: 15px;
       &.active {
         color: $white;
         background-color: $primary;
-        top: 0;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
+        margin-bottom: 0;
+        border-bottom: 8px solid $primary;
+        //top: 8px; // Prevent the border from pushing the element up
       }
     }
 
@@ -54,7 +58,7 @@ $fusion-tabs-spacing-sm: 15px;
 
 .fusion-tabs-content {
   box-sizing: border-box;
-  border: 20px solid $primary;
+  border: 10px solid $primary;
   background-color: $primary;
   border-radius: 8px;
   margin-top: -1px; // Need to touch the element above us
