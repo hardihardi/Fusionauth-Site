@@ -4,9 +4,90 @@ title: Download FusionAuth
 description: "Get started in seconds - installs with a single command. This is the full version of FusionAuth, not a feature-crippled ‘developer’ release."
 image: fusionauth-share-image.jpg
 ---
+<main>
+  <section class="pb-5 pt-5">
+    <div class="container text-center">
+      <h1 class="pb-3">Download FusionAuth</h1>
+      <div class="container w-75 mb-3">
+        <p class="text-secondary2 lea2d font-weight-bold pl-6 pr-6">
+          Get started in seconds - installs with a single command.
+          <br>
+          This is the full version of FusionAuth, not a feature-crippled "developer" release.
+        </p>
+      </div>
+    </div>
+  </section>
 
-<h2>Downloads</h2>
-<p>Get started in seconds - installs with a single command.
-This is the full version of FusionAuth, not a feature-crippled ‘developer’ release.</p>
+  <!--  TODO We should pull in the actual SVG images here so we can use CSS to adjust the fill color on active to make the logo turn white, etc -->
+  <section>
+    <div class="container">
+      <ul class="nav fusion-tabs">
+        <li class="nav-item">
+          <a class="d-flex flex-column justify-content-center align-items-center nav-link active" id="linux-tab" data-event="linux" data-toggle="tab" href="#linux" role="tab">
+            <img style="max-width: 67%; padding-top: 5px;" src="{{ '/assets/img/linux-logo.svg' | relative_url }}" alt="Linux logo"/>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="d-flex flex-column justify-content-center align-items-center nav-link" id="macos-tab" data-event="macos" data-toggle="tab" href="#macos" role="tab">
+            <img style="max-height: 80%;" src="{{ '/assets/img/apple-logo.svg' | relative_url }}" alt="macOS logo"/>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="d-flex flex-column justify-content-center align-items-center nav-link" id="win-tab" data-event="win" data-toggle="tab" href="#win" role="tab">
+            <img style="max-width: 85%;" src="{{ '/assets/img/windows-logo.svg' | relative_url }}" alt="Windows logo"/>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="d-flex flex-column justify-content-center align-items-center nav-link" id="docker-tab" data-event="docker" data-toggle="tab" href="#docker" role="tab">
+            <img style="max-width: 85%; padding-left: 5px;" src="{{ '/assets/img/docker-logo.svg' | relative_url }}" alt="Docker logo"/>
+          </a>
+        </li>
+      </ul>
+      <div class="fusion-tabs-content">
+        <div class="tab-content">
 
-<p>If you have questions or issues, visit our active developer community, or take a look at our hosting and support plans.</p>
+          <div class="tab-pane fade p-4 show active" role="tabpanel" id="linux">
+            <div class="heading d-flex" style="height: 100px;">
+              <div class="align-top">
+                <img style="width: 80px; height: 95px; padding-top: 5px;" src="{{ '/assets/img/linux-logo.svg' | relative_url }}" alt="Linux logo"/>
+              </div>
+              <h3 class="ml-3 h1 border-bottom border-secondary w-100" style="height: 50px;">Linux</h3>
+            </div>
+          </div>
+
+          <div class="tab-pane fade p-4" role="tabpanel" id="macos">
+            <div class="heading d-flex" style="height: 100px;">
+              <div class="align-top">
+                <img style="margin-right: -10px; width: 90px;" src="{{ '/assets/img/apple-logo.svg' | relative_url }}" alt="macOS logo"/>
+              </div>
+              <h3 class="ml-3 h1 border-bottom border-secondary w-100" style="height: 50px;">macOS</h3>
+            </div>
+          </div>
+
+          <div class="tab-pane fade p-4" role="tabpanel" id="win">
+            <div class="heading d-flex" style="height: 100px;">
+              <div class="align-top">
+                <img style="width: 80px;" src="{{ '/assets/img/windows-logo.svg' | relative_url }}" alt="Windows logo"/>
+              </div>
+              <h3 class="ml-3 h1 border-bottom border-secondary w-100" style="height: 50px;">Windows</h3>
+            </div>
+          </div>
+
+          <div class="tab-pane fade p-4" role="tabpanel" id="docker">
+            <div class="heading d-flex" style="height: 100px;">
+              <div class="align-top">
+                <img style="width: 80px;" src="{{ '/assets/img/docker-logo.svg' | relative_url }}" alt="Docker logo"/>
+              </div>
+              <h3 class="ml-3 h1 border-bottom border-secondary w-100" style="height: 50px;">Docker</h3>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <p>Migrating from another solution? Ask about our <a class="font-weight-bold" href="#TODO">Upgrade Guides</a> to make migration simple.</p>
+      </div>
+    </div>
+  </section>
+</main>
