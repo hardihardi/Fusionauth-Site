@@ -42,7 +42,7 @@ Launch review must have
 ====
 * [ ] Subscribe form, use MailChimp embedded form, just needs some style, Brian slacked code (1 hour TS)
 * [ ] Feature pages images and icons (8 hours, BG)
-* [ ] Pricing page, update graphic, remove 100% free graphic (1 hour, BG)
+* [x] Pricing page, update graphic, remove 100% free graphic (1 hour, BG)
 * [ ] Clickable cards on the resource page (1 hour, TS)
 * [ ] Documentation page (2 hours)
 * [ ] Community page (2 hours)
@@ -60,7 +60,7 @@ Launch review nice to have
 
 Design things
 ====
-* [ ] Tabs 
+* [ ] Tabs
 
 
 Backend Stuff
