@@ -17,9 +17,9 @@ Stuff we need to do
   + [x] Homegrown (Tyler)
   + [x] Open Source (Bryan)
   + [x] Saas (Tyler)
-* [ ] Resources Index (Tyler)
-* [ ] Pricing (Tyler)
-* [ ] Community
+* [x] Resources Index (Tyler)
+* [x] Pricing (Tyler)
+* [ ] Community (Tyler)
 * [ ] Contact (Daniel)
 * [ ] Client Partners
 * [ ] Download (Daniel)
