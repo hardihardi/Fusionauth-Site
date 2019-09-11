@@ -40,10 +40,10 @@ Outstanding questions
 
 Launch review must have
 ====
-* [ ] Subscribe form, use MailChimp embedded form, just needs some style, Brian slacked code (1 hour TS)
+* [x] Subscribe form, use MailChimp embedded form, just needs some style, Brian slacked code (1 hour TS)
 * [ ] Feature pages images and icons (8 hours, BG)
 * [x] Pricing page, update graphic, remove 100% free graphic (1 hour, BG)
-* [ ] Clickable cards on the resource page (1 hour, TS)
+* [x] Clickable cards on the resource page (1 hour, TS)
 * [ ] Documentation page (2 hours)
 * [ ] Community page (2 hours)
 * [ ] Download page (2 hours, DD)

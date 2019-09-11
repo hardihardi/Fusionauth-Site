@@ -21,12 +21,14 @@ header_dark: true
     <div class="fusion-go-round-free">
       {% for resource in site.data.resources %}
       <div class="fusion-go-round-car">
-        <div class="fusion-go-round-card shadow-sm">
-          <img class="card-img-top" src="/assets/img/{{ resource.image }}">
-          <div class="card-text-bottom text-center p-3 text-secondary font-weight-bold text-uppercase">
-            <span>{{ resource.title }}</span>
+        <a class="text-decoration-none" href="{{ resource.url }}">
+          <div class="fusion-go-round-card shadow-sm">
+            <img class="card-img-top" src="/assets/img/{{ resource.image }}">
+            <div class="card-text-bottom text-center p-3 text-secondary font-weight-bold text-uppercase">
+              <span>{{ resource.title }}</span>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
       {% endfor %}
     </div>
