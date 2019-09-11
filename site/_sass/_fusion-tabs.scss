@@ -54,6 +54,13 @@ $fusion-tabs-spacing-sm: 15px;
       margin-right: auto;
     }
   }
+
+  &.tab-bg-white {
+    .nav-link.active > img {
+      background-color: $white;
+      border-radius: $border-radius-sm;
+    }
+  }
 }
 
 .fusion-tabs-content {

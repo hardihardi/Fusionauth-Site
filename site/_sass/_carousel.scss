@@ -65,6 +65,26 @@ $fusion-go-round-car-padding-wide: ((map-get($container-max-widths, xl) - $grid-
   }
 }
 
+// Use this as the parent if you use the cards outside of a carousel
+.fusion-go-round-free {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: center;
+
+  .fusion-go-round-car {
+    flex: 0 0 auto;
+    padding: 0 $fusion-go-round-car-padding;
+    width: $fusion-go-round-card-width + $fusion-go-round-car-padding * 2;
+    margin-bottom: map_get($spacers, 5);
+
+    &.wide {
+      padding: 0 $fusion-go-round-car-padding-wide;
+      width: $fusion-go-round-card-width-wide + $fusion-go-round-car-padding-wide * 2;
+    }
+  }
+}
+
 .fusion-go-round-card {
   @extend .card;
 

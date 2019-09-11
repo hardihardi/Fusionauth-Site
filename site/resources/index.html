@@ -3,13 +3,38 @@ layout: default
 title: Resources
 description: Use the resources below to get in-depth details on everything related to authorization and identity.
 image: fusionauth-share-image.jpg
+header_dark: true
 ---
-<h1>Papers, Guides & Resources</h1>
 
+<section class="bg-secondary pt-6 pb-6">
+  <div class="container text-center text-white">
+    <h1 class="text-white display-4">Papers, Guides & Resources</h1>
 
+    <p class="lead">Use the resources below to get in-depth details on everything related to authorization and identity.</p>
 
-<h2>FusionAuth in Your Inbox</h2>
-<p>Subscribe for email updates and you’ll be the first to know about new features and updates.
-And don’t worry, our emails are just like FusionAuth - built for devs. We skip the annoying fluff marketing messages
-and only send out when we have useful information.
-</p>
+    <p class="lead">We also post regularly on the <a href="#TODO">FusionAuth blog</a>, so jump over to see the most recent updates.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container pt-6 pb-6">
+    <div class="fusion-go-round-free">
+      {% for resource in site.data.resources %}
+      <div class="fusion-go-round-car">
+        <div class="fusion-go-round-card shadow-sm">
+          <img class="card-img-top" src="/assets/img/{{ resource.image }}">
+          <div class="card-text-bottom text-center p-3 text-secondary font-weight-bold text-uppercase">
+            <span>{{ resource.title }}</span>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!--<section>-->
+<!-- Office hours don't exist yet -->
+<!--</section>-->
+
+{% include macros/subscribe.html %}
