@@ -21,7 +21,7 @@ Stuff we need to do
 * [x] Pricing (Tyler)
 * [x] Community (Tyler)
 * [x] Contact (Daniel)
-* [ ] Client Partners (Daniel)
+* [ ] Client Partners (Tyler)
 * [ ] Download (Daniel)
 * [x] Direct Download (Bryan)
 * [x] Everywhere (Tyler)
@@ -33,6 +33,7 @@ Stuff we need to do
 * [x] Landing Pages (Bryan)
 * [ ] Update resource graphics (Bryan)
 * [x] Write for FusionAuth (Bryan)
+* [x] Documentation (Tyler)
 
 Outstanding questions
 ====
