@@ -56,6 +56,7 @@ Launch review nice to have
 * [ ] Update macOS logo, see other usages on downloads (1 hour, DD)
 * [ ] Client & Partner page (2 hours)
 * [ ] Contact page radio buttons on mobile (1 hour, DD)
+* [ ] Update all social images - tw, fb, li, ph, 
 
 
 Design things
