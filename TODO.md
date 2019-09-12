@@ -21,7 +21,7 @@ Stuff we need to do
 * [x] Pricing (Tyler)
 * [x] Community (Tyler)
 * [x] Contact (Daniel)
-* [ ] Client Partners (Tyler)
+* [x] Client Partners (Tyler)
 * [ ] Download (Daniel)
 * [x] Direct Download (Bryan)
 * [x] Everywhere (Tyler)
