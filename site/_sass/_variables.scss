@@ -12,6 +12,15 @@ $fusion-go-round-visible-padding-y: 20px; // Useful for showing shadows. Overflo
 $fusion-go-round-visible-padding-x: 10px; // Useful for showing shadows. Overflow is not viable for this.
 $fusion-go-round-card-border-radius: 6px;
 
+$border-width: 1px;
+
+$border-widths: (
+    1: $border-width,
+    2: ($border-width * 2),
+    3: ($border-width * 3),
+    4: ($border-width * 8)
+);
+
 // Bootstrap variables
 $primary: #ea8c51;
 $secondary: #3f2e61;

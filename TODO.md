@@ -44,7 +44,7 @@ Launch review must have
 * [ ] Feature pages images and icons (8 hours, BG)
 * [x] Pricing page, update graphic, remove 100% free graphic (1 hour, BG)
 * [x] Clickable cards on the resource page (1 hour, TS)
-* [ ] Documentation page (2 hours)
+* [ ] Documentation page (2 hours, TS)
 * [ ] Community page (2 hours)
 * [ ] Download page (2 hours, DD)
 * [ ] Blog layout issues (2 hours, TS)

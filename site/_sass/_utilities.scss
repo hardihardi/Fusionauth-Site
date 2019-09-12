@@ -59,6 +59,18 @@
   }
 }
 
+@each $breakpoint in map_keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $size, $length in $border-widths {
+      .bw#{$infix}-#{$size} {
+        border-width: $length !important;
+      }
+    }
+  }
+}
+
 // Used for the programming languages and platforms
 .icon-row {
   display: flex;
