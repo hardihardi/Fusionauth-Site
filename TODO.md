@@ -4,7 +4,7 @@ Stuff we need to do
 ====
 * [x] Home (Tyler)
 * [x] Blog home/landing (Tyler)
-* [ ] Blog layout (Tyler) (Need to review the comments/footer area)
+* [x] Blog layout (Tyler) (Need to review the comments/footer area)
 * Features - These are all connected and require style (Tyler)
   + [x] API Built for Devs (Bryan)
   + [x] Authentication Options (Bryan)
@@ -45,17 +45,17 @@ Launch review must have
 * [ ] Feature pages images and icons (8 hours, BG)
 * [x] Pricing page, update graphic, remove 100% free graphic (1 hour, BG)
 * [x] Clickable cards on the resource page (1 hour, TS)
-* [ ] Documentation page (2 hours, TS)
-* [ ] Community page (2 hours)
+* [x] Documentation page (2 hours, TS)
+* [x] Community page (2 hours)
 * [ ] Download page (2 hours, DD)
-* [ ] Blog layout issues (2 hours, TS)
+* [x] Blog layout issues (2 hours, TS)
 * [ ] Switch 50 promotion, contact page and fulfilment flow
 
 Launch review nice to have
 ====
 * [ ] Update resource images on carousel (4 hours, BG)
 * [ ] Update macOS logo, see other usages on downloads (1 hour, DD)
-* [ ] Client & Partner page (2 hours)
+* [x] Client & Partner page (2 hours)
 * [ ] Contact page radio buttons on mobile (1 hour, DD)
 * [ ] Update all social images - tw, fb, li, ph, 
 
