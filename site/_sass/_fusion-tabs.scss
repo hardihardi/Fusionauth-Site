@@ -4,11 +4,13 @@ $fusion-tabs-spacing-sm: 15px;
 
 .fusion-tabs {
   margin: 0 auto;
+  padding-bottom: 8px;
   z-index: 1;
 
   .nav-item {
     margin: 0 ($fusion-tabs-spacing / 2);
     height: 120px;
+
 
     .nav-link {
       width: 120px;
