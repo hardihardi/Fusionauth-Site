@@ -202,3 +202,44 @@ img.quote-fluff {
     max-width: 100%;
   }
 }
+
+/* Shell Commands */
+.shell-command {
+  background-color: #262626;
+  padding: 12px 12px 1px;
+  margin-bottom: 0;
+  overflow: scroll;
+  width: 100%;
+
+  + button {
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  p {
+    color: $white;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 100;
+    margin-bottom: 12px;
+  }
+}
+
+/* Logo Colors */
+i {
+  &.fa-apple {
+    color: $apple-logo-bg;
+  }
+
+  &.fa-docker {
+    color: $docker-logo-bg;
+  }
+
+  &.fa-linux {
+    color: $linux-logo-bg;;
+  }
+
+  &.fa-windows {
+    color: $windows-logo-bg;
+  }
+}

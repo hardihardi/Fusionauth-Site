@@ -107,3 +107,9 @@
     letter-spacing: #{$size}rem;
   }
 }
+
+@each $size, $length in $font-sizes {
+  .fs-#{$size} {
+    font-size: #{$length};
+  }
+}
