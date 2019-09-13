@@ -22,7 +22,7 @@ Stuff we need to do
 * [x] Community (Tyler)
 * [x] Contact (Daniel)
 * [x] Client Partners (Tyler)
-* [ ] Download (Daniel)
+* [x] Download (Daniel)
 * [x] Direct Download (Bryan)
 * [x] Everywhere (Tyler)
 * [x] License (Bryan)
@@ -47,14 +47,14 @@ Launch review must have
 * [x] Clickable cards on the resource page (1 hour, TS)
 * [x] Documentation page (2 hours, TS)
 * [x] Community page (2 hours)
-* [ ] Download page (2 hours, DD)
+* [x] Download page (2 hours, DD)
 * [x] Blog layout issues (2 hours, TS)
 * [ ] Switch 50 promotion, contact page and fulfilment flow
 
 Launch review nice to have
 ====
 * [ ] Update resource images on carousel (4 hours, BG)
-* [ ] Update macOS logo, see other usages on downloads (1 hour, DD)
+* [x] Update macOS logo, see other usages on downloads (1 hour, DD)
 * [x] Client & Partner page (2 hours)
 * [ ] Contact page radio buttons on mobile (1 hour, DD)
 * [ ] Update all social images - tw, fb, li, ph, 
