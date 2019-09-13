@@ -7,20 +7,20 @@
   </div>
   <h1>{{ page.title }}</h1>
   <div class="search">
-    <form id="search-form" action="https://www.google.com/search" method="GET">
+    <form id="search-form" action="/docs/v1/tech/search" method="GET">
       <div>
         <button><i class="fa fa-search"></i></button>
-        <input type="text" placeholder="Search" name="q"/>
+        <input type="text" placeholder="Search" name="query"/>
       </div>
     </form>
-    <script>
-      var text = Prime.Document.queryFirst('#search-form input[name="q"]');
-      Prime.Document.queryById('search-form').addEventListener('submit', function(event) {
-        Prime.Utils.stopEvent(event);
-        window.location = 'https://www.google.com/search?q=' +
-            encodeURIComponent(text.getValue()) + '+' +
-            'site%3Ahttps%3A%2F%2Ffusionauth.io%2Fdocs%2Fv1%2Ftech%2F';
-      });
-    </script>
+<!--    <script>-->
+<!--      //var text = Prime.Document.queryFirst('#search-form input[name="q"]');-->
+<!--      //Prime.Document.queryById('search-form').addEventListener('submit', function(event) {-->
+<!--      //  Prime.Utils.stopEvent(event);-->
+<!--      //  window.location = 'https://www.google.com/search?q=' +-->
+<!--      //      encodeURIComponent(text.getValue()) + '+' +-->
+<!--      //      'site%3Ahttps%3A%2F%2Ffusionauth.io%2Fdocs%2Fv1%2Ftech%2F';-->
+<!--      //});-->
+<!--    </script>-->
   </div>
 </header>

@@ -23,6 +23,7 @@ group :jekyll_plugins do
   gem "jekyll-asciidoc", "2.1.1"
   gem "jekyll-feed", "0.11.0"
   gem "jekyll-paginate-v2", "1.9.2"
+  gem "jekyll-regex-replace", "1.1.0"
 end
 
 # For the docs

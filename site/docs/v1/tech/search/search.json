@@ -1,0 +1,8 @@
+---
+---
+{ {% assign doc_pages = site.pages | where: "layout", "doc" %}{% for page in doc_pages %}
+  "{{ page.url }}": {
+    "title": "{{ page.title}}",
+    "content": {{ page.content | asciidocify | strip_html | regex_replace: '\n+', ' ' | jsonify }}
+  }{% unless forloop.last == true %},{% endunless %}{% endfor %}
+}
