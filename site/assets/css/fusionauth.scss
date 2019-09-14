@@ -242,4 +242,128 @@ i {
   &.fa-windows {
     color: $windows-logo-bg;
   }
+
+  &.fad {
+    /* Pricing */
+    &.fa-horse {
+      filter: drop-shadow(2px 1px 1px $light);
+      --fa-primary-color: rgb(255, 212, 84);
+      --fa-secondary-color: #3f2e61;
+      --fa-secondary-opacity: 1.0;
+    }
+
+    &.fa-unicorn {
+      filter: drop-shadow(2px 1px 1px $light);
+
+      --fa-primary-color: #3f2e61;
+      --fa-secondary-color: rgb(134, 202, 221);
+      --fa-secondary-opacity: 1.0;
+    }
+
+    &.fa-alicorn {
+      filter: drop-shadow(2px 1px 1px $light);
+      --fa-primary-color: #3f2e61;
+      --fa-secondary-color: #fe3b48;
+      --fa-secondary-opacity: 1.0;
+    }
+
+    /* Support */
+    &.fa-chess-pawn-alt {
+      padding: 0 2px;
+      filter: drop-shadow(2px 1px 1px $light);
+
+      --fa-primary-color: #774eb2;
+      --fa-primary-color: rgb(255, 212, 84);
+      --fa-primary-color: rgb(125, 191, 210);
+      --fa-primary-color: #45376f;
+      --fa-primary-color: rgb(255, 212, 84);
+      --fa-primary-color: rgb(125, 191, 210);
+      --fa-primary-color: rgb(73, 85, 95);
+
+      //--fa-primary-color:  #fe9d53;
+      --fa-secondary-color: rgb(125, 191, 210);
+      --fa-secondary-color: #45376f;
+      --fa-secondary-color: rgb(255, 212, 84);
+      --fa-secondary-color: rgb(125, 191, 210);
+      --fa-secondary-color: rgb(73, 85, 95);
+      //--fa-secondary-color:  #fe9d53;
+
+      --fa-secondary-opacity: 1.0;
+    }
+
+    &.fa-chess-knight-alt {
+      padding: 0 2px;
+      filter: drop-shadow(2px 1px 1px $light);
+
+      --fa-primary-color: #533177;
+      --fa-primary-color: rgb(125, 191, 210);
+      --fa-secondary-color: #533177;
+      --fa-secondary-color: rgb(125, 191, 210);
+      --fa-secondary-opacity: 1.0;
+    }
+
+    &.fa-chess-rook-alt, &.fa-chess-bishop-alt {
+      padding: 0 2px;
+      filter: drop-shadow(1px 1px 1px $gray-900);
+
+      --fa-primary-color: rgb(125, 191, 210);
+      --fa-primary-color: rgb(125, 191, 210);
+      --fa-primary-color: rgb(255, 212, 84);
+      --fa-secondary-color: rgb(255, 212, 84);
+
+
+      //--fa-primary-color: rgb(72, 210, 71);
+      //--fa-secondary-color:  rgb(72, 210, 71);
+      //--fa-secondary-color: #fff;
+      --fa-secondary-opacity: 1.0;
+
+      //--fa-primary-color: #f99952;
+      //--fa-secondary-color: #d57c4d;
+    }
+
+    &.fa-chess-bishop-alt {
+      padding: 0 2px;
+      filter: drop-shadow(1px 1px 1px $gray-900);
+
+      --fa-primary-color: rgb(94, 210, 154);
+      --fa-primary-color: rgb(255, 212, 84);
+      --fa-secondary-color: rgb(94, 210, 154);
+      --fa-secondary-color: rgb(255, 212, 84);
+      //--fa-secondary-color: #fff;
+      --fa-secondary-opacity: 1.0;
+
+      //--fa-primary-color: #f99952;
+      //--fa-secondary-color: #d57c4d;
+    }
+
+    &.fa-chess-queen-alt {
+      padding: 0 2px;
+      filter: drop-shadow(1px 1px 1px $gray-800);
+
+      --fa-primary-color: rgb(253, 210, 84);
+      --fa-secondary-color: rgb(182, 150, 61);
+      --fa-secondary-opacity: 1.0;
+
+      --fa-primary-color: #fe9d53;
+      --fa-secondary-color: #fe9d53;
+      //--fa-secondary-color:#6c757d;
+    }
+
+    &.fa-chess-king-alt {
+      padding: 0 2px;
+      filter: drop-shadow(1px 1px 1px $gray-800);
+
+      --fa-primary-color: rgb(253, 210, 84);
+      --fa-secondary-color: rgb(182, 150, 61);
+      --fa-secondary-opacity: 1.0;
+
+      --fa-primary-color: #fe3b48;
+      --fa-primary-color: #fe9d53;
+      --fa-secondary-color: #fe3b48;
+      --fa-secondary-color: #fe9d53;
+    }
+  }
 }
+
+
+

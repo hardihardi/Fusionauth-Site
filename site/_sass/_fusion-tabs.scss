@@ -7,6 +7,53 @@ $fusion-tabs-spacing-sm: 15px;
   padding-bottom: 8px;
   z-index: 1;
 
+  &.border-less {
+    padding-bottom: 0;
+
+    .nav-item {
+      height: unset;
+
+      .nav-link {
+        background-color: $white;
+        border-radius: 0;
+        border-top: 6px solid transparent;
+        box-shadow: none;
+        color: rgba(0, 0, 0, 0.50);   /* RGBA Color (Alternative Transparency) */
+        height: 100px;
+        margin-bottom: 0;
+        opacity: 0.50;
+        text-transform: none;
+
+        i {
+          padding-bottom: 3px;
+          padding-left: 15px;
+        }
+
+        &:hover {
+          background-color: inherit;
+        }
+
+        span {
+          font-weight: 300;
+          text-transform: none;
+          text-align: center;
+          width: 100%;
+        }
+
+        &.active, &:hover {
+          background-color: $white;
+          border-bottom: none;
+          color: $secondary;
+          opacity: 1.0;
+
+          i {
+            filter: drop-shadow(1px 1px 1px $light);
+          }
+        }
+      }
+    }
+  }
+
   .nav-item {
     margin: 0 ($fusion-tabs-spacing / 2);
     height: 120px;
