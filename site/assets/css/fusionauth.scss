@@ -294,5 +294,9 @@ i {
   }
 }
 
-
+.form-check-inline {
+  > *:not(:last-child) {
+    margin-right: $form-check-inline-input-margin-x;
+  }
+}
 
