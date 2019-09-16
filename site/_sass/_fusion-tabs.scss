@@ -61,20 +61,20 @@ $fusion-tabs-spacing-sm: 15px;
     margin: 0 ($fusion-tabs-spacing / 2);
 
     .nav-link {
-      width: 120px;
-      height: 120px;
-      border: none;
-      background-color: $light2;
-      color: $secondary;
-      text-transform: uppercase;
       align-content: center;
-      position: relative;
+      background-color: $light2;
+      border: none;
       border-radius: $border-radius;
       box-shadow: $box-shadow;
-      font-weight: bold;
       box-sizing: content-box;
+      color: $secondary;
+      font-weight: bold;
+      height: 120px;
       margin-bottom: 8px;
       padding: 0;
+      position: relative;
+      text-transform: uppercase;
+      width: 120px;
 
       i {
         font-weight: 400;
@@ -93,9 +93,8 @@ $fusion-tabs-spacing-sm: 15px;
         background-color: $primary;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
-        margin-bottom: 0;
         border-bottom: 8px solid $primary;
-        //top: 8px; // Prevent the border from pushing the element up
+        margin-bottom: 0;
 
         i {
           filter: drop-shadow(1px 1px 1px #eee);
@@ -103,8 +102,8 @@ $fusion-tabs-spacing-sm: 15px;
       }
 
       @include media-breakpoint-down(sm) {
-        width: 100px;
         height: 100px;
+        width: 100px;
       }
     }
 
@@ -134,8 +133,8 @@ $fusion-tabs-spacing-sm: 15px;
   .tab-content {
     @extend .shadow-sm;
 
-    height: 100%;
     background-color: $white;
     border-radius: 4px;
+    height: 100%;
   }
 }
