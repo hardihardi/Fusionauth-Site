@@ -47,4 +47,4 @@ pagination:
     before: 4
     after: 5
 sass:
-#  style: compressed
+  style: compressed
