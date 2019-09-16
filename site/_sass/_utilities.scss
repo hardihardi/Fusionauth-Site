@@ -86,10 +86,6 @@
   }
 }
 
-.text-wide {
-  letter-spacing: .1rem;
-}
-
 .overflow-visible {
   overflow: visible;
 }
@@ -100,11 +96,10 @@
 
 
 /* Letter Spacing
-  TODO If we keep this we don't need .text-wide
 ====================================================*/
-@each $name, $size in ('sm', .1), ('md', .15), ('lg', .2), ('xl', .25) {
+@each $name, $size in $letter-spacings {
   .ls-#{$name} {
-    letter-spacing: #{$size}rem;
+    letter-spacing: $size;
   }
 }
 
