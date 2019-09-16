@@ -63,7 +63,11 @@ Launch review nice to have
 Design things
 ====
 * [ ] Tabs
-
+* [ ] Features - make tabs not jump
+* [ ] Space between hero and tabs on features page
+* [ ] Normalize height from top nav to fist graphic on hero on features
+* [ ] Fix flexible auth choices on features page, make one or two rows of icons instead of twitter, oidc, saml, etc collage
+* [ ] Features page descriptions
 
 Backend Stuff
 ====

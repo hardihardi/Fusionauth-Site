@@ -26,6 +26,10 @@ body {
   min-height: 100%;
 }
 
+h4 {
+  font-weight: 300;
+}
+
 .page-footer {
   a {
     color: $white;
@@ -244,25 +248,34 @@ i {
   }
 
   &.fad {
+    /* Self Hosted */
+    &.fa-building {
+      filter: drop-shadow(2px 1px 1px $light);
+      --fa-primary-color: #{$secondary};
+      --fa-secondary-color:  rgb(255, 212, 84);
+      --fa-secondary-opacity: 1.0;
+    }
+
     /* Pricing */
     &.fa-horse {
       filter: drop-shadow(2px 1px 1px $light);
       --fa-primary-color: rgb(255, 212, 84);
-      --fa-secondary-color: #3f2e61;
+      --fa-secondary-color: #{$dark-purple};
       --fa-secondary-opacity: 1.0;
     }
 
     &.fa-unicorn {
       filter: drop-shadow(2px 1px 1px $light);
 
-      --fa-primary-color: #3f2e61;
+      --fa-primary-color: #{$dark-purple};
       --fa-secondary-color: rgb(134, 202, 221);
       --fa-secondary-opacity: 1.0;
     }
 
     &.fa-alicorn {
       filter: drop-shadow(2px 1px 1px $light);
-      --fa-primary-color: #3f2e61;
+
+      --fa-primary-color: #{$dark-purple};
       --fa-secondary-color: #fe3b48;
       --fa-secondary-opacity: 1.0;
     }
@@ -300,3 +313,7 @@ i {
   }
 }
 
+body, button, input, select, textarea {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
