@@ -23,7 +23,7 @@ plugins:
 exclude:
  - docs/src/templates
 asciidoctor:
-  template_dir: docs/src/templates/haml
+  template_dir: site/docs/src/templates/haml
   base_dir: site
   attributes:
     icons: font

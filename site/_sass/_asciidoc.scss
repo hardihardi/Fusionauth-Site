@@ -52,54 +52,54 @@ table.admonitionblock {
     }
   }
 
-  p {
-    margin-bottom: 10px;
+    p {
+      margin-bottom: 10px;
 
-    &:not(:first-of-type) {
-      margin-top: 6px;
+      &:not(:first-of-type) {
+        margin-top: 6px;
+      }
     }
-  }
 
-  td, th {
-    border: none;
-    padding: 10px;
+    td, th {
+      border: none;
+      padding: 10px;
 
-    &.content {
-      padding-left: 0;
+      &.content {
+        padding-left: 0;
+      }
     }
-  }
 
-  td {
-    &.icon {
-      font-size: 35px;
-      padding: 5px 15px;
-      text-align: center;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
-      width: 60px;
+    td {
+      &.icon {
+        font-size: 35px;
+        padding: 5px 15px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+        width: 60px;
 
-      .icon-note:after {
-        color: #1f5fa7;
-        content: '\f05a';
-      }
+        .icon-note:after {
+          color: #1f5fa7;
+          content: '\f05a';
+        }
 
-      .icon-warning:after {
-        color: #e2d42e;
-        content: '\f071';
-      }
+        .icon-warning:after {
+          color: #e2d42e;
+          content: '\f071';
+        }
 
-      .icon-tip:after {
-        color: #111;
-        content: '\f0eb';
-      }
+        .icon-tip:after {
+          color: #111;
+          content: '\f0eb';
+        }
 
-      .icon-caution:after {
-        color: #bf3400;
-        content: '\f06d';
-      }
+        .icon-caution:after {
+          color: #bf3400;
+          content: '\f06d';
+        }
 
-      .icon-important:after {
-        color: #bf0000;
-        content: '\f06a';
+        .icon-important:after {
+          color: #bf0000;
+          content: '\f06a';
       }
     }
   }
