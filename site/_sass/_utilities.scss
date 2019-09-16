@@ -107,3 +107,14 @@
     letter-spacing: #{$size}rem;
   }
 }
+
+@each $size, $length in $font-sizes {
+  .fs-#{$size} {
+    font-size: #{$length};
+  }
+}
+
+.svg-container svg {
+  height: 100%;
+  width: 100%;
+}

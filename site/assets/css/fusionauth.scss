@@ -202,3 +202,100 @@ img.quote-fluff {
     max-width: 100%;
   }
 }
+
+/* Shell Commands */
+.shell-command {
+  background-color: #262626;
+  padding: 12px 12px 1px;
+  margin-bottom: 0;
+  overflow: scroll;
+  width: 100%;
+
+  + button {
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  p {
+    color: $white;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 100;
+    margin-bottom: 12px;
+  }
+}
+
+/* Logo Colors */
+i {
+  &.fa-apple {
+    color: $apple-logo-bg;
+  }
+
+  &.fa-docker {
+    color: $docker-logo-bg;
+  }
+
+  &.fa-linux {
+    color: $linux-logo-bg;;
+  }
+
+  &.fa-windows {
+    color: $windows-logo-bg;
+  }
+
+  &.fad {
+    /* Pricing */
+    &.fa-horse {
+      filter: drop-shadow(2px 1px 1px $light);
+      --fa-primary-color: rgb(255, 212, 84);
+      --fa-secondary-color: #3f2e61;
+      --fa-secondary-opacity: 1.0;
+    }
+
+    &.fa-unicorn {
+      filter: drop-shadow(2px 1px 1px $light);
+
+      --fa-primary-color: #3f2e61;
+      --fa-secondary-color: rgb(134, 202, 221);
+      --fa-secondary-opacity: 1.0;
+    }
+
+    &.fa-alicorn {
+      filter: drop-shadow(2px 1px 1px $light);
+      --fa-primary-color: #3f2e61;
+      --fa-secondary-color: #fe3b48;
+      --fa-secondary-opacity: 1.0;
+    }
+
+    /* Support */
+    &.fa-chess-pawn-alt {
+      padding: 0 2px;
+      filter: drop-shadow(2px 1px 1px $light);
+
+      --fa-primary-color: rgb(73, 85, 95);
+      --fa-secondary-color: rgb(73, 85, 95);
+      --fa-secondary-opacity: 1.0;
+    }
+
+    &.fa-chess-rook-alt, &.fa-chess-bishop-alt {
+      padding: 0 2px;
+      filter: drop-shadow(1px 1px 1px $gray-900);
+
+      --fa-primary-color: rgb(255, 212, 84);
+      --fa-secondary-color: rgb(255, 212, 84);
+      --fa-secondary-opacity: 1.0;
+    }
+
+    &.fa-chess-king-alt {
+      padding: 0 2px;
+      filter: drop-shadow(1px 1px 1px $gray-800);
+
+      --fa-primary-color: #fe9d53;
+      --fa-secondary-color: #fe9d53;
+      --fa-secondary-opacity: 1.0;
+    }
+  }
+}
+
+
+
