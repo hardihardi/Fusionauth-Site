@@ -22,13 +22,18 @@ $border-widths: (
 );
 
 // Bootstrap variables
-$primary: #ea8c51;
+$primary: #e67731;
 $secondary: #343a40;
 $dark: #5b6670;
 $light: #c6c7c6;
 $light2: #efefef;
 $dark-blue: #2d3d50;
 $dark-purple: #3f2e61;
+
+// Used in DuoTone FontAwesome mainly
+$sky-blue: #86cadd;
+$light-yellow: #ffd454;
+$light-red: #fe3b48;
 
 $theme-colors: (
     "dark-blue": $dark-blue,
@@ -69,7 +74,7 @@ $navbar-padding-y: 30px;
 $navbar-light-active-color: $dark;
 
 $btn-padding-x-lg: 24px;
-$btn-padding-y-lg: 16px;
+$btn-padding-y-lg: 12px;
 
 $spacer: 1rem; // Need this to be defined so we can add another spacer tier
 $spacers: (

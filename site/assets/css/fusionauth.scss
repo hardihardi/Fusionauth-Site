@@ -37,7 +37,7 @@ h4 {
 }
 
 .btn {
-  color: white;
+  color: $white;
   box-shadow: $box-shadow;
 }
 
@@ -248,18 +248,26 @@ i {
   }
 
   &.fad {
+    /* Cloud Pricing */
+    &.fa-clouds-sun {
+      filter: drop-shadow(2px 1px 1px $light);
+      --fa-primary-color: #{$sky-blue};
+      --fa-secondary-color: #{$light-yellow};
+      --fa-secondary-opacity: 1.0;
+    }
+
     /* Self Hosted */
     &.fa-building {
       filter: drop-shadow(2px 1px 1px $light);
       --fa-primary-color: #{$secondary};
-      --fa-secondary-color:  rgb(255, 212, 84);
+      --fa-secondary-color: #{$light-yellow};
       --fa-secondary-opacity: 1.0;
     }
 
     /* Pricing */
     &.fa-horse {
       filter: drop-shadow(2px 1px 1px $light);
-      --fa-primary-color: rgb(255, 212, 84);
+      --fa-primary-color: #{$light-yellow};
       --fa-secondary-color: #{$dark-purple};
       --fa-secondary-opacity: 1.0;
     }
@@ -268,7 +276,7 @@ i {
       filter: drop-shadow(2px 1px 1px $light);
 
       --fa-primary-color: #{$dark-purple};
-      --fa-secondary-color: rgb(134, 202, 221);
+      --fa-secondary-color: #{$sky-blue};
       --fa-secondary-opacity: 1.0;
     }
 
@@ -276,7 +284,7 @@ i {
       filter: drop-shadow(2px 1px 1px $light);
 
       --fa-primary-color: #{$dark-purple};
-      --fa-secondary-color: #fe3b48;
+      --fa-secondary-color: #{$light-red};
       --fa-secondary-opacity: 1.0;
     }
 
@@ -284,24 +292,24 @@ i {
     &.fa-dice-d8 {
       filter: drop-shadow(2px 1px 1px $light);
 
-      --fa-primary-color: rgb(134, 202, 221);
-      --fa-secondary-color: rgb(255, 212, 84);
+      --fa-primary-color: #{$sky-blue};
+      --fa-secondary-color: #{$light-yellow};
       --fa-secondary-opacity: 1.0;
     }
 
     &.fa-dice-d10 {
       filter: drop-shadow(1px 1px 1px $gray-900);
 
-      --fa-primary-color: rgb(255, 212, 84);
-      --fa-secondary-color:  rgb(134, 202, 221);
+      --fa-primary-color: #{$light-yellow};
+      --fa-secondary-color: #{$sky-blue};
       --fa-secondary-opacity: 1.0;
     }
 
     &.fa-dice-d12 {
       filter: drop-shadow(1px 1px 1px $gray-800);
 
-      --fa-primary-color:  rgb(134, 202, 221);
-      --fa-secondary-color: #ea8c51;
+      --fa-primary-color: #{$sky-blue};
+      --fa-secondary-color: #{$primary};
       --fa-secondary-opacity: 1.0;
     }
   }
@@ -317,3 +325,12 @@ body, button, input, select, textarea {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+a {
+  &:hover {
+    i {
+      filter: invert(1);
+    }
+  }
+}
+
