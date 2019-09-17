@@ -326,7 +326,7 @@ body, button, input, select, textarea {
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
+a.btn {
   &:hover {
     i {
       filter: invert(1);
