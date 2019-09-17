@@ -1,3 +1,4 @@
+import * as $ from "jquery";
 import ClickEvent = JQuery.ClickEvent;
 
 export class Carousel {
@@ -35,4 +36,3 @@ $(() => {
     new Carousel($(element));
   });
 });
-
