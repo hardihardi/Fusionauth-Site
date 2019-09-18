@@ -6,13 +6,19 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KFGZT3Q" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 {% include _navigation.html %}
-<article class="clean-block dark">
-  <section class="container">
-    <div class="block-heading guide-header">
-      <h1 class="text-white">{{ page.title }}</h1>
-      <p class="text-white"><em>{{ page.subtitle }}</em></p>
+<article class="post-body-content dark">
+  <section style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/resources/guide/background.jpg') no-repeat center; height:300px; background-color: rgb(0,0,14); ">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col text-center pt-2 pb-2">
+          <h1 class="text-white">{{ page.title }}</h1>
+          <p class="text-white"><em>{{ page.subtitle }}</em></p>        </div>
+      </div>
     </div>
-    <div class="card">
+  </section>
+
+  <section class="container">
+    <div class="card text-secondary">
       {% include guide/_toc.html %}
       <div class="card-body">
         {% if page.markdown == 1 %}

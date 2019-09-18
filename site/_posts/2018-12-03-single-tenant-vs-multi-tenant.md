@@ -4,7 +4,7 @@ title: Single-Tenant vs. Multi-Tenant CIAM
 description: Compare single-tenant and multi-tenant options for your CIAM solution and determine which is best for you.
 author: Bryan Giese
 categories: blog
-image: blogs/single-tenant-vs-multi-tenant-post.jpg
+image: blogs/single-multi-tenant-post.png
 ---
 
 Single-tenant or multi-tenant CIAM - which is right for you? The choice is completely dependent on your business objectives and requirements. Regulatory compliance, security, data management, and upgrade control are important considerations that will ultimately define the most effective solution for your company. Which trade-offs are you willing and able to make?
