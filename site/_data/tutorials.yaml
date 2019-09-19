@@ -1,10 +1,11 @@
+# complete list of all tutorials - put most popular in pop-tutorials list.
 - title: Integration with Node.js
   image: carousel/tut-node.png
   url: /blog/2019/02/19/easy-integration-fusionauth-nodejs
 - title: Using FusionAuth with Spring
   image: carousel/tut-spring.png
   url: /blog/2018/10/24/easy-integration-of-fusionauth-and-spring
-- title: Getting Started with Email Templates
+- title: Customizable Email Templates
   image: carousel/tut-email-templates.png
   url: /blog/2019/02/28/getting-started-with-email-templates
 - title: Login Themes Made Easy
@@ -17,7 +18,7 @@
   image: carousel/tut-setup-wizard.png
   url: /blog/2019/02/05/using-the-setup-wizard
 - title: Install FusionAuth on Mac
-  image: carousel/ktut-mac-install.png
+  image: carousel/tut-mac-install.png
   url: /blog/2019/02/07/download-install-mac-tutorial
 - title: Using Webhooks to Delete Data
   image: carousel/tut-webhooks.png
