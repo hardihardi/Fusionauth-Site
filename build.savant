@@ -15,7 +15,7 @@ project(group: "io.fusionauth", name: "fusionauth-site", version: "2.0.0", licen
   publications {
     main {
       publication(name: project.name, type: "css", file: "_site/assets/css/fusionauth.css")
-      publication(name: project.name, type: "scss", file: "build/fusionauth-scss.zip")
+      publication(name: project.name, type: "zip", file: "build/fusionauth-scss.zip")
     }
   }
 }
@@ -26,7 +26,6 @@ file = loadPlugin(id: "org.savantbuild.plugin:file:1.0.2")
 
 target(name: "bundle", description: "Zips any of the required resources for publication") {
   file.copy(to: "build/scss") {
-    fileSet(dir: "site/assets/css", includePatterns: [~/.+\.scss/])
     fileSet(dir: "site/_sass", includePatterns: [~/.+\.scss/])
   }
 

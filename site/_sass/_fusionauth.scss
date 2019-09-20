@@ -1,0 +1,333 @@
+//noinspection CssUnknownTarget
+@import "variables";
+//noinspection CssUnknownTarget
+@import "../../node_modules/bootstrap/scss/bootstrap";
+//noinspection CssUnknownTarget
+@import "carousel";
+//noinspection CssUnknownTarget
+@import "fusion-pills";
+//noinspection CssUnknownTarget
+@import "fusion-tabs";
+//noinspection CssUnknownTarget
+@import "forms";
+//noinspection CssUnknownTarget
+@import "utilities";
+
+// Global Styles
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+h4 {
+  font-weight: 300;
+}
+
+.page-footer {
+  a {
+    color: $white;
+  }
+}
+
+.btn {
+  color: $white;
+  box-shadow: $box-shadow;
+  text-transform: uppercase;
+}
+
+.input-group {
+  .btn {
+    box-shadow: none;
+  }
+}
+
+.client-logo {
+  width: 150px;
+}
+
+img.shadow {
+  box-shadow: none !important;
+  -webkit-filter: drop-shadow($box-shadow-sm);
+  filter: dropShadow($box-shadow);
+}
+
+.navbar {
+  .nav-link {
+    font-size: 14px;
+
+    &.active, &:active {
+      color: $dark;
+    }
+  }
+
+  &.navbar-dark {
+    background-color: $secondary;
+
+    .nav-link {
+      color: $white;
+    }
+  }
+}
+
+// Make the dropdown menus more similar to the nav.
+@include media-breakpoint-down(lg) {
+  .navbar-expand-xl {
+
+    .dropdown-menu {
+      border: none;
+    }
+
+    .dropdown-item {
+      color: $secondary;
+      font-size: 14px;
+
+      &:focus, &:hover {
+        color: $navbar-light-hover-color;
+      }
+    }
+
+    &.navbar-dark {
+      .dropdown-menu {
+        background: none;
+      }
+
+      .dropdown-item {
+        color: $white;
+        background: none;
+
+        &:hover {
+          color: $navbar-dark-hover-color;
+        }
+      }
+    }
+  }
+}
+
+// MISC and unsorted
+
+.hero {
+  max-width: 1440px;
+}
+
+// Dark links
+a.link-dark, .link-dark {
+  color: $secondary;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Variation of the first dark link (No underline and changes orange on mouse over)
+a.link-dark-2, .link-dark-2 {
+  color: $secondary;
+  text-decoration: none;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+// Used in the footer to add bars part of the way up the links
+@include media-breakpoint-up(md) {
+  .magic-3-col-bars > :nth-child(3n+5):not(:nth-last-child(-n+3)) {
+    border-left: 2px solid $light;
+    border-right: 2px solid $light;
+  }
+}
+
+// Specific to the quote section
+img.quote-fluff {
+  position: absolute;
+  top: -20px;
+  left: 0;
+}
+
+.bg-upgrade {
+  background-color: $dark-blue;
+  margin-bottom: map_get($spacers, 6);
+  text-align: center;
+}
+
+.upgrade-subheader {
+  color: white;
+
+  h2 {
+    color: white;
+  }
+}
+
+// Hack to get image to "overflow"
+@include media-breakpoint-up(lg) {
+  .bg-upgrade {
+    background: linear-gradient($dark-blue 45%, $white 45%);
+    margin-bottom: auto;
+    text-align: left;
+
+    .upgrade-image {
+      display: flex;
+      flex-direction: column;
+      justify-content: stretch;
+    }
+
+    // The second half of the hack to give the "overflow" effect for upgrade pages
+    .balanced-vertical {
+      display: grid;
+      grid-template-rows: 45fr 55fr;
+      align-content: stretch;
+      justify-content: stretch;
+    }
+  }
+
+  .upgrade-subheader {
+    color: $body-color;
+    margin-top: map_get($spacers, 6);
+
+    h2 {
+      color: $secondary;
+    }
+  }
+}
+
+.post-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.post-body-content {
+  img {
+    max-width: 100%;
+  }
+}
+
+/* Shell Commands */
+.shell-command {
+  background-color: #262626;
+  padding: 12px 12px 1px;
+  margin-bottom: 0;
+  overflow: scroll;
+  width: 100%;
+
+  + button {
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  p {
+    color: $white;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 100;
+    margin-bottom: 12px;
+  }
+}
+
+/* Logo Colors */
+i {
+  &.fa-apple {
+    color: $apple-logo-bg;
+  }
+
+  &.fa-docker {
+    color: $docker-logo-bg;
+  }
+
+  &.fa-linux {
+    color: $linux-logo-bg;;
+  }
+
+  &.fa-windows {
+    color: $windows-logo-bg;
+  }
+
+  &.fad {
+    /* Cloud Pricing */
+    &.fa-clouds-sun {
+      filter: drop-shadow(2px 1px 1px $light);
+      --fa-primary-color: #{$sky-blue};
+      --fa-secondary-color: #{$light-yellow};
+      --fa-secondary-opacity: 1.0;
+    }
+
+    /* Self Hosted */
+    &.fa-building {
+      filter: drop-shadow(2px 1px 1px $light);
+      --fa-primary-color: #{$secondary};
+      --fa-secondary-color: #{$light-yellow};
+      --fa-secondary-opacity: 1.0;
+    }
+
+    /* Pricing */
+    &.fa-horse {
+      filter: drop-shadow(2px 1px 1px $light);
+      --fa-primary-color: #{$light-yellow};
+      --fa-secondary-color: #{$dark-purple};
+      --fa-secondary-opacity: 1.0;
+    }
+
+    &.fa-unicorn {
+      filter: drop-shadow(2px 1px 1px $light);
+
+      --fa-primary-color: #{$dark-purple};
+      --fa-secondary-color: #{$sky-blue};
+      --fa-secondary-opacity: 1.0;
+    }
+
+    &.fa-alicorn {
+      filter: drop-shadow(2px 1px 1px $light);
+
+      --fa-primary-color: #{$dark-purple};
+      --fa-secondary-color: #{$light-red};
+      --fa-secondary-opacity: 1.0;
+    }
+
+    /* Support */
+    &.fa-dice-d8 {
+      filter: drop-shadow(2px 1px 1px $light);
+
+      --fa-primary-color: #{$sky-blue};
+      --fa-secondary-color: #{$light-yellow};
+      --fa-secondary-opacity: 1.0;
+    }
+
+    &.fa-dice-d10 {
+      filter: drop-shadow(1px 1px 1px $gray-900);
+
+      --fa-primary-color: #{$light-yellow};
+      --fa-secondary-color: #{$sky-blue};
+      --fa-secondary-opacity: 1.0;
+    }
+
+    &.fa-dice-d12 {
+      filter: drop-shadow(1px 1px 1px $gray-800);
+
+      --fa-primary-color: #{$sky-blue};
+      --fa-secondary-color: #{$primary};
+      --fa-secondary-opacity: 1.0;
+    }
+  }
+}
+
+.form-check-inline {
+  > *:not(:last-child) {
+    margin-right: $form-check-inline-input-margin-x;
+  }
+}
+
+body, button, input, select, textarea {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a.btn {
+  &:hover {
+    i {
+      filter: invert(1);
+    }
+  }
+}
