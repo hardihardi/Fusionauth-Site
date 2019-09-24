@@ -22,11 +22,12 @@ $border-widths: (
 );
 
 // Bootstrap variables
-$primary: #e67731;
+$primary: #ec8d53;
 $secondary: #343a40;
 $dark: #5b6670;
 $light: #c6c7c6;
 $light2: #efefef;
+$blue: #6772e5;
 $dark-blue: #2d3d50;
 $dark-purple: #3f2e61;
 
@@ -36,6 +37,7 @@ $light-yellow: #ffd454;
 $light-red: #fe3b48;
 
 $theme-colors: (
+    "blue": $blue,
     "dark-blue": $dark-blue,
     "orange": $primary,
     "purple": $dark-purple,
@@ -61,6 +63,11 @@ $letter-spacings: (
         (3, .2rem),
         (4, .25rem)
 );
+
+// Links
+$link-color: $blue;
+$link-hover-color: $dark-blue;
+$link-hover-decoration: none;
 
 $box-shadow-sm: 0 0.075rem 0.2rem rgba(0, 0, 0, .65);
 $box-shadow: 0 0.125rem 0.4rem rgba(0, 0, 0, .5);

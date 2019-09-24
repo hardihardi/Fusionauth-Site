@@ -27,7 +27,8 @@
   }
 }
 
-// Widths at breakpoints
+/* Widths
+====================================================*/
 @each $breakpoint in map-keys($grid-breakpoints) {
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
@@ -40,6 +41,10 @@
       }
     }
   }
+}
+
+.mw-50 {
+  max-width: 50%;
 }
 
 @each $size, $length in $border-widths {
@@ -94,3 +99,4 @@
 .text-black {
   color: $black;
 }
+

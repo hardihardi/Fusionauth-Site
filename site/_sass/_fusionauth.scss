@@ -62,6 +62,10 @@ img.shadow {
     &.active, &:active {
       color: $dark;
     }
+
+    &:focus {
+      outline: 0;
+    }
   }
 
   &.navbar-dark {
@@ -73,7 +77,22 @@ img.shadow {
   }
 }
 
-// Make the dropdown menus more similar to the nav.
+// Dropdowns
+// Add an arrow
+.dropdown-menu:before {
+  bottom: 100%;
+  border: 6px solid rgba(0, 0, 0, 0);
+  border-bottom-color: white;
+  content: ' ';
+  height: 0;
+  left: 50px;
+  margin-left: -6px;
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+}
+
+// Make the dropdown menus more similar to the nav on mobile
 @include media-breakpoint-down(lg) {
   .navbar-expand-xl {
 
@@ -104,6 +123,17 @@ img.shadow {
         }
       }
     }
+  }
+}
+
+// Borders with media queries and sides
+@include media-breakpoint-up(lg) {
+  .border-lg-bottom-1 {
+    border-bottom: 1px solid $light;
+  }
+
+  .border-lg-right-1 {
+    border-right: 1px solid $light;
   }
 }
 

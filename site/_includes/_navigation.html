@@ -2,17 +2,16 @@
   {% assign url = page.url | downcase %}
 
   <div class="container">
-    <a class="navbar-brand logo" href="/">
+    <a class="navbar-brand" href="/">
       {% if page.header_dark == true %}
-      <img src="/assets/img/FusionAuth-Logo-white-orange.svg" alt="FusionAuth Logo" width="200">
+      <img src="/assets/img/fusionauth-logo-white-orange.svg" alt="FusionAuth Logo" width="200">
       {% else %}
-      <img src="/assets/img/fusionauth-FC-wide.svg" alt="FusionAuth Logo" width="200">
+      <img src="/assets/img/fusionauth-logo-grey-orange.svg" alt="FusionAuth Logo" width="200">
       {% endif %}
     </a>
-    <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span
-        class="bg-inverse navbar-toggler-icon"></span></button>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="bg-inverse navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse text-uppercase" id="navcol-1">
-      <ul class="nav navbar-nav text-right text-xl-left">
+      <ul class="nav navbar-nav text-right text-xl-left pl-xl-5">
         <li class="nav-item" role="presentation"><a class="nav-link {% if page.url contains '/features' %}active{% endif %}" href="/features/">Features</a></li>
         <li class="nav-item" role="presentation"><a class="nav-link {% if page.url == '/pricing.html'%}active{% endif %}" href="/pricing">Pricing</a></li>
         <li class="nav-item" role="presentation"><a class="nav-link" href="/documentation">Docs</a></li>
@@ -37,7 +36,7 @@
         </li>
         <li class="nav-item d-xl-none" role="presentation"><a class="nav-link" href="/contact">Contact Us</a></li>
       </ul>
-      <a class="btn btn-primary btn-lg ml-auto d-none d-xl-inline-block" href="/contact">Contact Us</a>
+      <a class="btn btn-outline-primary ml-auto d-none d-xl-inline-block" href="https://account.fusionauth.io/login">Login</a>
     </div>
   </div>
 </nav>
