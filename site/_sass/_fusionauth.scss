@@ -30,6 +30,16 @@ h4 {
 .page-footer {
   a {
     color: $white;
+
+    &:hover {
+      color: $light;
+    }
+  }
+}
+
+.bg-secondary {
+  a:hover {
+    color: lighten($blue, 10%);
   }
 }
 
