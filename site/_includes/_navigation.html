@@ -14,7 +14,7 @@
       <ul class="nav navbar-nav text-right text-xl-left pl-xl-5">
         <li class="nav-item" role="presentation"><a class="nav-link {% if page.url contains '/features' %}active{% endif %}" href="/features/">Features</a></li>
         <li class="nav-item" role="presentation"><a class="nav-link {% if page.url == '/pricing.html'%}active{% endif %}" href="/pricing">Pricing</a></li>
-        <li class="nav-item" role="presentation"><a class="nav-link" href="/documentation">Docs</a></li>
+        <li class="nav-item" role="presentation"><a class="nav-link" href="/docs">Docs</a></li>
         <li class="nav-item dropdown" role="presentation">
           <a class="nav-link dropdown-toggle " href="#" data-toggle="dropdown">Resources</a>
           <div class="dropdown-menu text-right text-xl-left">
@@ -36,7 +36,7 @@
         </li>
         <li class="nav-item d-xl-none" role="presentation"><a class="nav-link" href="/contact">Contact Us</a></li>
       </ul>
-      <a class="btn btn-outline-primary ml-auto d-none d-xl-inline-block" href="https://account.fusionauth.io/login">Login</a>
+      <a class="btn {% if page.header_dark == true %}btn-outline-primary{% else %}btn-primary{% endif %} ml-auto d-none d-xl-inline-block" href="https://account.fusionauth.io/login">Login</a>
     </div>
   </div>
 </nav>

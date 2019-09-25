@@ -9,6 +9,7 @@ header_dark: true
   <div class="container pb-5 pt-5 mb-4">
     <div class="row">
       <div class="col-12 col-md-5 text-center">
+        <!-- TODO New pricing image? -->
         <img class="w-100 w-lg-75" src="/assets/img/1.0-pricing-hero-main.svg">
       </div>
       <div class="col-12 col-md-7 text-white mt-5 mt-md-3 mt-lg-5 text-center text-md-left">
@@ -20,190 +21,301 @@ header_dark: true
   </div>
 </section>
 
-<section>
-  <div class="container mt-5">
+<section class="pt-6">
+  <div class="container">
     <div class="text-center mb-5">
-      <i class="fad fa-clouds-sun fa-4x text-primary"></i>
-      <h2 class="display-4">FusionAuth Cloud</h2>
-      <p class="text-secondary">We host and manage FusionAuth for you in private, secure cloud data centers.</p>
+      <i class="fad fa-clouds-sun fa-5x"></i>
+      <h2 class="display-4 mt-4">FusionAuth Cloud</h2>
+      <p class="lh-4 mt-4">Let FusionAuth host, manage, monitor and maintain your deployment in your own private cloud.</p>
     </div>
-    <ul class="nav fusion-tabs border-less mt-2">
-      <li class="nav-item">
-        <a class="d-flex flex-column justify-content-center align-items-center nav-link active" id="basic-tab" data-toggle="tab" href="#basic" role="tab">
-          <i class="fad fa-horse fa-4x pl-2"></i>
-          <span>Basic</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="d-flex flex-column justify-content-center align-items-center nav-link" id="premium-tab" data-toggle="tab" href="#premium" role="tab">
-          <i class="fad fa-unicorn fa-4x pl-3"></i>
-          <span>Premium</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="d-flex flex-column justify-content-center align-items-center nav-link" id="enterprise-tab" data-toggle="tab" href="#enterprise" role="tab">
-          <i class="fad fa-alicorn fa-4x pl-3"></i>
-          <span>Enterprise</span>
-        </a>
-      </li>
-    </ul>
-    <div class="fusion-tabs-content">
-      <div class="tab-content">
+    <div class="row pt-5">
+      <div class="col-md-6 col-lg-4 mb-6 pr-4 pl-4 d-flex flex-column align-content-stretch justify-content-start">
+        <div class="rounded bg-light2 shadow d-flex flex-column align-content-stretch justify-content-between p-5 text-center flex-fill">
+          <i class="fad fa-home fa-4x"></i>
+          <h3 class="text-uppercase mt-4">Basic</h3>
+          <h5 class="h5 font-weight-light text-uppercase">Hosting</h5>
 
-        <div class="tab-pane p-4 show active" role="tabpanel" id="basic">
-          <div class="heading d-flex">
-            <i class="fad fa-horse fa-4x"></i>
-            <h3 class="ml-4 h1 border-bottom border-secondary w-100">Basic</h3>
+          <hr class="w-50 ml-auto mt-4 mb-auto border-light">
+
+          <div class="mt-5 mb-5">
+            <h4 class="text-uppercase">Server</h4>
+            <p class="text-dark lh-2">Single server with fault-tolerant disks.</p>
+
+            <h4 class="text-uppercase">Backups</h4>
+            <p class="text-dark lh-2">Not included.</p>
+
+            <h4 class="text-uppercase">Support</h4>
+            <p class="text-dark lh-2">Optional and separate.</p>
+
+            <h4 class="text-uppercase">SLA</h4>
+            <p class="text-dark lh-2">Not applicable.</p>
+
+            <h4 class="text-uppercase">Location</h4>
+            <p class="text-dark lh-2">US, Canada, South America, Europe, Asia.</p>
           </div>
-          <div class="row p-4 text-center text-md-left">
-            <div class="col-12 col-md-5 mb-4 mb-md-0">
-              <h4>Server</h4>
-              <p class="text-dark">Single server using fault tolerant disks</p>
-            </div>
-            <div class="col-12 col-md-3 mb-4 mb-md-0">
-              <h4>Backups</h4>
-              <p class="text-dark">Optional</p>
-            </div>
-            <div class="col-12 col-md-4 mb-4 mb-md-0">
-              <h4>Support</h4>
-              <p class="text-dark">Community Support & Optional Support Packages</p>
-            </div>
-            <div class="col-12 col-md-5 mb-4 mb-md-0">
-              <h4>Number of applications</h4>
-              <p class="text-dark">Unlimited</p>
-            </div>
-            <div class="col-12 col-md-3 mb-4 mb-md-0">
-              <h4>Total Users</h4>
-              <p class="text-dark">Up to 200,000</p>
-            </div>
-            <div class="col-12 col-md-4 mb-4 mb-md-0"><!-- Empty --></div>
-            <div class="col-12 col-md-5 mb-4 mb-md-0">
-              <h4>Location</h4>
-              <p class="text-dark">US, Canada, EU, Asia, SA, Australia</p>
-            </div>
-            <div class="col-12 col-md-3 mb-4 mb-md-0">
-              <h4>SLA</h4>
-              <p class="text-dark">N/A</p>
-            </div>
-            <div class="col-12 col-md-4 mb-4 mb-md-0">
-              <div class="text-uppercase font-weight-light text-dark ls-2">Starting at</div>
-              <div><span class="text-primary display-4">$100</span><span class="text-secondary h5">/month</span></div>
-            </div>
-            <div class="col-12 text-center pt-4">
-              <a class="btn btn-lg btn-primary m-auto" href="#TODO">Buy Basic Hosting</a>
-            </div>
-          </div>
+
+          <hr class="w-50 ml-auto mt-auto mb-4 border-light">
+
+          <h5>Starting at <span class="h4 text-primary">$50</span>/month</h5>
         </div>
 
-        <div class="tab-pane p-4" role="tabpanel" id="premium">
-          <div class="heading d-flex">
-            <i class="fad fa-unicorn fa-4x"></i>
-            <h3 class="ml-3 h1 border-bottom border-secondary w-100">Premium</h3>
+        <a class="btn btn-primary btn-lg btn-block text-uppercase mt-5" href="https://account.fusionauth.io/build-deployment">Buy now</a>
+      </div>
+      <div class="col-md-6 col-lg-4 mb-6 pr-4 pl-4 d-flex flex-column align-content-stretch justify-content-start">
+        <div class="rounded bg-secondary text-white shadow d-flex flex-column align-content-stretch justify-content-between p-5 text-center flex-fill">
+          <i class="fad fa-building fa-4x"></i>
+          <h3 class="text-uppercase text-white mt-4">Premium</h3>
+          <h5 class="font-weight-light text-uppercase text-white">Hosting</h5>
+
+          <hr class="w-50 ml-auto mt-4 mb-auto border-light">
+
+          <div class="mt-5 mb-5">
+            <h4 class="text-white text-uppercase">Server</h4>
+            <p class="text-white lh-2">Single server with fault-tolerant disks.</p>
+
+            <h4 class="text-white text-uppercase">Backups</h4>
+            <p class="text-white lh-2">3 nightly backups included.</p>
+
+            <h4 class="text-white text-uppercase">Support</h4>
+            <p class="text-white lh-2">Optional and separate.</p>
+
+            <h4 class="text-white text-uppercase">SLA</h4>
+            <p class="text-white lh-2">Not applicable.</p>
+
+            <h4 class="text-white text-uppercase">Location</h4>
+            <p class="text-white lh-2">US, Canada, South America, Europe, Asia.</p>
           </div>
-          <div class="row p-4 text-center text-md-left">
-            <div class="col-12 col-md-5 mb-4 mb-md-0">
-              <h4>Server</h4>
-              <p class="text-dark">Single server using fault tolerant disks and a managed database</p>
-            </div>
-            <div class="col-12 col-md-3 mb-4 mb-md-0">
-              <h4>Backups</h4>
-              <p class="text-dark">2 backups included</p>
-            </div>
-            <div class="col-12 col-md-4 mb-4 mb-md-0">
-              <h4>Support</h4>
-              <p class="text-dark">Community Support & Optional Support Packages</p>
-            </div>
-            <div class="col-12 col-md-5 mb-4 mb-md-0">
-              <h4>Number of applications</h4>
-              <p class="text-dark">Unlimited</p>
-            </div>
-            <div class="col-12 col-md-3 mb-4 mb-md-0">
-              <h4>Total Users</h4>
-              <p class="text-dark">Up to 500,000</p>
-            </div>
-            <div class="col-12 col-md-4 mb-4 mb-md-0"></div>
-            <div class="col-12 col-md-5 mb-4 mb-md-0">
-              <h4>Location</h4>
-              <p class="text-dark">US, Canada, EU, Asia, SA, Australia</p>
-            </div>
-            <div class="col-12 col-md-3 mb-4 mb-md-0">
-              <h4>SLA</h4>
-              <p class="text-dark">N/A</p>
-            </div>
-            <div class="col-12 col-md-4 mb-4 mb-md-0">
-              <div class="text-uppercase font-weight-light text-dark ls-2">Starting at</div>
-              <div><span class="text-primary display-4">$250</span><span class="text-secondary h5">/month</span></div>
-            </div>
-            <div class="col-12 text-center pt-4">
-              <a class="btn btn-lg btn-primary m-auto" href="#TODO">Buy Premium Hosting</a>
-            </div>
-          </div>
+
+          <hr class="w-50 ml-auto mt-auto mb-4 border-light">
+
+          <h5 class="text-white">Starting at <span class="h4 text-primary">$150</span>/month</h5>
         </div>
 
-        <div class="tab-pane p-4" role="tabpanel" id="enterprise">
-          <div class="heading d-flex">
-            <i class="fad fa-alicorn fa-4x"></i>
-            <h3 class="ml-3 h1 border-bottom border-secondary w-100">Enterprise</h3>
+        <a class="btn btn-primary btn-lg btn-block text-uppercase mt-5" href="https://account.fusionauth.io/build-deployment">Buy now</a>
+      </div>
+      <div class="col-md-6 col-lg-4 mb-6 pr-4 pl-4 d-flex flex-column align-content-stretch justify-content-start">
+        <div class="rounded bg-dark text-white shadow d-flex flex-column align-content-stretch justify-content-between p-5 text-center flex-fill">
+          <i class="fad fa-city fa-4x"></i>
+          <h3 class="text-white mt-4">Enterprise</h3>
+          <div class="h5 font-weight-light text-uppercase text-white">Hosting</div>
+
+          <hr class="w-50 ml-auto mt-4 mb-auto border-light">
+
+          <div class="mt-5 mb-5">
+            <h4 class="text-white text-uppercase">Server</h4>
+            <p class="text-white lh-2">2 servers with fault-tolerant disks and a load-balancer.</p>
+
+            <h4 class="text-white text-uppercase">Backups</h4>
+            <p class="text-white lh-2">3 nightly backups included (full replication optional).</p>
+
+            <h4 class="text-white text-uppercase">Support</h4>
+            <p class="text-white lh-2">Optional and separate.</p>
+
+            <h4 class="text-white text-uppercase">SLA</h4>
+            <p class="text-white lh-2">Starts at 99.5%.</p>
+
+            <h4 class="text-white text-uppercase">Location</h4>
+            <p class="text-white lh-2">US, Canada, South America, Europe, Asia.</p>
           </div>
-          <div class="row p-4 text-center text-md-left">
-            <div class="col-12 col-md-5 mb-4 mb-md-0">
-              <h4>Server</h4>
-              <p class="text-dark">Multiple servers using fault tolerant disks, a load balancer, and a managed database</p>
-            </div>
-            <div class="col-12 col-md-3 mb-4 mb-md-0">
-              <h4>Backups</h4>
-              <p class="text-dark">2 backups included</p>
-            </div>
-            <div class="col-12 col-md-4 mb-4 mb-md-0">
-              <h4>Support</h4>
-              <p class="text-dark">Community Support & Optional Support Packages</p>
-            </div>
-            <div class="col-12 col-md-5 mb-4 mb-md-0">
-              <h4>Number of applications</h4>
-              <p class="text-dark">Unlimited</p>
-            </div>
-            <div class="col-12 col-md-3 mb-4 mb-md-0">
-              <h4>Total Users</h4>
-              <p class="text-dark">Up to 1,000,000</p>
-            </div>
-            <div class="col-12 col-md-4 mb-4 mb-md-0"></div>
-            <div class="col-12 col-md-5 mb-4 mb-md-0">
-              <h4>Location</h4>
-              <p class="text-dark">US, Canada, EU, Asia, SA, Australia</p>
-            </div>
-            <div class="col-12 col-md-3 mb-4 mb-md-0">
-              <h4>SLA</h4>
-              <p class="text-dark">Standard 99.9%</p>
-            </div>
-            <div class="col-12 col-md-4 mb-4 mb-md-0">
-              <div class="text-uppercase font-weight-light text-dark ls-2">Starting at</div>
-              <div><span class="text-primary display-4">$500</span><span class="text-secondary h5">/month</span></div>
-            </div>
-            <div class="col-12 text-center pt-4">
-              <a class="btn btn-lg btn-primary m-auto" href="#TODO">Buy Enterprise Hosting</a>
-            </div>
-          </div>
+
+          <hr class="w-50 ml-auto mt-auto mb-4 border-light">
+
+          <h5 class="text-white">Starting at <span class="h4 text-primary">$225</span>/month</h5>
         </div>
 
-
+        <a class="btn btn-primary btn-lg btn-block text-uppercase mt-5" href="https://account.fusionauth.io/build-deployment">Buy now</a>
       </div>
     </div>
-
     <div class="text-center mt-4">
       <p>Migrating from another solution? Contact us about our <a class="font-weight-bold" href="/contact">Upgrade Guides</a> to make migration simple.</p>
     </div>
   </div>
 </section>
 
+
+
+
+
+<!--    <div class="text-center mb-5">-->
+<!--      <h2 class="display-4">FusionAuth Cloud</h2>-->
+<!--      <p class="text-secondary">We host and manage FusionAuth for you in private, secure cloud data centers.</p>-->
+<!--    </div>-->
+<!--    <ul class="nav fusion-tabs border-less mt-2">-->
+<!--      <li class="nav-item">-->
+<!--        <a class="d-flex flex-column justify-content-center align-items-center nav-link active" id="basic-tab" data-toggle="tab" href="#basic" role="tab">-->
+<!--          <i class="fad fa-horse fa-4x pl-2"></i>-->
+<!--          <span>Basic</span>-->
+<!--        </a>-->
+<!--      </li>-->
+<!--      <li class="nav-item">-->
+<!--        <a class="d-flex flex-column justify-content-center align-items-center nav-link" id="premium-tab" data-toggle="tab" href="#premium" role="tab">-->
+<!--          <i class="fad fa-unicorn fa-4x pl-3"></i>-->
+<!--          <span>Premium</span>-->
+<!--        </a>-->
+<!--      </li>-->
+<!--      <li class="nav-item">-->
+<!--        <a class="d-flex flex-column justify-content-center align-items-center nav-link" id="enterprise-tab" data-toggle="tab" href="#enterprise" role="tab">-->
+<!--          <i class="fad fa-alicorn fa-4x pl-3"></i>-->
+<!--          <span>Enterprise</span>-->
+<!--        </a>-->
+<!--      </li>-->
+<!--    </ul>-->
+<!--    <div class="fusion-tabs-content">-->
+<!--      <div class="tab-content">-->
+
+<!--        <div class="tab-pane p-4 show active" role="tabpanel" id="basic">-->
+<!--          <div class="heading d-flex">-->
+<!--            <i class="fad fa-horse fa-4x"></i>-->
+<!--            <h3 class="ml-4 h1 border-bottom border-secondary w-100">Basic</h3>-->
+<!--          </div>-->
+<!--          <div class="row p-4 text-center text-md-left">-->
+<!--            <div class="col-12 col-md-5 mb-4 mb-md-0">-->
+<!--              <h4>Server</h4>-->
+<!--              <p class="text-dark">Single server using fault tolerant disks</p>-->
+<!--            </div>-->
+<!--            <div class="col-12 col-md-3 mb-4 mb-md-0">-->
+<!--              <h4>Backups</h4>-->
+<!--              <p class="text-dark">Optional</p>-->
+<!--            </div>-->
+<!--            <div class="col-12 col-md-4 mb-4 mb-md-0">-->
+<!--              <h4>Support</h4>-->
+<!--              <p class="text-dark">Community Support & Optional Support Packages</p>-->
+<!--            </div>-->
+<!--            <div class="col-12 col-md-5 mb-4 mb-md-0">-->
+<!--              <h4>Number of applications</h4>-->
+<!--              <p class="text-dark">Unlimited</p>-->
+<!--            </div>-->
+<!--            <div class="col-12 col-md-3 mb-4 mb-md-0">-->
+<!--              <h4>Total Users</h4>-->
+<!--              <p class="text-dark">Up to 200,000</p>-->
+<!--            </div>-->
+<!--            <div class="col-12 col-md-4 mb-4 mb-md-0">&lt;!&ndash; Empty &ndash;&gt;</div>-->
+<!--            <div class="col-12 col-md-5 mb-4 mb-md-0">-->
+<!--              <h4>Location</h4>-->
+<!--              <p class="text-dark">US, Canada, EU, Asia, SA, Australia</p>-->
+<!--            </div>-->
+<!--            <div class="col-12 col-md-3 mb-4 mb-md-0">-->
+<!--              <h4>SLA</h4>-->
+<!--              <p class="text-dark">N/A</p>-->
+<!--            </div>-->
+<!--            <div class="col-12 col-md-4 mb-4 mb-md-0">-->
+<!--              <div class="text-uppercase font-weight-light text-dark ls-2">Starting at</div>-->
+<!--              <div><span class="text-primary display-4">$100</span><span class="text-secondary h5">/month</span></div>-->
+<!--            </div>-->
+<!--            <div class="col-12 text-center pt-4">-->
+<!--              <a class="btn btn-lg btn-primary m-auto" href="#TODO">Buy Basic Hosting</a>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--        <div class="tab-pane p-4" role="tabpanel" id="premium">-->
+<!--          <div class="heading d-flex">-->
+<!--            <i class="fad fa-unicorn fa-4x"></i>-->
+<!--            <h3 class="ml-3 h1 border-bottom border-secondary w-100">Premium</h3>-->
+<!--          </div>-->
+<!--          <div class="row p-4 text-center text-md-left">-->
+<!--            <div class="col-12 col-md-5 mb-4 mb-md-0">-->
+<!--              <h4>Server</h4>-->
+<!--              <p class="text-dark">Single server using fault tolerant disks and a managed database</p>-->
+<!--            </div>-->
+<!--            <div class="col-12 col-md-3 mb-4 mb-md-0">-->
+<!--              <h4>Backups</h4>-->
+<!--              <p class="text-dark">2 backups included</p>-->
+<!--            </div>-->
+<!--            <div class="col-12 col-md-4 mb-4 mb-md-0">-->
+<!--              <h4>Support</h4>-->
+<!--              <p class="text-dark">Community Support & Optional Support Packages</p>-->
+<!--            </div>-->
+<!--            <div class="col-12 col-md-5 mb-4 mb-md-0">-->
+<!--              <h4>Number of applications</h4>-->
+<!--              <p class="text-dark">Unlimited</p>-->
+<!--            </div>-->
+<!--            <div class="col-12 col-md-3 mb-4 mb-md-0">-->
+<!--              <h4>Total Users</h4>-->
+<!--              <p class="text-dark">Up to 500,000</p>-->
+<!--            </div>-->
+<!--            <div class="col-12 col-md-4 mb-4 mb-md-0"></div>-->
+<!--            <div class="col-12 col-md-5 mb-4 mb-md-0">-->
+<!--              <h4>Location</h4>-->
+<!--              <p class="text-dark">US, Canada, EU, Asia, SA, Australia</p>-->
+<!--            </div>-->
+<!--            <div class="col-12 col-md-3 mb-4 mb-md-0">-->
+<!--              <h4>SLA</h4>-->
+<!--              <p class="text-dark">N/A</p>-->
+<!--            </div>-->
+<!--            <div class="col-12 col-md-4 mb-4 mb-md-0">-->
+<!--              <div class="text-uppercase font-weight-light text-dark ls-2">Starting at</div>-->
+<!--              <div><span class="text-primary display-4">$250</span><span class="text-secondary h5">/month</span></div>-->
+<!--            </div>-->
+<!--            <div class="col-12 text-center pt-4">-->
+<!--              <a class="btn btn-lg btn-primary m-auto" href="#TODO">Buy Premium Hosting</a>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--        <div class="tab-pane p-4" role="tabpanel" id="enterprise">-->
+<!--          <div class="heading d-flex">-->
+<!--            <i class="fad fa-alicorn fa-4x"></i>-->
+<!--            <h3 class="ml-3 h1 border-bottom border-secondary w-100">Enterprise</h3>-->
+<!--          </div>-->
+<!--          <div class="row p-4 text-center text-md-left">-->
+<!--            <div class="col-12 col-md-5 mb-4 mb-md-0">-->
+<!--              <h4>Server</h4>-->
+<!--              <p class="text-dark">Multiple servers using fault tolerant disks, a load balancer, and a managed database</p>-->
+<!--            </div>-->
+<!--            <div class="col-12 col-md-3 mb-4 mb-md-0">-->
+<!--              <h4>Backups</h4>-->
+<!--              <p class="text-dark">2 backups included</p>-->
+<!--            </div>-->
+<!--            <div class="col-12 col-md-4 mb-4 mb-md-0">-->
+<!--              <h4>Support</h4>-->
+<!--              <p class="text-dark">Community Support & Optional Support Packages</p>-->
+<!--            </div>-->
+<!--            <div class="col-12 col-md-5 mb-4 mb-md-0">-->
+<!--              <h4>Number of applications</h4>-->
+<!--              <p class="text-dark">Unlimited</p>-->
+<!--            </div>-->
+<!--            <div class="col-12 col-md-3 mb-4 mb-md-0">-->
+<!--              <h4>Total Users</h4>-->
+<!--              <p class="text-dark">Up to 1,000,000</p>-->
+<!--            </div>-->
+<!--            <div class="col-12 col-md-4 mb-4 mb-md-0"></div>-->
+<!--            <div class="col-12 col-md-5 mb-4 mb-md-0">-->
+<!--              <h4>Location</h4>-->
+<!--              <p class="text-dark">US, Canada, EU, Asia, SA, Australia</p>-->
+<!--            </div>-->
+<!--            <div class="col-12 col-md-3 mb-4 mb-md-0">-->
+<!--              <h4>SLA</h4>-->
+<!--              <p class="text-dark">Standard 99.9%</p>-->
+<!--            </div>-->
+<!--            <div class="col-12 col-md-4 mb-4 mb-md-0">-->
+<!--              <div class="text-uppercase font-weight-light text-dark ls-2">Starting at</div>-->
+<!--              <div><span class="text-primary display-4">$500</span><span class="text-secondary h5">/month</span></div>-->
+<!--            </div>-->
+<!--            <div class="col-12 text-center pt-4">-->
+<!--              <a class="btn btn-lg btn-primary m-auto" href="#TODO">Buy Enterprise Hosting</a>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+
+
+<!--      </div>-->
+<!--    </div>-->
+
+<!--    <div class="text-center mt-4">-->
+<!--      <p>Migrating from another solution? Contact us about our <a class="font-weight-bold" href="/contact">Upgrade Guides</a> to make migration simple.</p>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+
 <section class="bg-light2 mt-6 pt-6 pb-2">
   <div class="container">
     <div class="text-center mb-5">
-      <i class="fad fa-building fa-5x"></i>
-      <h2 class="display-4">Support for FusionAuth Self-Hosted</h2>
-      <p>Host FusionAuth yourself<a href="/everywhere"> on any platform</a>, then select a stand-alone support plan that fits your needs.
-      </p>
+      <i class="fad fa-user-headset fa-5x"></i>
+      <h2 class="display-4 mt-4">Support for FusionAuth</h2>
+      <p class="lh-4 mt-4">Whether you are hosting FusionAuth or we are, you can buy support to ensure that everything runs smoothly and to answer any questions you have.</p>
     </div>
-    <div class="row">
+    <div class="row pt-5">
       <div class="col-md-6 col-lg-4 mb-6 pr-4 pl-4 d-flex flex-column align-content-stretch justify-content-start">
         <div class="rounded bg-white shadow d-flex flex-column align-content-stretch justify-content-between p-5 text-center flex-fill">
           <div>
