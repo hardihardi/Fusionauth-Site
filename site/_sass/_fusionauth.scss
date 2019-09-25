@@ -79,17 +79,29 @@ img.shadow {
 
 // Dropdowns
 // Add an arrow
-.dropdown-menu:before {
-  bottom: 100%;
-  border: 6px solid rgba(0, 0, 0, 0);
-  border-bottom-color: white;
-  content: ' ';
-  height: 0;
-  left: 50px;
-  margin-left: -6px;
-  pointer-events: none;
-  position: absolute;
-  width: 0;
+.dropdown-menu {
+  &:before {
+    bottom: 100%;
+    border: 6px solid rgba(0, 0, 0, 0);
+    border-bottom-color: white;
+    content: ' ';
+    height: 0;
+    left: 50px;
+    margin-left: -6px;
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+  }
+
+  &.push-top {
+    top: calc(100% + 8px);
+  }
+
+  &.tight-left {
+    &:before {
+      left: 15px;
+    }
+  }
 }
 
 // Make the dropdown menus more similar to the nav on mobile
