@@ -24,21 +24,6 @@ release = loadPlugin(id: "org.savantbuild.plugin:release-git:1.0.0")
 dependency = loadPlugin(id: "org.savantbuild.plugin:dependency:1.0.2")
 file = loadPlugin(id: "org.savantbuild.plugin:file:1.0.2")
 
-target(name: "bundle", description: "Zips any of the required resources for publication") {
-  file.copy(to: "build/scss") {
-    fileSet(dir: "site/_sass", includePatterns: [~/.+\.scss/])
-  }
-
-  file.rename {
-    fileSet(dir: "build/scss")
-    filter(token: "_", value: "") // Remove the underscores
-  }
-
-  file.zip(file: "build/fusionauth-scss.zip") {
-    fileSet(dir: "build/scss")
-  }
-}
-
 target(name: "optimize-images", description: "Uses ImageOptim to reduce image sizes (currently PNGs only)") {
   new File("assets/img").traverse(maxDepth: 0) {
     if (it.getName().endsWith(".png")) {
@@ -94,7 +79,7 @@ target(name: "pre-install", description: "Gets any dependencies required to buil
   }
 }
 
-target(name: "build", description: "builds the project", dependsOn: ["clean", "pre-install"]) {
+target(name: "compile", description: "builds the project", dependsOn: ["pre-install"]) {
   if (switches.has("drafts")) {
     cleanExecute(["bundle", "exec", "jekyll", "build", "--drafts"])
 
@@ -111,7 +96,20 @@ target(name: "serve", description: "Serve the project", dependsOn: ["pre-install
   cleanExecute(["bundle", "exec", "jekyll", "serve", "--drafts", "--incremental", "-o"])
 }
 
-target(name: "int", description: "Releases a local integration build of the project", dependsOn: ["build", "bundle"]) {
+target(name: "int", description: "Releases a local integration build of the project", dependsOn: ["compile"]) {
+  file.copy(to: "build/scss") {
+    fileSet(dir: "site/_sass", includePatterns: [~/.+\.scss/])
+  }
+
+  file.rename {
+    fileSet(dir: "build/scss")
+    filter(token: "_", value: "") // Remove the underscores
+  }
+
+  file.zip(file: "build/fusionauth-scss.zip") {
+    fileSet(dir: "build/scss")
+  }
+
   dependency.integrate()
 }
 
