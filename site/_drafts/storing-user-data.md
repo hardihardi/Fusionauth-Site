@@ -406,7 +406,7 @@ this.update = this.update.bind(this);
 
 And we need to update the render function, so it looks like this:
 
-```js
+```jsx
 render() {
    return (
       <div&gt;

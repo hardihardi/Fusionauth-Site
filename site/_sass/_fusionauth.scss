@@ -35,8 +35,12 @@ body {
 
 .bg-secondary {
   // Hover to a lighter blue with dark background
-  a:hover {
+  a.blue-link {
     color: lighten($blue, 10%);
+  }
+
+  a:hover {
+    color: lighten($blue, 15%);
   }
 
   // Don't go to blue for buttons
