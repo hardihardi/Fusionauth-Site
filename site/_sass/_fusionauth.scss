@@ -370,6 +370,25 @@ i {
       --fa-secondary-color: #{$primary};
       --fa-secondary-opacity: 1.0;
     }
+
+    /* Manage Users */
+    &.account {
+      &.fa-users {
+        filter: drop-shadow(2px 1px 1px $light);
+
+        --fa-primary-color: #343a40;
+        --fa-secondary-color: #ec8d53;
+        --fa-secondary-opacity: 1;
+      }
+
+      /* Manage Deployments */
+      &.fa-building {
+        filter: drop-shadow(2px 1px 1px $light);
+        --fa-primary-color: #343a40;
+        --fa-secondary-color: #ffd552;
+        --fa-secondary-opacity: 1;
+      }
+    }
   }
 }
 
