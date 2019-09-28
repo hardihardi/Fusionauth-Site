@@ -403,7 +403,7 @@ body, button, input, select, textarea {
   -moz-osx-font-smoothing: grayscale;
 }
 
-a.btn {
+a.btn.btn-primary {
   &:hover {
     i {
       filter: invert(1);
