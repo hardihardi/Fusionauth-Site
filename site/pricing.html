@@ -59,7 +59,7 @@ header_dark: true
           <h5>Starting at <span class="h4 text-primary">$50</span>/month</h5>
         </div>
 
-        <a class="btn btn-primary btn-lg btn-block text-uppercase mt-5" href="https://account.fusionauth.io/build-deployment">Buy now</a>
+        <a class="btn btn-primary btn-lg btn-block text-uppercase mt-5" href="{% if jekyll.environment == 'development' %}http://account.local{% else %}https://account.fusionauth.io{% endif %}/build-deployment">Buy now</a>
       </div>
       <div class="col-md-6 col-lg-4 mb-6 pr-4 pl-4 d-flex flex-column align-content-stretch justify-content-start">
         <div class="rounded bg-secondary text-white shadow d-flex flex-column align-content-stretch justify-content-between p-5 text-center flex-fill">
@@ -91,7 +91,7 @@ header_dark: true
           <h5 class="text-white">Starting at <span class="h4 text-primary">$150</span>/month</h5>
         </div>
 
-        <a class="btn btn-primary btn-lg btn-block text-uppercase mt-5" href="https://account.fusionauth.io/build-deployment">Buy now</a>
+        <a class="btn btn-primary btn-lg btn-block text-uppercase mt-5" href="{% if jekyll.environment == 'development' %}http://account.local{% else %}https://account.fusionauth.io{% endif %}/build-deployment">Buy now</a>
       </div>
       <div class="col-md-6 col-lg-4 mb-6 pr-4 pl-4 d-flex flex-column align-content-stretch justify-content-start">
         <div class="rounded bg-dark text-white shadow d-flex flex-column align-content-stretch justify-content-between p-5 text-center flex-fill">
@@ -123,7 +123,7 @@ header_dark: true
           <h5 class="text-white">Starting at <span class="h4 text-primary">$225</span>/month</h5>
         </div>
 
-        <a class="btn btn-primary btn-lg btn-block text-uppercase mt-5" href="https://account.fusionauth.io/build-deployment">Buy now</a>
+        <a class="btn btn-primary btn-lg btn-block text-uppercase mt-5" href="{% if jekyll.environment == 'development' %}http://account.local{% else %}https://account.fusionauth.io{% endif %}/build-deployment">Buy now</a>
       </div>
     </div>
     <div class="text-center mt-4">

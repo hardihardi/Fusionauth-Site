@@ -37,32 +37,33 @@ $sky-blue: #86cadd;
 $light-red: #fe3b48;
 
 $theme-colors: (
-    "blue": $blue,
-    "dark-blue": $dark-blue,
-    "sky-blue": $sky-blue,
-    "orange": $primary,
-    "purple": $dark-purple,
-    "light2": $light2
+  "blue": $blue,
+  "dark-blue": $dark-blue,
+  "sky-blue": $sky-blue,
+  "orange": $primary,
+  "purple": $dark-purple,
+  "light2": $light2
 );
+
 
 $font-size-base: 1rem;
+$font-weight-bold: 600;
+$font-sizes: (
+  0: ($font-size-base),
+  n1: ($font-size-base * .95),
+  n2: ($font-size-base * .90),
+  n3: ($font-size-base * .85),
+  n4: ($font-size-base * .80),
+  n5: ($font-size-base * .75)
+);
 $lead-font-size: $font-size-base * 1.1 !default;
 
-$font-sizes: (
-    0: ($font-size-base),
-    n1: ($font-size-base * .95),
-    n2: ($font-size-base * .90),
-    n3: ($font-size-base * .85),
-    n4: ($font-size-base * .80),
-    n5: ($font-size-base * .75)
-);
-
 $letter-spacings: (
-        (0, 0rem),
-        (1, .1rem),
-        (2, .15rem),
-        (3, .2rem),
-        (4, .25rem)
+  (0, 0rem),
+  (1, .1rem),
+  (2, .15rem),
+  (3, .2rem),
+  (4, .25rem)
 );
 
 // Links
@@ -107,8 +108,6 @@ $display1-weight: bold;
 $display2-weight: bold;
 $display3-weight: bold;
 $display4-weight: bold;
-
-$font-weight-bold: 600;
 
 /* Brand Colors */
 $apple-logo-bg: #000;
