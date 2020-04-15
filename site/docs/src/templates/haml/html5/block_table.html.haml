@@ -4,6 +4,7 @@
   - if title?
     %caption.title=captioned_title
   - unless (attr :rowcount).zero?
+    TODO - remove
     %colgroup
       - if autowidth?
         - @columns.each do

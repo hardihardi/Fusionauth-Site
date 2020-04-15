@@ -29,3 +29,6 @@ site/assets/img/diagrams
 # node stuff
 node_modules
 package-lock.json
+
+# CSS
+site/assets/css/fusionauth-website-style-*

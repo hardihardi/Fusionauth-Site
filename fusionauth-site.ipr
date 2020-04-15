@@ -163,7 +163,7 @@
       <module fileurl="file://$PROJECT_DIR$/fusionauth-site.iml" filepath="$PROJECT_DIR$/fusionauth-site.iml" />
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_10" default="false" project-jdk-name="rbenv: 2.3.1" project-jdk-type="RUBY_SDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_10" default="false" project-jdk-name="rbenv: 2.7.0" project-jdk-type="RUBY_SDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="VcsDirectoryMappings">
