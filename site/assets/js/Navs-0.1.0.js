@@ -12,17 +12,17 @@ Prime.Document.onReady(function() {
   });
 
   // Docs nav
-  Prime.Document.query('.docs aside a.sub-menu').each(function(e) {
-    e.addEventListener('click', function(event) {
+  Prime.Document.query('.docs aside ul li ul').each(function(ul) {
+    const a = ul.getParent().queryFirst('a');
+    a.addEventListener('click', function(event) {
       Prime.Utils.stopEvent(event);
-      const i = e.queryLast('i');
-      const subMenu = e.getNextSibling();
-      if (subMenu.isVisible()) {
+      const i = a.queryLast('i');
+      if (ul.hasClass('open')) {
         i.removeClass('fa-chevron-up').addClass('fa-chevron-down');
-        subMenu.hide();
+        ul.removeClass('open');
       } else {
         i.removeClass('fa-chevron-down').addClass('fa-chevron-up');
-        subMenu.show();
+        ul.addClass('open');
       }
     });
   });
