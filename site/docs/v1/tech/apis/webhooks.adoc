@@ -43,13 +43,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Create 
 [method]#POST# [uri]#/api/webhook/``\{webhookId\}``#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#webhookId# [type]#[UUID]# [optional]#Optional# [default]#defaults to secure random UUID#
-|The Id to use for the new Webhook. If not specified a secure random UUID will be generated.
-|===
+[field]#webhookId# [type]#[UUID]# [optional]#Optional# [default]#defaults to secure random UUID#::
+The Id to use for the new Webhook. If not specified a secure random UUID will be generated.
 
 include::docs/v1/tech/apis/_webhook-request-body.adoc[]
 
@@ -84,13 +82,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Retriev
 [method]#GET# [uri]#/api/webhook/``\{webhookId\}``#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#webhookId# [type]#[UUID]# [optional]#Optional#
-|The Id of the Webhook to retrieve.
-|===
+[field]#webhookId# [type]#[UUID]# [optional]#Optional#::
+The Id of the Webhook to retrieve.
 
 === Response
 
@@ -120,13 +116,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Update 
 :api_endpoint: pass:normal[/api/webhook/``\{webhookId\}``]
 include::docs/v1/tech/apis/_patch-support.adoc[]
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#webhookId# [type]#[UUID]# [required]#Required#
-|The Id of the Webhook to update.
-|===
+[field]#webhookId# [type]#[UUID]# [required]#Required#::
+The Id of the Webhook to update.
 
 include::docs/v1/tech/apis/_webhook-request-body.adoc[]
 
@@ -153,13 +147,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Delete 
 [method]#DELETE# [uri]#/api/webhook/``\{webhookId\}``#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#webhookId# [type]#[UUID]# [required]#Required#
-|The Id of the Webhook to delete.
-|===
+[field]#webhookId# [type]#[UUID]# [required]#Required#::
+The Id of the Webhook to delete.
 
 === Response
 

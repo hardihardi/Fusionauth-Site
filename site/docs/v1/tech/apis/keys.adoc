@@ -41,13 +41,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Retriev
 [method]#GET# [uri]#/api/key/`\{keyId\}`#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#keyId# [type]#[UUID]# [required]#Required#
-|The unique Id of the Key to retrieve.
-|===
+[field]#keyId# [type]#[UUID]# [required]#Required#::
+The unique Id of the Key to retrieve.
 
 === Response
 
@@ -71,13 +69,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Update 
 [method]#PUT# [uri]#/api/key/`\{keyId\}`#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#keyId# [type]#[UUID]# [required]#Required#
-|The unique Id of the Key to update.
-|===
+[field]#keyId# [type]#[UUID]# [required]#Required#::
+The unique Id of the Key to update.
 
 include::docs/v1/tech/apis/_key-put-request-body.adoc[]
 
@@ -101,13 +97,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Delete 
 [method]#DELETE# [uri]#/api/key/`\{keyId\}`#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#keyId# [type]#[UUID]# [required]#Required#
-|The unique Id of the Key to delete.
-|===
+[field]#keyId# [type]#[UUID]# [required]#Required#::
+The unique Id of the Key to delete.
 
 === Response
 
@@ -135,14 +129,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Generat
 [method]#POST# [uri]#/api/key/generate/`\{keyId\}`#
 --
 
-[cols="3a,7a"]
-[.api]
-.Request Parameters
-|===
-|[field]#keyId# [type]#[UUID]# [optional]#Optional# [default]#defaults to secure random UUID#
-|The Id to use for the new key. If not specified a secure random UUID will be generated.
-|===
+==== Request Parameters
 
+[.api]
+[field]#keyId# [type]#[UUID]# [optional]#Optional# [default]#defaults to secure random UUID#::
+The Id to use for the new key. If not specified a secure random UUID will be generated.
 
 include::docs/v1/tech/apis/_key-generate-post-request-body.adoc[]
 
@@ -174,13 +165,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Import 
 [method]#POST# [uri]#/api/key/import/`\{keyId\}`#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#keyId# [type]#[UUID]# [required]#Required#
-|The unique Id of the Key to retrieve.
-|===
+[field]#keyId# [type]#[UUID]# [required]#Required#::
+The unique Id of the Key to retrieve.
 
 include::docs/v1/tech/apis/_key-import-post-request-body.adoc[]
 

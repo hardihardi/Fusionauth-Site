@@ -2,7 +2,6 @@
 layout: landing-page
 title: Matt's Share Page
 description: FusionAuth is a web-scale identity (CIAM) platform. Assets from our site.
-image: fusionauth-share-image.png
 header_dark: true
 
 sitemap:

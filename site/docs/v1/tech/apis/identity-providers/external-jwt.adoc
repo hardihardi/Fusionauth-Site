@@ -44,13 +44,11 @@ link:../authentication#api-key-authentication[icon:lock[role=red,type=far]] Crea
 
 The [field]#type# property in the request JSON is used to determine that you are managing an External JWT identity provider.
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#identityProviderId# [type]#[UUID]# [optional]#Optional# [default]#defaults to secure random UUID#
-|The Id to use for the new Identity Provider. If an id is not provided, a secure random UUID is generated.
-|===
+[field]#identityProviderId# [type]#[UUID]# [optional]#Optional# [default]#defaults to secure random UUID#::
+The Id to use for the new Identity Provider. If an id is not provided, a secure random UUID is generated.
 
 include::docs/v1/tech/apis/identity-providers/_external-jwt-request-body.adoc[]
 
@@ -73,13 +71,11 @@ link:../authentication#api-key-authentication[icon:lock[role=red,type=far]] Retr
 [method]#GET# [uri]#/api/identity-provider/`\{identityProviderId\}`#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#identityProviderId# [type]#[UUID]# [required]#Required#
-|The unique Id of the Identity Provider to retrieve.
-|===
+[field]#identityProviderId# [type]#[UUID]# [required]#Required#::
+The unique Id of the Identity Provider to retrieve.
 
 === Response
 
@@ -103,13 +99,11 @@ link:../authentication#api-key-authentication[icon:lock[role=red,type=far]] Upda
 :api_endpoint: pass:normal[/api/identity-provider/`\{identityProviderId\}`]
 include::docs/v1/tech/apis/_patch-support.adoc[]
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#identityProviderId# [type]#[UUID]# [required]#Required#
-|The unique Id of the Identity Provider to update.
-|===
+[field]#identityProviderId# [type]#[UUID]# [required]#Required#::
+The unique Id of the Identity Provider to update.
 
 include::docs/v1/tech/apis/identity-providers/_external-jwt-request-body.adoc[]
 
@@ -134,13 +128,11 @@ link:../authentication#api-key-authentication[icon:lock[role=red,type=far]] Dele
 [method]#DELETE# [uri]#/api/identity-provider/`\{identityProviderId\}`#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#identityProviderId# [type]#[UUID]# [required]#Required#
-|The unique Id of the Identity Provider to delete.
-|===
+[field]#identityProviderId# [type]#[UUID]# [required]#Required#::
+The unique Id of the Identity Provider to delete.
 
 === Response
 

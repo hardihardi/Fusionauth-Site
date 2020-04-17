@@ -50,13 +50,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Create 
 [method]#POST# [uri]#/api/tenant/`\{tenantId\}`#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#tenantId# [type]#[UUID]# [optional]#Optional# [default]#defaults to secure random UUID#
-|The Id to use for the new Tenant. If not specified a secure random UUID will be generated.
-|===
+[field]#tenantId# [type]#[UUID]# [optional]#Optional# [default]#defaults to secure random UUID#::
+The Id to use for the new Tenant. If not specified a secure random UUID will be generated.
 
 include::docs/v1/tech/apis/_tenant-request-body.adoc[]
 
@@ -91,13 +89,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Retriev
 [method]#GET# [uri]#/api/tenant/`\{tenantId\}`#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#tenantId# [type]#[UUID]# [required]#Required#
-|The unique Id of the Tenant to retrieve.
-|===
+[field]#tenantId# [type]#[UUID]# [required]#Required#::
+The unique Id of the Tenant to retrieve.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
@@ -132,13 +128,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Update 
 :api_endpoint: pass:normal[/api/tenant/`\{tenantId\}`]
 include::docs/v1/tech/apis/_patch-support.adoc[]
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#tenantId# [type]#[UUID]# [required]#Required#
-|The Id of the Tenant to update.
-|===
+[field]#tenantId# [type]#[UUID]# [required]#Required#::
+The Id of the Tenant to update.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
@@ -169,13 +163,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Delete 
 [method]#DELETE# [uri]#/api/tenant/`\{tenantId\}`#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#tenantId# [type]#[UUID]# [required]#Required#
-|The unique Id of the Tenant to delete.
-|===
+[field]#tenantId# [type]#[UUID]# [required]#Required#::
+The unique Id of the Tenant to delete.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
@@ -204,13 +196,11 @@ link:authentication#no-authentication-required[icon:unlock-alt[role=green,type=f
 [method]#GET# [uri]#/api/tenant/password-validation-rules/`\{tenantId\}`#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#tenantId# [type]#[UUID]# [required]#Required#
-|The Id of the tenant.
-|===
+[field]#tenantId# [type]#[UUID]# [required]#Required#::
+The Id of the tenant.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 

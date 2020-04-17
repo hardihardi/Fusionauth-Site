@@ -2,7 +2,6 @@
 layout: landing-page
 title: Share FusionAuth with your friends
 description: FusionAuth is auth built for devs and works everywhere
-image: fusionauth-share-image.png
 header_dark: true
 
 sitemap:

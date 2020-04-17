@@ -1,24 +1,22 @@
-[cols="3a,7a"]
+==== Request Body
+
 [.api]
-.Request Body
-|===
-|[field]#dryRun# [type]#[Boolean]# [optional]#Optional# [default]#defaults to `false`#
-|To preview the user Ids to be deleted by the request without applying the requested action set this value to `true`.
+[field]#dryRun# [type]#[Boolean]# [optional]#Optional# [default]#defaults to `false`#::
+To preview the user Ids to be deleted by the request without applying the requested action set this value to `true`.
 
-|[field]#hardDelete# [type]#[Boolean]# [optional]#Optional# [default]#defaults to `false`#
-|To Permanently delete a user from FusionAuth set this value to `true`. Once a user has been permanently deleted, the action cannot be undone. When this value is set to `false` the user is marked as inactive and the user will be unable log into FusionAuth. This action may be undone by reactivating the user.
+[field]#hardDelete# [type]#[Boolean]# [optional]#Optional# [default]#defaults to `false`#::
+To Permanently delete a user from FusionAuth set this value to `true`. Once a user has been permanently deleted, the action cannot be undone. When this value is set to `false` the user is marked as inactive and the user will be unable log into FusionAuth. This action may be undone by reactivating the user.
 
-|[field]#query# [type]#[String]# [optional]#Optional# [since]#Available Since 1.13.0#
-|The raw JSON Elasticsearch query that is used to search for Users. The [field]#userIds#, [field]#query#, and [field]#queryString#  parameters are mutually exclusive, they are listed here in order of precedence.
-
+[field]#query# [type]#[String]# [optional]#Optional# [since]#Available Since 1.13.0#::
+The raw JSON Elasticsearch query that is used to search for Users. The [field]#userIds#, [field]#query#, and [field]#queryString#  parameters are mutually exclusive, they are listed here in order of precedence.
++
 It is necessary to use the [field]#query# parameter when querying against `registrations` in order to achieve expected results, as this field is defined as a link:https://www.elastic.co/guide/en/elasticsearch/reference/6.3/nested.html[nested datatype] in the ElasticSearch mapping.
 
-|[field]#queryString# [type]#[String]# [optional]#Optional# [since]#Available Since 1.13.0#
-|The Elasticsearch query string that is used to search for Users to be deleted. The [field]#userIds#, [field]#query#, and [field]#queryString#  parameters are mutually exclusive, they are listed here in order of precedence.
+[field]#queryString# [type]#[String]# [optional]#Optional# [since]#Available Since 1.13.0#::
+The Elasticsearch query string that is used to search for Users to be deleted. The [field]#userIds#, [field]#query#, and [field]#queryString#  parameters are mutually exclusive, they are listed here in order of precedence.
 
-|[field]#userIds# [type]#[Array]# [optional]#Optional#
-|An array of User Ids to delete. The [field]#userIds#, [field]#query#, and [field]#queryString#  parameters are mutually exclusive, they are listed here in order of precedence.
-|===
+[field]#userIds# [type]#[Array]# [optional]#Optional#::
+An array of User Ids to delete. The [field]#userIds#, [field]#query#, and [field]#queryString#  parameters are mutually exclusive, they are listed here in order of precedence.
 
 [source,json]
 .Example Request JSON searching by `userIds`

@@ -29,13 +29,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Enable 
 [method]#POST# [uri]#/api/user/two-factor/`{userId}`#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#userId# [type]#[UUID]# [required]#Required#
-|The Id of the User to enable Two Factor authentication.
-|===
+[field]#userId# [type]#[UUID]# [required]#Required#::
+The Id of the User to enable Two Factor authentication.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
@@ -98,16 +96,14 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Disable
 [method]#DELETE# [uri]#/api/user/two-factor/`{userId}?code={code}`#
 --
 
-[cols="3a,7a"]
-[.api]
-.Request Parameters
-|===
-|[field]#userId# [type]#[UUID]# [required]#Required#
-|The Id of the User to enable Two Factor authentication.
+==== Request Parameters
 
-|[field]#code# [type]#[String]# [required]#Required#
-|The time based one time use password, also called a Two Factor verification code.
-|===
+[.api]
+[field]#userId# [type]#[UUID]# [required]#Required#::
+The Id of the User to enable Two Factor authentication.
+
+[field]#code# [type]#[String]# [required]#Required#::
+The time based one time use password, also called a Two Factor verification code.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
@@ -119,13 +115,11 @@ link:authentication#jwt-authentication[icon:id-badge[role=green,type=far]] Disab
 [method]#DELETE# [uri]#/api/user/two-factor``?code={code}``#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#code# [type]#[String]# [required]#Required#
-|The time based one time use password, also called a Two Factor verification code.
-|===
+[field]#code# [type]#[String]# [required]#Required#::
+The time based one time use password, also called a Two Factor verification code.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
@@ -182,13 +176,11 @@ This request is intended to be used to send a Two Factor code to a User that alr
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
-[cols="3a,7a"]
+==== Request Body
+
 [.api]
-.Request Body
-|===
-|[field]#userId# [type]#[UUID]# [required]#Required#
-|The User Id of the User to send a Two Factor verification code. This User is expected to already have Two Factor enabled.
-|===
+[field]#userId# [type]#[UUID]# [required]#Required#::
+The User Id of the User to send a Two Factor verification code. This User is expected to already have Two Factor enabled.
 
 [source,json]
 .Example Request JSON
@@ -206,19 +198,16 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Send a 
 
 This request is intended to be used to send a Two Factor code to a User to assist in enabling Two Factor authentication.
 
-[cols="3a,7a"]
+==== Request Body
+
 [.api]
-.Request Body
-|===
-|[field]#mobilePhone# [type]#[String]# [required]#Required#
-|A mobile phone to send the Two Factor verification code.
+[field]#mobilePhone# [type]#[String]# [required]#Required#::
+A mobile phone to send the Two Factor verification code.
 
-|[field]#secret# [type]#[String]# [required]#Required#
-|The Two Factor secret used to generate a Two Factor verification code to send to the provided mobile phone.
-
-You may optionally use value provided in the `secret` field returned by the link:../apis/two-factor#generate-a-secret[Two Factor Secret] API
-instead of generating this value yourself.
-|===
+[field]#secret# [type]#[String]# [required]#Required#::
+The Two Factor secret used to generate a Two Factor verification code to send to the provided mobile phone.
++
+You may optionally use value provided in the `secret` field returned by the link:../apis/two-factor#generate-a-secret[Two Factor Secret] API instead of generating this value yourself.
 
 [source,json]
 .Example Request JSON
@@ -236,13 +225,11 @@ link:authentication#no-authentication-required[icon:unlock-alt[role=green,type=f
 
 This request is intended to send additional messages to the User's mobile phone during login.
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#twoFactorId# [type]#[String]# [required]#Required#
-|The `twoFactorId` returned by the Login API.
-|===
+[field]#twoFactorId# [type]#[String]# [required]#Required#::
+The `twoFactorId` returned by the Login API.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
@@ -304,16 +291,14 @@ include::docs/v1/tech/apis/_standard-get-response-codes.adoc[]
 :no_errors!:
 :never_missing!:
 
-[cols="3a,7a"]
-[.api]
-.Response Body
-|===
-|[field]#secret# [type]#[String]#
-|A Base64 encoded secret that may be used to enable Two Factor authentication.
+==== Response Body
 
-|[field]#secretBase32Encoded# [type]#[String]#
-|A Base32 encoded form of the provided secret. This useful if you need to provide a QR code to the User to enable Two Factor authentication.
-|===
+[.api]
+[field]#secret# [type]#[String]#::
+A Base64 encoded secret that may be used to enable Two Factor authentication.
+
+[field]#secretBase32Encoded# [type]#[String]#::
+A Base32 encoded form of the provided secret. This useful if you need to provide a QR code to the User to enable Two Factor authentication.
 
 [source,json]
 .Example Response JSON

@@ -107,9 +107,9 @@ When you create an API key the key is defaulted to a secure random value but the
 
 image::create-api-key.png[Create an API Key,width=1200,role=shadowed]
 
-[cols="3a,7a"]
+==== Form Fields
+
 [.api]
-.Form Fields
 |===
 |Key
 |A unique key to be utilized to authorize API requests using the `Authorization` header.

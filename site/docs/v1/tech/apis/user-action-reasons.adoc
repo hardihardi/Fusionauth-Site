@@ -36,13 +36,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Create 
 [method]#POST# [uri]#/api/user-action-reason/`\{userActionReasonId\}`#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#userActionReasonId# [type]#[UUID]# [optional]#Optional# [default]#defaults to secure random UUID#
-|The Id to use for the new User Action Reason. If not specified a secure random UUID will be generated.
-|===
+[field]#userActionReasonId# [type]#[UUID]# [optional]#Optional# [default]#defaults to secure random UUID#::
+The Id to use for the new User Action Reason. If not specified a secure random UUID will be generated.
 
 include::docs/v1/tech/apis/_user-action-reason-request-body.adoc[]
 
@@ -77,13 +75,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Retriev
 [method]#GET# [uri]#/api/user-action-reason/`\{userActionReasonId\}`#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#userActionReasonId# [type]#[UUID]# [optional]#Optional#
-|The Id of the User Action Reason to retrieve.
-|===
+[field]#userActionReasonId# [type]#[UUID]# [optional]#Optional#::
+The Id of the User Action Reason to retrieve.
 
 === Response
 
@@ -113,13 +109,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Update 
 :api_endpoint: pass:normal[/api/user-action-reason/`\{userActionReasonId\}`]
 include::docs/v1/tech/apis/_patch-support.adoc[]
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#userActionReasonId# [type]#[UUID]# [required]#Required#
-|The Id of the User Action Reason to update.
-|===
+[field]#userActionReasonId# [type]#[UUID]# [required]#Required#::
+The Id of the User Action Reason to update.
 
 include::docs/v1/tech/apis/_user-action-reason-request-body.adoc[]
 
@@ -146,13 +140,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Delete 
 [method]#DELETE# [uri]#/api/user-action-reason/`\{userActionReasonId\}`#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#userActionReasonId# [type]#[UUID]# [required]#Required#
-|The Id of the User Action Reason to delete.
-|===
+[field]#userActionReasonId# [type]#[UUID]# [required]#Required#::
+The Id of the User Action Reason to delete.
 
 === Response
 

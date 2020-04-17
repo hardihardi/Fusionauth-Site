@@ -46,13 +46,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Add a U
 [method]#POST# [uri]#/api/user/family/`\{familyId\}`#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#familyId# [type]#[UUID]# [optional]#Optional# [default]#defaults to secure random UUID#
-|The Id to use for the new Family. If not specified a secure random UUID will be generated.
-|===
+[field]#familyId# [type]#[UUID]# [optional]#Optional# [default]#defaults to secure random UUID#::
+The Id to use for the new Family. If not specified a secure random UUID will be generated.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
@@ -82,13 +80,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Retriev
 [method]#GET# [uri]#/api/user/family/`\{familyId\}`#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#familyId# [type]#[UUID]# [required]#Required#
-|The unique Id of the Family.
-|===
+[field]#familyId# [type]#[UUID]# [required]#Required#::
+The unique Id of the Family.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
@@ -102,13 +98,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Retriev
 [method]#GET# [uri]#/api/user/family``?userId={userId}``#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#userId# [type]#[UUID]# [required]#Required#
-|The unique Id of the User.
-|===
+[field]#userId# [type]#[UUID]# [required]#Required#::
+The unique Id of the User.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
@@ -134,13 +128,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Update 
 [method]#PUT# [uri]#/api/user/family/`\{familyId\}`#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#familyId# [type]#[UUID]# [required]#Required#
-|The unique Id of the Family.
-|===
+[field]#familyId# [type]#[UUID]# [required]#Required#::
+The unique Id of the Family.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
@@ -168,16 +160,14 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Remove 
 [method]#DELETE# [uri]#/api/user/family/`\{familyId\}/\{userId\}`#
 --
 
-[cols="3a,7a"]
-[.api]
-.Request Parameters
-|===
-|[field]#familyId# [type]#[UUID]# [required]#Required#
-|The unique Id of the Family.
+==== Request Parameters
 
-|[field]#userId# [type]#[UUID]# [required]#Required#
-|The unique Id of the User.
-|===
+[.api]
+[field]#familyId# [type]#[UUID]# [required]#Required#::
+The unique Id of the Family.
+
+[field]#userId# [type]#[UUID]# [required]#Required#::
+The unique Id of the User.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
@@ -201,13 +191,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Retriev
 [method]#GET# [uri]#/api/user/family/pending``?parentEmail={parentEmail}``#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#parentEmail# [type]#[String]# [required]#Required#
-|The email address of the parent.
-|===
+[field]#parentEmail# [type]#[String]# [required]#Required#::
+The email address of the parent.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 

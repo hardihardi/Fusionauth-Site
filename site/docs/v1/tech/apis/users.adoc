@@ -48,13 +48,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Create 
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-create-operation.adoc[]
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#userId# [type]#[UUID]# [optional]#Optional# [default]#defaults to secure random UUID#
-|The Id to use for the new User. If not specified a secure random UUID will be generated.
-|===
+[field]#userId# [type]#[UUID]# [optional]#Optional# [default]#defaults to secure random UUID#::
+The Id to use for the new User. If not specified a secure random UUID will be generated.
 
 :http_method: POST
 include::docs/v1/tech/apis/_user-request-body.adoc[]
@@ -87,13 +85,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Retriev
 [method]#GET# [uri]#/api/user/`\{userId\}`#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#userId# [type]#[UUID]# [required]#Required#
-|The unique Id of the User to retrieve.
-|===
+[field]#userId# [type]#[UUID]# [required]#Required#::
+The unique Id of the User to retrieve.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
@@ -105,13 +101,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Retriev
 [method]#GET# [uri]#/api/user``?loginId=\{loginId\}``#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#loginId# [type]#[String]# [required]#Required#
-|The unique Id of the User to retrieve. The loginId can be either the email or username.
-|===
+[field]#loginId# [type]#[String]# [required]#Required#::
+The unique Id of the User to retrieve. The loginId can be either the email or username.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-ambiguous-operation.adoc[]
 
@@ -123,13 +117,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Retriev
 [method]#GET# [uri]#/api/user``?email=\{email\}``#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#email# [type]#[String]# [required]#Required#
-|The email of the User to retrieve.
-|===
+[field]#email# [type]#[String]# [required]#Required#::
+The email of the User to retrieve.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-ambiguous-operation.adoc[]
 
@@ -141,13 +133,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Retriev
 [method]#GET# [uri]#/api/user``?username=\{username\}``#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#username# [type]#[String]# [required]#Required#
-|The username of the User to retrieve.
-|===
+[field]#username# [type]#[String]# [required]#Required#::
+The username of the User to retrieve.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-ambiguous-operation.adoc[]
 
@@ -159,13 +149,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Retriev
 [method]#GET# [uri]#/api/user``?changePasswordId=\{changePasswordId\}``#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#changePasswordId# [type]#[String]# [required]#Required#
-|The change password Id associated with the user when the Forgot Password workflow has been started.
-|===
+[field]#changePasswordId# [type]#[String]# [required]#Required#::
+The change password Id associated with the user when the Forgot Password workflow has been started.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
@@ -177,13 +165,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Retriev
 [method]#GET# [uri]#/api/user``?verificationId=\{verificationId\}``#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#verificationId# [type]#[String]# [required]#Required#
-|The verification Id associated with the user when the Email verification process has been started.
-|===
+[field]#verificationId# [type]#[String]# [required]#Required#::
+The verification Id associated with the user when the Email verification process has been started.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
@@ -225,13 +211,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Update 
 :api_endpoint: pass:normal[/api/user/`\{userId\}`]
 include::docs/v1/tech/apis/_patch-support.adoc[]
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#userId# [type]#[UUID]# [required]#Required#
-|The Id of the User to update.
-|===
+[field]#userId# [type]#[UUID]# [required]#Required#::
+The Id of the User to update.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
@@ -271,16 +255,14 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Permane
 [method]#DELETE# [uri]#/api/user/`\{userId\}?hardDelete=true`#
 --
 
-[cols="3a,7a"]
-[.api]
-.Request Parameters
-|===
-|[field]#userId# [type]#[UUID]# [required]#Required#
-|The Id of the User to delete.
+==== Request Parameters
 
-|[field]#hardDelete# [type]#[Boolean]# [optional]#Optional# [default]#defaults to `false`#
-|To Permanently delete a user from FusionAuth set this value to `true`. Once a user has been permanently deleted, the action cannot be undone. When this value is set to `false` the user is marked as inactive and the user will be unable log into FusionAuth. This action may be undone by reactivating the user.
-|===
+[.api]
+[field]#userId# [type]#[UUID]# [required]#Required#::
+The Id of the User to delete.
+
+[field]#hardDelete# [type]#[Boolean]# [optional]#Optional# [default]#defaults to `false`#::
+To Permanently delete a user from FusionAuth set this value to `true`. Once a user has been permanently deleted, the action cannot be undone. When this value is set to `false` the user is marked as inactive and the user will be unable log into FusionAuth. This action may be undone by reactivating the user.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
@@ -345,27 +327,25 @@ link:authentication#api-key-authentication[icon:lock[role=red]] Permanently Dele
 [method]#DELETE# [uri]#/api/user/bulk``?query=\{query\}&hardDelete=true&dryRun=false``#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#dryRun# [type]#[Boolean]# [optional]#Optional# [default]#defaults to `false`#
-|To preview the user Ids to be deleted by the request without applying the requested action set this value to `true`.
+[field]#dryRun# [type]#[Boolean]# [optional]#Optional# [default]#defaults to `false`#::
+To preview the user Ids to be deleted by the request without applying the requested action set this value to `true`.
 
-|[field]#hardDelete# [type]#[Boolean]# [optional]#Optional# [default]#defaults to `false`#
-|To Permanently delete a user from FusionAuth set this value to `true`. Once a user has been permanently deleted, the action cannot be undone. When this value is set to `false` the user is marked as inactive and the user will be unable log into FusionAuth. This action may be undone by reactivating the user.
+[field]#hardDelete# [type]#[Boolean]# [optional]#Optional# [default]#defaults to `false`#::
+To Permanently delete a user from FusionAuth set this value to `true`. Once a user has been permanently deleted, the action cannot be undone. When this value is set to `false` the user is marked as inactive and the user will be unable log into FusionAuth. This action may be undone by reactivating the user.
 
-|[field]#query# [type]#[String]# [optional]#Optional# [since]#Available Since 1.13.0#
-|The raw JSON Elasticsearch query that is used to search for Users. The [field]#userId#, [field]#query#, and [field]#queryString#  parameters are mutually exclusive, they are listed here in order of precedence.
-
+[field]#query# [type]#[String]# [optional]#Optional# [since]#Available Since 1.13.0#::
+The raw JSON Elasticsearch query that is used to search for Users. The [field]#userId#, [field]#query#, and [field]#queryString#  parameters are mutually exclusive, they are listed here in order of precedence.
++
 It is necessary to use the [field]#query# parameter when querying against `registrations` in order to achieve expected results, as this field is defined as a link:https://www.elastic.co/guide/en/elasticsearch/reference/6.3/nested.html[nested datatype] in the ElasticSearch mapping.
 
-|[field]#queryString# [type]#[String]# [optional]#Optional# [since]#Available Since 1.13.0#
-|The Elasticsearch query string that is used to search for Users to be deleted. The [field]#userId#, [field]#query#, and [field]#queryString#  parameters are mutually exclusive, they are listed here in order of precedence.
+[field]#queryString# [type]#[String]# [optional]#Optional# [since]#Available Since 1.13.0#::
+The Elasticsearch query string that is used to search for Users to be deleted. The [field]#userId#, [field]#query#, and [field]#queryString#  parameters are mutually exclusive, they are listed here in order of precedence.
 
-|[field]#userId# [type]#[UUID]# [optional]#Optional#
-|The Id of the User to delete. Repeat this parameter for each user to be deleted. The [field]#userId#, [field]#query#, and [field]#queryString#  parameters are mutually exclusive, they are listed here in order of precedence.
-|===
+[field]#userId# [type]#[UUID]# [optional]#Optional#::
+The Id of the User to delete. Repeat this parameter for each user to be deleted. The [field]#userId#, [field]#query#, and [field]#queryString#  parameters are mutually exclusive, they are listed here in order of precedence.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
@@ -411,13 +391,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Reactiv
 [method]#PUT# [uri]#/api/user/`\{userId\}?reactivate=true`#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#userId# [type]#[UUID]# [required]#Required#
-|The Id of the User to reactivate.
-|===
+[field]#userId# [type]#[UUID]# [required]#Required#::
+The Id of the User to reactivate.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
@@ -496,43 +474,42 @@ link:authentication#api-key-authentication[icon:lock[role=red]] Search for Users
 [method]#GET# [uri]#/api/user/search``?query=\{query\}``#
 --
 
-[cols="3a,7a"]
-[.api]
-.Request Parameters
-|===
-|[field]#ids# [type]#[UUID]# [optional]#Optional#
-|A User Id to retrieve. By specifying this URL parameter multiple times you can lookup multiple Users. Using this parameter is mutually exclusive with the [field]#query# and [field]#queryString# fields and is not paginated or sorted using the `sortFields`.
+==== Request Parameters
 
+[.api]
+[field]#ids# [type]#[UUID]# [optional]#Optional#::
+A User Id to retrieve. By specifying this URL parameter multiple times you can lookup multiple Users. Using this parameter is mutually exclusive with the [field]#query# and [field]#queryString# fields and is not paginated or sorted using the `sortFields`.
++
 Using this parameter will not hit the Elasticsearch index, instead it will cause users to be retrieved by Id only.
 
-|[field]#numberOfResults# [type]#[Integer]# [optional]#Optional# [default]#defaults to `25`#
-|The number of search results to return. Used for pagination.
+[field]#numberOfResults# [type]#[Integer]# [optional]#Optional# [default]#defaults to `25`#::
+The number of search results to return. Used for pagination.
 
-|[field]#query# [type]#[String]# [optional]#Optional# [since]#Available Since 1.13.0#
-|The raw JSON Elasticsearch query that is used to search for Users. Using this parameter is mutually exclusive with the [field]#search.ids# and [field]#search.queryString# fields.
-
+[field]#query# [type]#[String]# [optional]#Optional# [since]#Available Since 1.13.0#::
+The raw JSON Elasticsearch query that is used to search for Users. Using this parameter is mutually exclusive with the [field]#search.ids# and [field]#search.queryString# fields.
++
 It is necessary to use the [field]#search.query# parameter when querying against `registrations` in order to achieve expected results, as this field is defined as a link:https://www.elastic.co/guide/en/elasticsearch/reference/6.3/nested.html[nested datatype] in the ElasticSearch mapping.
 
-|[field]#queryString# [type]#[String]# [optional]#Optional#
-|The Elasticsearch query string that used to search for Users. Using this parameter is mutually exclusive with the [field]#ids# and [field]#query# fields.
+[field]#queryString# [type]#[String]# [optional]#Optional#::
+The Elasticsearch query string that used to search for Users. Using this parameter is mutually exclusive with the [field]#ids# and [field]#query# fields.
 
-|[field]#startRow# [type]#[Integer]# [optional]#Optional# [default]#defaults to 0#
-|The start row within the search results to return. Used for pagination.
+[field]#startRow# [type]#[Integer]# [optional]#Optional# [default]#defaults to 0#::
+The start row within the search results to return. Used for pagination.
 
-|[field]#sortFields# [type]#[Array]# [optional]#Optional#
-|An array of sort fields used to sort the result. The order the sort fields are provided will be maintained in the sorted output.
+[field]#sortFields# [type]#[Array]# [optional]#Optional#::
+An array of sort fields used to sort the result. The order the sort fields are provided will be maintained in the sorted output.
 
-|[field]#sortFields``[x]``.missing# [type]#[String]# [optional]#Optional# [default]#defaults to `_last`#
-|The value to substitute if this field is not defined. Two special values may be used:
-
+[field]#sortFields``[x]``.missing# [type]#[String]# [optional]#Optional# [default]#defaults to `_last`#::
+The value to substitute if this field is not defined. Two special values may be used:
++
 * `_first` When the field is not defined sort this record first.
 * `_last` When the field is not defined sort this record last.
 
-|[field]#sortFields``[x]``.name# [type]#[String]# [required]#Required#
-|The name of the field to sort.
-
+[field]#sortFields``[x]``.name# [type]#[String]# [required]#Required#::
+The name of the field to sort.
++
 Due to how the search index is structured not all fields on the user are sortable. The following field names are supported.
-
++
 * `birthDate`
 * `email`
 * `fullName`
@@ -548,12 +525,11 @@ Due to how the search index is structured not all fields on the user are sortabl
 * `tenantId`
 * `username`
 
-|[field]#sortFields``[x]``.order# [type]#[String]# [optional]#Optional# [default]#defaults to `asc`#
-|The order to sort the specified field. Possible values are:
-
+[field]#sortFields``[x]``.order# [type]#[String]# [optional]#Optional# [default]#defaults to `asc`#::
+The order to sort the specified field. Possible values are:
++
 * `asc`
 * `desc`
-|===
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
@@ -598,19 +574,17 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Retriev
 [method]#GET# [uri]#/api/user/recent-login``?limit=\{limit\}&offset=\{offset\}&userId=\{userId\}``#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#limit# [type]#[Integer]# [optional]#Optional# [default]#defaults to `10`#
-|This parameter indicates the maximum amount of logins to return for a single request.
+[field]#limit# [type]#[Integer]# [optional]#Optional# [default]#defaults to `10`#::
+This parameter indicates the maximum amount of logins to return for a single request.
 
-|[field]#offset# [type]#[Integer]# [optional]#Optional# [default]#defaults to `0`#
-|This parameter provides the offset into the result set. Generally speaking if you wish to paginate the results, you will increment this parameter on subsequent API request by the size of the `limit` parameter.
+[field]#offset# [type]#[Integer]# [optional]#Optional# [default]#defaults to `0`#::
+This parameter provides the offset into the result set. Generally speaking if you wish to paginate the results, you will increment this parameter on subsequent API request by the size of the `limit` parameter.
 
-|[field]#userId# [type]#[UUID]# [optional]#Optional#
-|This parameter will narrow the results to only logins for a particular user. When this parameter is omitted, the most recent logins for all of FusionAuth will be returned.
-|===
+[field]#userId# [type]#[UUID]# [optional]#Optional#::
+This parameter will narrow the results to only logins for a particular user. When this parameter is omitted, the most recent logins for all of FusionAuth will be returned.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
@@ -620,31 +594,29 @@ The response will contain recent logins containing no more than the value set by
 
 include::docs/v1/tech/apis/_standard-get-response-codes.adoc[]
 
-[cols="3a,7a"]
+==== Response Body
+
 [.api]
-.Response Body
-|===
-|[field]#logins# [type]#[Array]#
-|A list of recent logins.
+[field]#logins# [type]#[Array]#::
+A list of recent logins.
 
-|[field]#logins``[x]``.applicationId# [type]#[UUID]#
-|The unique Id of the application that is represented by this login record.
+[field]#logins``[x]``.applicationId# [type]#[UUID]#::
+The unique Id of the application that is represented by this login record.
 
-|[field]#logins``[x]``.applicationName# [type]#[String]#
-|The name of the application at the time this record was created.
+[field]#logins``[x]``.applicationName# [type]#[String]#::
+The name of the application at the time this record was created.
 
-|[field]#logins``[x]``.instant# [type]#[Long]#
-|The link:/docs/v1/tech/reference/data-types#instants[instant] this login occurred.
+[field]#logins``[x]``.instant# [type]#[Long]#::
+The link:/docs/v1/tech/reference/data-types#instants[instant] this login occurred.
 
-|[field]#logins``[x]``.ipAddress# [type]#[String]#
-|The IP address if provided during the login request.
+[field]#logins``[x]``.ipAddress# [type]#[String]#::
+The IP address if provided during the login request.
 
-|[field]#logins``[x]``.loginId# [type]#[String]#
-|The User's email address or username at the time of the login request.
+[field]#logins``[x]``.loginId# [type]#[String]#::
+The User's email address or username at the time of the login request.
 
-|[field]#logins``[x]``.userId# [type]#[UUID]#
-|The unique Id of the user that is represented by this login record.
-|===
+[field]#logins``[x]``.userId# [type]#[UUID]#::
+The unique Id of the user that is represented by this login record.
 
 [source,json]
 .Example Response JSON
@@ -666,13 +638,11 @@ link:authentication#no-authentication-required[icon:unlock-alt[role=green,type=f
 [method]#POST# [uri]#/api/user/verify-email/`\{verificationId\}`#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#verificationId# [type]#[String]# [required]#Required#
-|The verification Id generated by FusionAuth used to verify the User's account is valid by ensuring they have access to the provided email address.
-|===
+[field]#verificationId# [type]#[String]# [required]#Required#::
+The verification Id generated by FusionAuth used to verify the User's account is valid by ensuring they have access to the provided email address.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
@@ -698,13 +668,11 @@ link:authentication#no-authentication-required[icon:unlock-alt[role=green,type=f
 [method]#PUT# [uri]#/api/user/verify-email``?email=\{email\}``#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#email# [type]#[String]# [required]#Required#
-|The email address used to uniquely identify the User.
-|===
+[field]#email# [type]#[String]# [required]#Required#::
+The email address used to uniquely identify the User.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-ambiguous-operation.adoc[]
 
@@ -716,19 +684,17 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Resend 
 [method]#PUT# [uri]#/api/user/verify-email``?email=\{email\}&sendVerifyEmail=\{sendVerifyEmail\}``#
 --
 
-[cols="3a,7a"]
-[.api]
-.Request Parameters
-|===
-|[field]#email# [type]#[String]# [required]#Required#
-|The email address used to uniquely identify the User.
+==== Request Parameters
 
-|[field]#sendVerifyEmail# [type]#[Boolean]# [optional]#Optional# [default]#defaults to `true`#
-|If you would only like to generate a new `verificationId` and return it in the JSON body without FusionAuth attempting to send the User an email
+[.api]
+[field]#email# [type]#[String]# [required]#Required#::
+The email address used to uniquely identify the User.
+
+[field]#sendVerifyEmail# [type]#[Boolean]# [optional]#Optional# [default]#defaults to `true`#::
+If you would only like to generate a new `verificationId` and return it in the JSON body without FusionAuth attempting to send the User an email
 set this optional parameter to `false`.
 
 This may be useful if you need to integrate the Email Verification process using a third party messaging service.
-|===
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-ambiguous-operation.adoc[]
 
@@ -744,14 +710,12 @@ include::docs/v1/tech/apis/_standard-put-response-codes.adoc[]
 :success_message!:
 :403_message!:
 
-[cols="3a,7a"]
+==== Response Body
+
 [.api]
-.Response Body
-|===
-|[field]#verificationId# [type]#[String]#
-|The email verification Id that was generated by this API request. This identifier may be used by the <<verify-a-users-email,Verify a User's Email>> API.
+[field]#verificationId# [type]#[String]#::
+The email verification Id that was generated by this API request. This identifier may be used by the <<verify-a-users-email,Verify a User's Email>> API.
 This field is only returned in the JSON response body if the request was authenticated using an API key, if an API key is not used no response body is returned.
-|===
 
 [source,json]
 .Example Response JSON
@@ -787,13 +751,11 @@ link:authentication#no-authentication-required[icon:unlock-alt[role=green,type=f
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-ambiguous-operation.adoc[]
 
-[cols="3a,7a"]
+==== Request Body
+
 [.api]
-.Request Body
-|===
-|[field]#loginId# [type]#[String]# [required]#Required#
-|The login identifier of the user. The login identifier can be either the `email` or the `username`. The username is not case sensitive.
-|===
+[field]#loginId# [type]#[String]# [required]#Required#::
+The login identifier of the user. The login identifier can be either the `email` or the `username`. The username is not case sensitive.
 
 [source,json]
 .Example Request JSON
@@ -811,23 +773,20 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Start t
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-ambiguous-operation.adoc[]
 
-[cols="3a,7a"]
+==== Request Body
+
 [.api]
-.Request Body
-|===
-|[field]#changePasswordId# [type]#[String]# [optional]#Optional#
-|The optional change password Id to be used on the <<change-a-users-password,Change a User's Password>> API.
+[field]#changePasswordId# [type]#[String]# [optional]#Optional#::
+The optional change password Id to be used on the <<change-a-users-password,Change a User's Password>> API.
++
+It is recommended to omit this parameter and allow FusionAuth to generate the identifier. Use this parameter only if you must supply your own value for integration into existing systems.
 
-It is recommended to omit this parameter and allow FusionAuth to generate the identifier. Use this parameter only if you must supply your own
-value for integration into existing systems.
+[field]#loginId# [type]#[String]# [required]#Required#::
+The login identifier of the user. The login identifier can be either the `email` or the `username`. The username is not case sensitive.
 
-|[field]#loginId# [type]#[String]# [required]#Required#
-|The login identifier of the user. The login identifier can be either the `email` or the `username`. The username is not case sensitive.
-
-|[field]#sendForgotPasswordEmail# [type]#[Boolean]# [optional]#Optional# [default]#defaults to `true`#
-|Whether or not calling this API should attempt to send the user an email using the Forgot Password Email Template. Setting this to
+[field]#sendForgotPasswordEmail# [type]#[Boolean]# [optional]#Optional# [default]#defaults to `true`#::
+Whether or not calling this API should attempt to send the user an email using the Forgot Password Email Template. Setting this to
 false will skip the email attempt and only set the `changePasswordId` for the user.
-|===
 
 [source,json]
 .Example Request JSON
@@ -867,13 +826,11 @@ include::docs/src/json/users/forgot-password-request-advanced.json[]
 |The search index is not available or encountered an exception so the request cannot be completed. The response will contain a JSON body.
 |===
 
-[cols="3a,7a"]
+==== Response Body
+
 [.api]
-.Response Body
-|===
-|[field]#changePasswordId# [type]#[String]#
-|The change password Id that was generated by this API request. This identifier may be used by the <<change-a-users-password,Change Password>> API. This field is only returned in the JSON response body if the request was authenticated using an API key, if an API key is not used no response body is returned.
-|===
+[field]#changePasswordId# [type]#[String]#::
+The change password Id that was generated by this API request. This identifier may be used by the <<change-a-users-password,Change Password>> API. This field is only returned in the JSON response body if the request was authenticated using an API key, if an API key is not used no response body is returned.
 
 [source,json]
 .Example Response JSON
@@ -913,29 +870,24 @@ This usage is generally intended to be part of an email workflow and does not re
 [method]#POST# [uri]#/api/user/change-password/`\{changePasswordId\}`#
 --
 
-[cols="3a,7a"]
-[.api]
-.Request Parameters
-|===
-|[field]#changePasswordId# [type]#[String]# [required]#Required#
-|The `changePasswordId` that is used to identity the user after the Start Forgot Password workflow has been initiated.
+==== Request Parameters
 
-If this `changePasswordId` was sent via an email to the User by FusionAuth during User create in order to set up a new password, or as
-part of a Forgot Password request, then successful use of this identifier to change the User's password will implicitly complete Email Verification if not already verified.
-|===
+[.api]
+[field]#changePasswordId# [type]#[String]# [required]#Required#::
+The `changePasswordId` that is used to identity the user after the Start Forgot Password workflow has been initiated.
++
+If this `changePasswordId` was sent via an email to the User by FusionAuth during User create in order to set up a new password, or as part of a Forgot Password request, then successful use of this identifier to change the User's password will implicitly complete Email Verification if not already verified.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
-[cols="3a,7a"]
-[.api]
-.Request Body
-|===
-|[field]#currentPassword# [type]#[String]# [optional]#Optional#
-|The User's current password. When this parameter is provided the current password will be verified to be correct.
+==== Request Body
 
-|[field]#password# [type]#[String]# [required]#Required#
-|The User's new password.
-|===
+[.api]
+[field]#currentPassword# [type]#[String]# [optional]#Optional#::
+The User's current password. When this parameter is provided the current password will be verified to be correct.
+
+[field]#password# [type]#[String]# [required]#Required#::
+The User's new password.
 
 [source,json]
 .Example JSON Request
@@ -956,21 +908,19 @@ This usage requires and API key and allows you to change any user's password if 
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-ambiguous-operation.adoc[]
 
-[cols="3a,7a"]
+==== Request Body
+
 [.api]
-.Request Body
-|===
-|[field]#currentPassword# [type]#[String]# [optional]#Optional#
-|The User's current password. When this parameter is provided the current password will be verified to be correct.
+[field]#currentPassword# [type]#[String]# [optional]#Optional#::
+The User's current password. When this parameter is provided the current password will be verified to be correct.
 
-|[field]#loginId# [type]#[String]# [required]#Required#
-|The login identifier of the user. The login identifier can be either the `email` or the `username`. The username is not case sensitive.
-
+[field]#loginId# [type]#[String]# [required]#Required#::
+The login identifier of the user. The login identifier can be either the `email` or the `username`. The username is not case sensitive.
++
 When this value is provided it should be in place of the `changePasswordId` request parameter. If both the `changePasswordId` and `loginId` are provided on the request, the `changePasswordId` will take precedence.
 
-|[field]#password# [type]#[String]# [required]#Required#
-|The User's new password.
-|===
+[field]#password# [type]#[String]# [required]#Required#::
+The User's new password.
 
 [source,json]
 .Example JSON Request
@@ -1002,21 +952,19 @@ For this reason, this API will return a `oneTimePassword` that is intended to be
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
-[cols="3a,7a"]
+==== Request Body
+
 [.api]
-.Request Body
-|===
-|[field]#currentPassword# [type]#[String]# [required]#Required#
-|The User's current password. This is required when using a JWT to change your password.
+[field]#currentPassword# [type]#[String]# [required]#Required#::
+The User's current password. This is required when using a JWT to change your password.
 
-|[field]#password# [type]#[String]# [required]#Required#
-|The User's new password.
+[field]#password# [type]#[String]# [required]#Required#::
+The User's new password.
 
-|[field]#refreshToken# [type]#[String]# [optional]#Optional#
-|The user's existing refresh token. If you have access to your current refresh token, it can be provided in the request body using this parameter. If the `refresh_token` cookie also exists and is present on the request it will take precedence over this parameter.
-
+[field]#refreshToken# [type]#[String]# [optional]#Optional#::
+The user's existing refresh token. If you have access to your current refresh token, it can be provided in the request body using this parameter. If the `refresh_token` cookie also exists and is present on the request it will take precedence over this parameter.
++
 This parameter is used to determine if the `oneTimePassword` that is returned from this API will be eligible to request a refresh token when used by the Login API. If this parameter is not provided and no cookie is found on the request, a refresh token will not be provided on the Login response when using the returned `oneTimePassword`.
-|===
 
 [source,json]
 .Example JSON Request
@@ -1051,15 +999,13 @@ include::docs/src/json/users/change-password-request.json[]
 |===
 
 
-[cols="3a,7a"]
-[.api]
-.Response Body
-|===
-|[field]#oneTimePassword# [type]#[String]# [since]#Available Since 1.5.0#
-|A one time password that can be used as a substitute for your `loginId` and `password` on the Login API.
+==== Response Body
 
+[.api]
+[field]#oneTimePassword# [type]#[String]# [since]#Available Since 1.5.0#::
+A one time password that can be used as a substitute for your `loginId` and `password` on the Login API.
++
 This JSON response body will only be returned when using a `changePasswordId` or JWT to change the password. When calling this API with an API key no response body will be returned.
-|===
 
 [source,json]
 .Example Response JSON

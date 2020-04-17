@@ -57,15 +57,13 @@ link:../authentication#no-authentication-required[icon:unlock-alt[role=green,typ
 [method]#GET# [uri]#/api/identity-provider/lookup``?domain={domain}``#
 --
 
-[cols="3a,7a"]
-[.api]
-.Request Parameters
-|===
-|[field]#domain# [type]#[String]# [required]#Required#
-|The email domain or the full email address of the user.
+==== Request Parameters
 
+[.api]
+[field]#domain# [type]#[String]# [required]#Required#::
+The email domain or the full email address of the user.
++
 [block-quote]#For example, `jenny@acme.com` and `acme.com` are functionally equivalent.#
-|===
 
 === Response
 

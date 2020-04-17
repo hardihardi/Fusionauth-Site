@@ -44,13 +44,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Create 
 [method]#POST# [uri]#/api/group/`\{groupId\}`#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#groupId# [type]#[UUID]# [optional]#Optional# [default]#defaults to secure random UUID#
-|The Id to use for the new Group. If not specified a secure random UUID will be generated.
-|===
+[field]#groupId# [type]#[UUID]# [optional]#Optional# [default]#defaults to secure random UUID#::
+The Id to use for the new Group. If not specified a secure random UUID will be generated.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-create-operation.adoc[]
 
@@ -89,13 +87,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Retriev
 [method]#GET# [uri]#/api/group/`\{groupId\}`#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#groupId# [type]#[UUID]# [required]#Required#
-|The unique Id of the Group to retrieve.
-|===
+[field]#groupId# [type]#[UUID]# [required]#Required#::
+The unique Id of the Group to retrieve.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
@@ -130,13 +126,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Update 
 :api_endpoint: pass:normal[/api/group/`\{groupId\}`]
 include::docs/v1/tech/apis/_patch-support.adoc[]
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#groupId# [type]#[UUID]# [required]#Required#
-|The Id of the Group to update.
-|===
+[field]#groupId# [type]#[UUID]# [required]#Required#::
+The Id of the Group to update.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
@@ -166,13 +160,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Delete 
 [method]#DELETE# [uri]#/api/group/`\{groupId\}`#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#groupId# [type]#[UUID]# [required]#Required#
-|The unique Id of the Group to delete.
-|===
+[field]#groupId# [type]#[UUID]# [required]#Required#::
+The unique Id of the Group to delete.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
@@ -223,13 +215,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Remove 
 [method]#DELETE# [uri]#/api/group/member/`\{memberId\}`#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#memberId# [type]#[UUID]# [required]#Required#
-|The unique Id of the Group Member to delete.
-|===
+[field]#memberId# [type]#[UUID]# [required]#Required#::
+The unique Id of the Group Member to delete.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
@@ -241,16 +231,14 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Remove 
 [method]#DELETE# [uri]#/api/group/member``?groupId={groupId}&userId={userId}``#
 --
 
-[cols="3a,7a"]
-[.api]
-.Request Parameters
-|===
-|[field]#groupId# [type]#[UUID]# [required]#Required#
-|The unique Id of the Group to remove the User from.
+==== Request Parameters
 
-|[field]#userId# [type]#[UUID]# [required]#Required#
-|The unique Id of the User to remove from the Group.
-|===
+[.api]
+[field]#groupId# [type]#[UUID]# [required]#Required#::
+The unique Id of the Group to remove the User from.
+
+[field]#userId# [type]#[UUID]# [required]#Required#::
+The unique Id of the User to remove from the Group.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
@@ -262,13 +250,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Remove 
 [method]#DELETE# [uri]#/api/group/member``?groupId={groupId}``#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#groupId# [type]#[UUID]# [required]#Required#
-|The unique Id of the Group.
-|===
+[field]#groupId# [type]#[UUID]# [required]#Required#::
+The unique Id of the Group.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 

@@ -42,13 +42,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Create 
 [method]#POST# [uri]#/api/application/`\{applicationId\}`#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#applicationId# [type]#[UUID]# [optional]#Optional# [default]#defaults to a generated UUID#
-|The Id to use for the new Application. If not specified a secure random UUID will be generated.
-|===
+[field]#applicationId# [type]#[UUID]# [optional]#Optional# [default]#defaults to a generated UUID#::
+The Id to use for the new Application. If not specified a secure random UUID will be generated.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-create-operation.adoc[]
 
@@ -89,13 +87,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Retriev
 [method]#GET# [uri]#/api/application``?inactive=true``#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#inactive# [type]#[Boolean]# [optional]#Optional#
-|Set this parameter to `true` in order to retrieve only inactive Applications. Setting this parameter to `false` is equivalent omitting the `inactive` parameter.
-|===
+[field]#inactive# [type]#[Boolean]# [optional]#Optional#::
+Set this parameter to `true` in order to retrieve only inactive Applications. Setting this parameter to `false` is equivalent omitting the `inactive` parameter.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
@@ -107,13 +103,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Retriev
 [method]#GET# [uri]#/api/application/`\{applicationId\}`#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#applicationId# [type]#[UUID]# [optional]#Optional#
-|The Id of the Application to retrieve. This request will return the Application if it exists regardless if the Application is active or not.
-|===
+[field]#applicationId# [type]#[UUID]# [optional]#Optional#::
+The Id of the Application to retrieve. This request will return the Application if it exists regardless if the Application is active or not.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
@@ -192,16 +186,14 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Permane
 [method]#DELETE# [uri]#/api/application/`\{applicationId\}?hardDelete=true`#
 --
 
-[cols="3a,7a"]
-[.api]
-.Request Parameters
-|===
-|[field]#applicationId# [type]#[UUID]# [required]#Required#
-|The Id of the Application to delete.
+==== Request Parameters
 
-|[field]#hardDelete# [type]#[Boolean]# [optional]#Optional#
-|Whether or not the Application is soft or hard deleted. A hard delete is a permanent operation.
-|===
+[.api]
+[field]#applicationId# [type]#[UUID]# [required]#Required#::
+The Id of the Application to delete.
+
+[field]#hardDelete# [type]#[Boolean]# [optional]#Optional#::
+Whether or not the Application is soft or hard deleted. A hard delete is a permanent operation.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
@@ -227,13 +219,11 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Reactiv
 [method]#PUT# [uri]#/api/application/`\{applicationId\}?reactivate=true`#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#applicationId# [type]#[UUID]# [required]#Required#
-|The Id of the Application to reactivate.
-|===
+[field]#applicationId# [type]#[UUID]# [required]#Required#::
+The Id of the Application to reactivate.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
@@ -268,35 +258,31 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Create 
 [method]#POST# [uri]#/api/application/`\{applicationId\}`/role/`\{roleId\}`#
 --
 
-[cols="3a,7a"]
-[.api]
-.Request Parameters
-|===
-|[field]#applicationId# [type]#[UUID]# [required]#Required#
-|The Id of the Application.
+==== Request Parameters
 
-|[field]#roleId# [type]#[UUID]# [optional]#Optional# [default]#defaults to secure random UUID#
-|The Id to use for the new role. If not specified a secure random UUID will be generated.
-|===
+[.api]
+[field]#applicationId# [type]#[UUID]# [required]#Required#::
+The Id of the Application.
+
+[field]#roleId# [type]#[UUID]# [optional]#Optional# [default]#defaults to secure random UUID#::
+The Id to use for the new role. If not specified a secure random UUID will be generated.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
-[cols="3a,7a"]
+==== Request Body
+
 [.api]
-.Request Body
-|===
-|[field]#role.description# [type]#[String]# [optional]#Optional#
-|A description for the role.
+[field]#role.description# [type]#[String]# [optional]#Optional#::
+A description for the role.
 
-|[field]#role.name# [type]#[String]# [required]#Required#
-|The name of the Role.
+[field]#role.name# [type]#[String]# [required]#Required#::
+The name of the Role.
 
-|[field]#role.isDefault# [type]#[Boolean]# [optional]#Optional# [default]#defaults to `false`#
-|Whether or not the Role is a default role. A default role is automatically assigned to a user during registration if no roles are provided.
+[field]#role.isDefault# [type]#[Boolean]# [optional]#Optional# [default]#defaults to `false`#::
+Whether or not the Role is a default role. A default role is automatically assigned to a user during registration if no roles are provided.
 
-|[field]#role.isSuperRole# [type]#[Boolean]# [optional]#Optional# [default]#defaults to `false`#
-|Whether or not the Role is a considered to be a super user role. This is a marker to indicate that it supersedes all other roles. FusionAuth will attempt to enforce this contract when using the web UI, it is not enforced programmatically when using the API.
-|===
+[field]#role.isSuperRole# [type]#[Boolean]# [optional]#Optional# [default]#defaults to `false`#::
+Whether or not the Role is a considered to be a super user role. This is a marker to indicate that it supersedes all other roles. FusionAuth will attempt to enforce this contract when using the web UI, it is not enforced programmatically when using the API.
 
 [source,json]
 .Example Request JSON
@@ -330,35 +316,31 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Update 
 :api_endpoint: pass:normal[/api/application/``\{applicationId\}``/role/``\{roleId\}``]
 include::docs/v1/tech/apis/_patch-support.adoc[]
 
-[cols="3a,7a"]
-[.api]
-.Request Parameters
-|===
-|[field]#applicationId# [type]#[UUID]# [required]#Required#
-|The Id of the Application.
+==== Request Parameters
 
-|[field]#roleId# [type]#[UUID]# [required]#Required#
-|The Id of the role that is being updated.
-|===
+[.api]
+[field]#applicationId# [type]#[UUID]# [required]#Required#::
+The Id of the Application.
+
+[field]#roleId# [type]#[UUID]# [required]#Required#::
+The Id of the role that is being updated.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
-[cols="3a,7a"]
+==== Request Body
+
 [.api]
-.Request Body
-|===
-|[field]#role.description# [type]#[String]# [optional]#Optional#
-|A description for the role.
+[field]#role.description# [type]#[String]# [optional]#Optional#::
+A description for the role.
 
-|[field]#role.name# [type]#[String]# [required]#Required#
-|The name of the Role.
+[field]#role.name# [type]#[String]# [required]#Required#::
+The name of the Role.
 
-|[field]#role.isDefault# [type]#[Boolean]# [optional]#Optional# [default]#defaults to `false`#
-|Whether or not the Role is a default role. A default role is automatically assigned to a user during registration if no roles are provided. More than one role can be marked as default.
+[field]#role.isDefault# [type]#[Boolean]# [optional]#Optional# [default]#defaults to `false`#::
+Whether or not the Role is a default role. A default role is automatically assigned to a user during registration if no roles are provided. More than one role can be marked as default.
 
-|[field]#role.isSuperRole# [type]#[Boolean]# [optional]#Optional# [default]#defaults to `false`#
-|Whether or not the Role is a considered to be a super user role. This is a marker to indicate that it supersedes all other roles. FusionAuth will attempt to enforce this contract when using the web UI, it is not enforced programmatically when using the API.
-|===
+[field]#role.isSuperRole# [type]#[Boolean]# [optional]#Optional# [default]#defaults to `false`#::
+Whether or not the Role is a considered to be a super user role. This is a marker to indicate that it supersedes all other roles. FusionAuth will attempt to enforce this contract when using the web UI, it is not enforced programmatically when using the API.
 
 [source,json]
 .Example Request JSON
@@ -389,16 +371,14 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Delete 
 [method]#DELETE# [uri]#/api/application/``\{applicationId\}``/role/``\{roleId\}``#
 --
 
-[cols="3a,7a"]
-[.api]
-.Request Parameters
-|===
-|[field]#applicationId# [type]#[UUID]# [required]#Required#
-|The Id of the Application the role belongs.
+==== Request Parameters
 
-|[field]#roleId# [type]#[UUID]# [required]#Required#
-|The Id of the role to delete.
-|===
+[.api]
+[field]#applicationId# [type]#[UUID]# [required]#Required#::
+The Id of the Application the role belongs.
+
+[field]#roleId# [type]#[UUID]# [required]#Required#::
+The Id of the role to delete.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
@@ -410,16 +390,14 @@ link:authentication#api-key-authentication[icon:lock[role=red,type=far]] Delete 
 [method]#DELETE# [uri]#/api/application/``\{applicationId\}``/role``?name={name\}``#
 --
 
-[cols="3a,7a"]
-[.api]
-.Request Parameters
-|===
-|[field]#applicationId# [type]#[UUID]# [required]#Required#
-|The Id of the Application the role belongs.
+==== Request Parameters
 
-|[field]#name# [type]#[String]# [required]#Required#
-|The name of the role to delete.
-|===
+[.api]
+[field]#applicationId# [type]#[UUID]# [required]#Required#::
+The Id of the Application the role belongs.
+
+[field]#name# [type]#[String]# [required]#Required#::
+The name of the role to delete.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
@@ -444,13 +422,11 @@ link:authentication#no-authentication-required[icon:unlock-alt[role=green,type=f
 [method]#GET# [uri]#/api/application/``\{applicationId\}``/oauth-configuration#
 --
 
-[cols="3a,7a"]
+==== Request Parameters
+
 [.api]
-.Request Parameters
-|===
-|[field]#applicationId# [type]#[UUID]# [required]#Required#
-|The Id of the Application to retrieve the OAuth configuration.
-|===
+[field]#applicationId# [type]#[UUID]# [required]#Required#::
+The Id of the Application to retrieve the OAuth configuration.
 
 include::docs/v1/tech/apis/_x-fusionauth-tenant-id-header-scoped-operation.adoc[]
 
