@@ -24,7 +24,8 @@ The list of roles that the User has for this Application.
 [field]#registration.timezone# [type]#[String]# [optional]#Optional#::
 The User's preferred timezone for this Application registration. The format is not enforced, however it is recommended to use a timezone in the TZ format such as
 +
-[block-quote]#`America/Denver` or `US/Mountain`#
+[quote]
+`America/Denver` or `US/Mountain`
 
 [field]#registration.username# [type]#[String]# [optional]#Optional#::
 The username of the User for this Application only.
@@ -102,7 +103,8 @@ An array of locale strings that give, in order, the User's preferred languages. 
 [field]#user.timezone# [type]#[String]# [optional]#Optional#::
 The User's preferred timezone. The string must be in an https://www.iana.org/time-zones[IANA] time zone format. For example:
 +
-[block-quote]#`America/Denver` or `US/Mountain`#
+[quote]
+`America/Denver` or `US/Mountain`
 
 [field]#users.twoFactorDelivery# [type]#[String]# [optional]#Optional# [default]#defaults to `None`#::
 The User's preferred delivery for verification codes during a two factor login request.

@@ -394,7 +394,8 @@ The link:/docs/v1/tech/reference/data-types#time-zone[time zone] used to adjust 
 
 For example:
 
-[block-quote]#`America/Denver` or `US/Mountain`#
+[quote]
+`America/Denver` or `US/Mountain`
 
 [field]#systemConfiguration.uiConfiguration.headerColor# [type]#[String]#::
 A hexadecimal color to override the default menu color in the user interface.

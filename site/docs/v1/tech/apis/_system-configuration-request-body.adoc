@@ -428,12 +428,14 @@ The link:/docs/v1/tech/reference/data-types#time-zone[time zone] used to adjust 
 +
 For example:
 +
-[block-quote]#`America/Denver` or `US/Mountain`#
+[quote]
+`America/Denver` or `US/Mountain`
 
 [field]#systemConfiguration.uiConfiguration.headerColor# [type]#[String]# [optional]#Optional#::
 A hexadecimal color to override the default menu color in the user interface.
 +
-[block-quote]#Example: `000000` would set the menu color to black.#
+[quote]
+Example: `000000` would set the menu color to black.
 
 [field]#systemConfiguration.uiConfiguration.loginTheme.emailComplete# [type]#[String]# [deprecated]#Deprecated#::
 A https://freemarker.apache.org[FreeMarker] template that is rendered when the user requests the /email/complete page. This page is used after a user has verified their email address by clicking the URL in the email. After FusionAuth has updated their user object to indicate that their email was verified, the browser is redirected to this page.
@@ -549,7 +551,8 @@ A URL of a logo to override the default FusionAuth logo in the user interface.
 [field]#systemConfiguration.uiConfiguration.menuFontColor# [type]#[String]# [optional]#Optional#::
 A hexadecimal color to override the default menu font color in the user interface.
 +
-[block-quote]#Example: `FFFFFF` would set the menu font color to white.#
+[quote]
+Example: `FFFFFF` would set the menu font color to white.
 
 [source,json]
 .Example Request JSON

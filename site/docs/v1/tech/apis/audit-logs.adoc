@@ -297,7 +297,8 @@ The link:/docs/v1/tech/reference/data-types#time-zone[time zone] used to adjust 
 +
 For example:
 +
-[block-quote]#`America/Denver` or `US/Mountain`#
+[quote]
+`America/Denver` or `US/Mountain`
 +
 &nbsp;
 +
@@ -338,7 +339,8 @@ The link:/docs/v1/tech/reference/data-types#time-zone[time zone] used to adjust 
 +
 For example:
 +
-[block-quote]#`America/Denver` or `US/Mountain`#
+[quote]
+`America/Denver` or `US/Mountain`
 +
 &nbsp;
 +

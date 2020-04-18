@@ -28,7 +28,7 @@ Ensure you have a Google login, and then navigate to the Google Cloud console.
 
 == Create Google OAuth client credentials
 
-In the Google Cloud console, find the APIs & Services Credentials by navigating to [breadcrumb]#APIs and Services# icon:chevron-right[role=breadcrumb,type=fas] [breadcrumb]#Credentials#.
+In the Google Cloud console, find the APIs & Services Credentials by navigating to [breadcrumb]#APIs and Services -> Credentials#.
 
 If you are prompted to select or create a project, do that now. In the following example I will need to create my first project before I can create credentials. I will call the project `Pied Piper`.
 
@@ -67,7 +67,7 @@ image::google-cloud-client-credentials.png[OAuth Client credentials,width=1200,r
 
 == Create a Google Identity Provider
 
-The last step will be to create a Google Identity Provider in FusionAuth. To create an Identity Provider navigate to [breadcrumb]#Settings# icon:chevron-right[role=breadcrumb,type=fas] [breadcrumb]#Identity Providers# and click `Add provider` and select `Google` from the dialog.
+The last step will be to create a Google Identity Provider in FusionAuth. To create an Identity Provider navigate to [breadcrumb]#Settings -> Identity Providers# and click `Add provider` and select `Google` from the dialog.
 
 This will take you to the `Add Google` panel, and you'll fill out the `Client Id` and `Client secret` required fields using the values found in the Google Cloud console. The button text is also required but it will be defaulted to `Login with Google`, you may optionally modify this default value.
 
@@ -84,22 +84,20 @@ That's it, now the `Login with Google` button will show up on the login page for
 image::identity-provider-google-add.png[Add Google,width=1200,role=shadowed]
 
 
-[cols="3a,7a"]
+==== Form Fields
+
 [.api]
-.Form Fields
-|===
-|Client Id [required]#Required#
-|The Google Client Id found in your Google credentials settings in the `Client ID` field.
+[field]#Client Id# [required]#Required#::
+The Google Client Id found in your Google credentials settings in the `Client ID` field.
 
-|Client secret [required]#Required#
-|The Google Client Secret found in your Google credentials settings in the `Client secret` field.
+[field]#Client secret# [required]#Required#::
+The Google Client Secret found in your Google credentials settings in the `Client secret` field.
 
-|Button text [required]#Required#
-|The text to be displayed in the button on the login form. This value is defaulted to `Login with Google` but it may be modified to your preference.
+[field]#Button text# [required]#Required#::
+The text to be displayed in the button on the login form. This value is defaulted to `Login with Google` but it may be modified to your preference.
 
-|Scope [optional]#Optional#
-|This optional field defines the scope you're requesting from the user during login. See the Google login documentation for further information.
+[field]#Scope# [optional]#Optional#::
+This optional field defines the scope you're requesting from the user during login. See the Google login documentation for further information.
 
-|Debug enabled [optional]#Optional# [default]#defaults to `false`#
-|Enable debug to create an event log to assist you in debugging integration errors.
-|===
+[field]#Debug enabled# [optional]#Optional# [default]#defaults to `false`#::
+Enable debug to create an event log to assist you in debugging integration errors.

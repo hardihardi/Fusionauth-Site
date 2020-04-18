@@ -25,7 +25,7 @@ The Login API is used authenticate a user in FusionAuth. The issuer of the One T
 
 === Request
 
-By default, this API will require authentication when called with an [field]#applicationId#. Authentication may be disabled per Application, see [field]#application.loginConfiguration.requireAuthentication# in the link:../apis/applications[Application API] or navigate to [breadcrumb]#Applications# icon:chevron-right[role=breadcrumb,type=fas] [breadcrumb]#Edit# icon:chevron-right[role=breadcrumb,type=fas] [breadcrumb]#Security# in the user interface.
+By default, this API will require authentication when called with an [field]#applicationId#. Authentication may be disabled per Application, see [field]#application.loginConfiguration.requireAuthentication# in the link:../apis/applications[Application API] or navigate to [breadcrumb]#Applications -> Edit -> Security# in the user interface.
 
 
 Prior to version `1.5.0` this API did not accept an API key and never required authentication.
@@ -134,7 +134,7 @@ This API is used to login using a One Time Password that has been returned from 
 
 === Request
 
-By default, this API will require authentication when called with an [field]#applicationId#. Authentication may be disabled per Application, see [field]#application.loginConfiguration.requireAuthentication# in the link:../apis/applications[Application API] or navigate to [breadcrumb]#Applications# icon:chevron-right[role=breadcrumb,type=fas] [breadcrumb]#Edit# icon:chevron-right[role=breadcrumb,type=fas] [breadcrumb]#Security# in the user interface.
+By default, this API will require authentication when called with an [field]#applicationId#. Authentication may be disabled per Application, see [field]#application.loginConfiguration.requireAuthentication# in the link:../apis/applications[Application API] or navigate to [breadcrumb]#Applications -> Edit -> Security# in the user interface.
 
 
 [.api-authentication]
@@ -699,7 +699,8 @@ The link:/docs/v1/tech/reference/data-types#time-zone[time zone] used to adjust 
 +
 For example:
 +
-[block-quote]#`America/Denver` or `US/Mountain`#
+[quote]
+`America/Denver` or `US/Mountain`
 +
 &nbsp;
 +
@@ -740,7 +741,8 @@ The link:/docs/v1/tech/reference/data-types#time-zone[time zone] used to adjust 
 +
 For example:
 +
-[block-quote]#`America/Denver` or `US/Mountain`#
+[quote]
+`America/Denver` or `US/Mountain`
 +
 &nbsp;
 +

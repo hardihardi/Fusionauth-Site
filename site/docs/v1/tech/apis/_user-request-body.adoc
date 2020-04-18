@@ -10,8 +10,7 @@ Configuration setting for **Set Password Email Template**.
 +
 If you set this value to `true` the `password` field is then ignored, FusionAuth will set the initial password to a securely generated random string.
 +
-If you have also enabled email verification and do not select to skip verification using the `skipVerification` parameter, only the setup password email will be
-sent to the user. Setting up the password using the email sent during this user create operation will implicitly verify the User's email if it is not already verified.
+If you have also enabled email verification and do not select to skip verification using the `skipVerification` parameter, only the setup password email will be sent to the user. Setting up the password using the email sent during this user create operation will implicitly verify the User's email if it is not already verified.
 +
 If the SMTP email configuration is not complete, or disabled, this value is ignored.
 endif::[]
@@ -99,7 +98,8 @@ See link:/docs/v1/tech/reference/data-types#locales[Locales].
 [field]#user.timezone# [type]#[String]# [optional]#Optional#::
 The User's preferred timezone. The string must be in an https://www.iana.org/time-zones[IANA] time zone format. For example:
 +
-[block-quote]#`America/Denver` or `US/Mountain`#
+[quote]
+`America/Denver` or `US/Mountain`
 
 [field]#users.twoFactorDelivery# [type]#[String]# [optional]#Optional# [default]#defaults to `None`#::
 The User's preferred delivery for verification codes during a two factor login request.

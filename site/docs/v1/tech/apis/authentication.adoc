@@ -14,7 +14,7 @@ The FusionAuth APIs are primarily secured using API keys, a few APIs may optiona
 
 {nbsp} +
 
-API keys must be created in the FusionAuth admin user interface, this function is not available through an API for security reasons. To manage API keys navigate to [breadcrumb]#Settings# icon:chevron-right[role=breadcrumb,type=fas] [breadcrumb]#API Keys#.
+API keys must be created in the FusionAuth admin user interface, this function is not available through an API for security reasons. To manage API keys navigate to [breadcrumb]#Settings -> API Keys#.
 
 * <<Manage API Keys>>
 * <<Making an API request using a Tenant Id>>
@@ -95,7 +95,7 @@ When an API that is marked with an unlocked icon such as &nbsp;&nbsp; icon:unloc
 
 == Manage API Keys
 
-Navigate to [breadcrumb]#Settings# icon:chevron-right[role=breadcrumb,type=fas] [breadcrumb]#API Keys# to manage API keys.
+Navigate to [breadcrumb]#Settings -> API Keys# to manage API keys.
 
 Create as many API keys as you like, each one may be optionally limited in ability to minimize security risk.
 
@@ -110,19 +110,16 @@ image::create-api-key.png[Create an API Key,width=1200,role=shadowed]
 ==== Form Fields
 
 [.api]
-|===
-|Key
-|A unique key to be utilized to authorize API requests using the `Authorization` header.
+[field]#Key#::
+A unique key to be utilized to authorize API requests using the `Authorization` header.
 
-|Description
-|An optional description of how this API key will be utilized.
+[field]#Description#::
+An optional description of how this API key will be utilized.
 
-|Tenant
-|The optional tenant to which this API key will be assigned. This value cannot be changed once the API key is created. This field is only displayed when more than one tenant exists. When you assign an API key to a tenant, you will only be able to operate on users, applications, and groups in the selected tenant.
+[field]#Tenant#::
+The optional tenant to which this API key will be assigned. This value cannot be changed once the API key is created. This field is only displayed when more than one tenant exists. When you assign an API key to a tenant, you will only be able to operate on users, applications, and groups in the selected tenant.
 
-|Endpoints
-|Select one or more endpoints this API key will be authorized to access. Selecting no endpoints will authorize this key to all API endpoints.
-|===
-
+[field]#Endpoints#::
+Select one or more endpoints this API key will be authorized to access. Selecting no endpoints will authorize this key to all API endpoints.
 
 include::docs/v1/tech/apis/_tenant-authentication.adoc[]

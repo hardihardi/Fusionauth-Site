@@ -12,11 +12,11 @@ Prime.Document.onReady(function() {
   });
 
   // Docs nav
-  Prime.Document.query('.docs aside ul li ul').each(function(ul) {
-    const a = ul.getParent().queryFirst('a');
+  Prime.Document.query('.docs aside a.sub-menu').each(function(a) {
     a.addEventListener('click', function(event) {
       Prime.Utils.stopEvent(event);
       const i = a.queryLast('i');
+      const ul = a.getNextSibling();
       if (ul.hasClass('open')) {
         i.removeClass('fa-chevron-up').addClass('fa-chevron-down');
         ul.removeClass('open');
